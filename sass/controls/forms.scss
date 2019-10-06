@@ -1,0 +1,75 @@
+.search__form-label {
+ position: relative;
+ display: block;
+ padding: 0.5em 1em 0.5em 3em;
+ border-radius: 25px;
+ background-color: $mist;
+}
+
+.search-form__button {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 3em;
+ height: 100%;
+ text-indent: -9999px;
+background:url(../img/search.svg) center center/auto 80% no-repeat;
+}
+
+.user__login {
+ position: absolute;
+ left: -9999px;
+ top: calc(100% + 14px);
+ min-width: 222px;
+ width: 100%;
+ padding: 16px;
+ background-color: #fbfbfb;
+ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.47);
+ opacity: 0;
+ transition: opacity .3s ease-in-out;
+ z-index: 10;
+ &.open {
+  left: 0;
+  opacity: 1;
+ }
+}
+
+.user__title {
+ margin-bottom: 10px;
+ font-weight: 700;
+}
+
+.form__row {
+ position: relative;
+ margin-bottom: 14px;
+ &:last-of-type {
+  margin-bottom: 0;
+ }
+  &.password {
+  [type="password"] {
+  padding: 4px 25px 4px 4px;
+ }
+  &:after {
+   content: '';
+   position: absolute;
+   right: 5px;
+   bottom: 5px;
+   width: 20px;
+   height: 11px;
+   background: url(../img/misc/eye.svg) center center/contain no-repeat;
+  }
+ }
+}
+
+.form__label {
+ position: relative;
+ display: block;
+ margin-bottom: 5px;
+}
+
+.form__input {
+ display: block;
+ width: 100%;
+ padding: 5px;
+ border: 1px solid #757575;
+}
