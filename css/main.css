@@ -296,6 +296,9 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .row.jsa {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
 
 .header {
   display: -webkit-box;
@@ -735,6 +738,79 @@ a {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out; }
+
+.footer {
+  padding: 30px 0 20px 0;
+  background-color: #c63b3b;
+  color: #fff; }
+
+.footer__col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 20%;
+  flex: 0 1 20%;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (max-width: 1000px) {
+    .footer__col {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+      flex: 0 1 30%;
+      margin-bottom: 30px; }
+      .footer__col.footer-net, .footer__col.payment {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+        flex: 0 1 30%;
+        margin-bottom: 0; } }
+  @media (max-width: 1000px) and (max-width: 720px) {
+    .footer__col {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%; }
+      .footer__col.footer-net, .footer__col.payment {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+        flex: 0 1 50%; } }
+    @media (max-width: 1000px) and (max-width: 720px) and (max-width: 400px) {
+      .footer__col.footer-net, .footer__col.payment {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%; }
+        .footer__col.footer-net.footer-net, .footer__col.payment.footer-net {
+          margin-bottom: 30px; } }
+
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 18px; }
+
+.footer__item a {
+  display: block;
+  padding: 3px 0; }
+  .footer__item a > * {
+    vertical-align: bottom; }
+  .footer__item a > img {
+    margin-right: 10px; }
+
+.payment__item {
+  width: 55px;
+  padding: 0 5px;
+  margin-bottom: 10px; }
+
+.footer__bottom {
+  margin-top: 30px; }
+  @media (max-width: 500px) {
+    .footer__bottom {
+      display: block;
+      text-align: center; }
+      .footer__bottom p {
+        display: inline;
+        vertical-align: bottom; } }
 
 .search__wrap {
   margin-top: 10px; }
