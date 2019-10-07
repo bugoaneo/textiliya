@@ -8,15 +8,24 @@ $(document).ready(function () {
   return false;
  });
 
+ $('.search__open-btn').click(function () {
+  $('.search__wrap').toggleClass('open');
+ });
+
  $('.login-btn').click(function () {
   $('.user__login').toggleClass('open');
  });
 
- $('.close').click(function () {
-  $('.user__login').removeClass('open');
- });
 
- //dropdown__text
+
+ $('.menu-trigger').click(function () {
+  $('.header__nav').addClass('open');
+ });
+ $(document).mouseup(function (e) {
+  if (!$('.header__nav').is(e.target) && $('.header__nav').has(e.target).length === 0) {
+   $('.header__nav').removeClass('open');
+  }
+ });
 
 });
 

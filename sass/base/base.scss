@@ -33,6 +33,13 @@ a {
  vertical-align: middle;
 }
 
+.mobila {
+ display: none !important;
+ @include bp(720px) {
+  display: block !important;
+ }
+}
+
 /*grid*/
 
 .row, %row {

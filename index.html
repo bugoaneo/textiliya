@@ -44,7 +44,7 @@ http://browsehappy.com/">обновите</a>
             <div class="email"><a href="mailto:sale@tkani-textiliya.ru">sale@tkani-textiliya.ru</a></div>
             <div class="chain"><a href="/**/">Магазины у метро</a></div>
             <div class="net">
-              <ul class="net row">
+              <ul class="net-list row">
                 <li class="net-item fst"><a href="/*/*/"><img src="img/misc/01.png" alt=""></a></li>
                 <li class="net-item scnd"><a href="/*/*/"><img src="img/misc/02.png" alt=""></a></li>
                 <li class="net-item frd"><a href="/*/*/"><img src="img/misc/03.png" alt=""></a></li>
@@ -56,10 +56,12 @@ http://browsehappy.com/">обновите</a>
       </div>
       <div class="header__main">
         <div class="container">
-          <div class="row jsb">
+          <div class="row jsb ac">
+            <button class="menu-trigger" type="button"></button>
             <div class="logo search">
               <div class="logo__pic"><img src="img/logo.svg" alt="Текстилия"> <span class="logo__text">Модные ткани
                   оптом и в розницу</span></div>
+              <button type="button" class="search__open-btn"><img src="img/search.svg"></button>
               <div class="search__wrap">
                 <form action="/***/" id="search__form" name="search__form" class="search__form" method="POST">
                   <label class="search__form-label" for="search">
@@ -79,10 +81,10 @@ http://browsehappy.com/">обновите</a>
               </ul>
             </div>
             <div class="user row">
-              <div class="user__wrap row ac">
+              <div class="user__wrap row ac" onClick="return true">
                 <div class="user__avatar"><img src="img/user.svg" alt="" class="user__pic"></div>
                 <ul class="user__menu">
-                  <li class="user__menu-item"><a class="login-btn" href="///">Войти</a></li>
+                  <li class="user__menu-item"><span class="login-btn">Войти</span></li>
                   <li class="user__menu-item"><a class="registr-btn" href="///">Регистрация</a></li>
                 </ul>
               </div>
@@ -120,6 +122,9 @@ http://browsehappy.com/">обновите</a>
       </div>
       <div class="header__nav">
         <div class="container">
+          <div class="logo__pic mobila"><img src="img/logo.svg" alt="Текстилия"> <span class="logo__text mobila">Модные
+              ткани
+              оптом и в розницу</span></div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item current"><a class="nav__link" href="">Ткани опт</a></li>
@@ -142,7 +147,7 @@ http://browsehappy.com/">обновите</a>
                           <a href="" class="dropdown__link"><span class="dropdown__text">Для рукоделия</span>
                             <span class="link-count"> 28</span></a>
                         </li>
-                        <li class="dropdown__item sub__dropdown">
+                        <li class="dropdown__item">
                           <a href="" class="dropdown__link"><span class="dropdown__text">Костюмные</span> <span
                               class="link-count">266</span></a>
                         </li>
@@ -414,6 +419,30 @@ http://browsehappy.com/">обновите</a>
               <li class="nav__item accent"><a class="nav__link" href="">%Sale</a></li>
             </ul>
           </nav>
+          <div class="phones mobila">
+            <ul class="phones__list">
+              <li class="phones__item"><a href="tel:+78002004150">8 800-200-4150</a> опт</li>
+              <li class="phones__item"><a href="tel:+78005518980">8 800-551-8980</a> розница</li>
+              <li class="phones__item"><img src="img/misc/wtp.svg" alt=""><a href="https://wa.me/89513661969">8 951
+                  366 19 69</a></li>
+            </ul>
+          </div>
+          <div class="adds mobila">
+            <div class="region">
+              <span>Ваш регион</span>
+              <span class="you-region">Новосибирск</span>
+            </div>
+            <div class="header__adress">г. Новосибирск, Красный пр-т, 153Б</div>
+            <div class="email"><a href="mailto:sale@tkani-textiliya.ru">sale@tkani-textiliya.ru</a></div>
+            <div class="chain"><a href="/**/">Магазины у метро</a></div>
+            <ul class="net-list row">
+              <li class="net-item fst"><a href="/*/*/"><img src="img/misc/01.png" alt=""></a></li>
+              <li class="net-item scnd"><a href="/*/*/"><img src="img/misc/02.png" alt=""></a></li>
+              <li class="net-item frd"><a href="/*/*/"><img src="img/misc/03.png" alt=""></a></li>
+              <li class="net-item fos"><a href="/*/*/"><img src="img/misc/04.png" alt=""></a></li>
+            </ul>
+
+          </div>
         </div>
       </div>
     </header>
@@ -421,11 +450,11 @@ http://browsehappy.com/">обновите</a>
   <footer></footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/shave.js"></script>
+  <!-- <script src="js/shave.js"></script> -->
   <script src="js/scripts.js"></script>
-  <script>
+  <!-- <script>
     $('.dropdown__text').shave(20);
-  </script>
+  </script> -->
 </body>
 
 </html>
