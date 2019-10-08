@@ -1,0 +1,5 @@
+.main {
+ @include bp(720px) {
+  margin-top: 80px;
+ }
+}

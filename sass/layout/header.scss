@@ -15,7 +15,7 @@
 .adds {
   background-color: $mist;
   padding: 20px;
-  margin: 0 -20px;
+  margin: 0 -20px ;
   .region, .header__adress, .chain, .email {
     margin-bottom: 20px;
   }
@@ -34,19 +34,22 @@
   text-decoration: underline;
   cursor: pointer;
   &:after {
-    content: "";
+    content: "\25BC";
     @include center(y);
     right: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 4px 0 4px;
-    border-color: #000000 transparent transparent transparent;
   }
 }
 
 .header__main {
   padding: 14px 0;
+  @include bp(720px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
 }
 
 .logo {
@@ -230,9 +233,10 @@
     position: fixed;
     left: -100%;
     top: 0;
-    bottom: 0;
+    bottom: 70px;
     width: 80%;
     height: 100%;
+    // height: calc(100% + 70px);
     padding-top: 20px;
     background-color:#fff;
     z-index: 100;
@@ -242,6 +246,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+      // height: calc(100% - 100px);
     }
     &.open {
       left: 0;

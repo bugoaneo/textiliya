@@ -8,15 +8,23 @@ $(document).ready(function () {
   return false;
  });
 
+
  $('.search__open-btn').click(function () {
   $('.search__wrap').toggleClass('open');
  });
 
+ /*login popup behavior*/
+
  $('.login-btn').click(function () {
-  $('.user__login').toggleClass('open');
+  $('.user__login').addClass('open');
+ });
+ $('.close').click(function () {
+  $('.user__login').removeClass('open');
  });
 
 
+
+ /*menu behavior on mobile breakpoint */
 
  $('.menu-trigger').click(function () {
   $('.header__nav').addClass('open');
@@ -27,5 +35,27 @@ $(document).ready(function () {
   }
  });
 
+});
+
+
+$(window).resize(function () {
+ if ($(window).width() < 720) {
+  $('.footer__title').click(function () {
+   $(this).next('.footer__list').toggleClass('open');
+  });
+ };
+ 
+});
+
+
+$(window).scroll(function () {
+ if ($(window).width() > 720) {
+ if ($(window).scrollTop() >= 115) {
+  $('.header__nav').addClass('fixed');
+ }
+ else {
+  $('.header__nav').removeClass('fixed');
+ }
+ };
 });
 
