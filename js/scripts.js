@@ -44,18 +44,20 @@ $(window).resize(function () {
    $(this).next('.footer__list').toggleClass('open');
   });
  };
- 
+
 });
 
 
 $(window).scroll(function () {
  if ($(window).width() > 720) {
- if ($(window).scrollTop() >= 115) {
-  $('.header__nav').addClass('fixed');
- }
- else {
-  $('.header__nav').removeClass('fixed');
- }
+  if ($(window).scrollTop() >= 115) {
+   $('.header__nav').addClass('fixed');
+   $('.main').addClass('fixed');
+  }
+  else {
+   $('.header__nav').removeClass('fixed');
+   $('.main').removeClass('fixed');
+  }
  };
 });
 
