@@ -43,10 +43,13 @@ $(window).resize(function () {
   $('.footer__title').click(function () {
    $(this).next('.footer__list').toggleClass('open');
   });
+
+ 
  };
-
 });
-
+ $('.dropdown__trigger').click(function () {
+   $(this).next('.dropdown__wrap').toggleClass('open');
+  });
 
 $(window).scroll(function () {
  if ($(window).width() > 720) {
