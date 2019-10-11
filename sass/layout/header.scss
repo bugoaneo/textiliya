@@ -39,7 +39,7 @@
   &:after {
     content: "\25BC";
     @include center(y);
-    right: 0;
+    right: -3px;
   }
 }
 
@@ -251,13 +251,13 @@
       height: 100%;
       // height: calc(100% - 100px);
     }
-
-  }
-  @include bp(400px){
-    width: 100%;
   }
   &.open {
     left: 0;
+    width: 80%;
+  @include bp(400px){
+    width: 100%;
+  }   
   }
   &.fixed {
     position: fixed;
@@ -304,7 +304,7 @@
 
 .nav__link {
   display: block;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1em;
   font-size: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
@@ -324,7 +324,7 @@
       }
       &.open {
         left: 0;
-      opacity: 1;
+        opacity: 1;
       }
     }
   }
@@ -344,15 +344,15 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   @include bp(720px) {
-    /* max-height: 100vh; */
     position: fixed;
     top: 0;
     height: 100%;
     overflow: auto;
-    // &.open {     
-    //   left: 0;
-    //   opacity: 1;
-    // }
+    width: 80%;
+    padding: 40px 20px 20px 20px;
+  }
+  @include bp(400px){
+    width: 100%;
   }
   &.open {  
     left: 0;
@@ -395,10 +395,12 @@
     @include bp(720px) {
       flex: 1 1 100%;
       margin-top: 20px;
+      padding: 0;
     }
   }
   @include bp(720px) {
     flex: 1 1 100%;
+    padding: 0;
   }
 }
 
@@ -418,6 +420,9 @@
   &:hover {
     &:after {
       background-color: $haze;
+    }
+    &:before {
+       transform: translateY(-50%) rotateZ(135deg);
     }
   }
 }
@@ -449,6 +454,7 @@
 /*dropdown submenu*/
 
 .submenu {
+  display: flex;
   padding-left: 14px;
   &:before {
     content: "";
@@ -467,7 +473,24 @@
     .submenu__list {
       right: 0;
       opacity: 1;
+      @include bp(720px) {
+        right: -9999px;
+        opacity: 0;
+      }
+      &.open {
+        right: 0;
+        opacity: 1;
+      }
     }
+  }
+  @include bp(720px) {
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+  .dropdown__link {
+    width: auto;
   }
 }
 
@@ -481,4 +504,12 @@
   background-color: #f5f5ff;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+  &.open {
+    right: 0;
+    opacity: 1;
+  }
+  @include bp(400px) {
+    max-width: 400px;
+  }
 }

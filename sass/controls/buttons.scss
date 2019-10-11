@@ -48,21 +48,108 @@ padding: 5px 1.4em;
  @include bp(720px) {
   display: block;
  }
+ @include bp(400px) {
+   height: 25px;
+   padding: 11px 5px;
+   &:before, &:after {
+     left: 5px;
+     right: 5px;
+     width: auto;
+     height: 3px;
+   }
+ }
+}
+
+.menu-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 2;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 50%;
+    height: 3px;
+    background-color: #222;
+  }
+  &:before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  &:after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
 
 .dropdown__trigger {
-  // position: relative;
+  position: relative;
   flex: 1 1 auto;
-  // &:after {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   top: 50%;
-  //   right: 20px;
-  //   transform: rotate(-45deg) translateY(-50%);
-  //   width: 12px;
-  //   height: 12px;
-  //   border-bottom: 3px solid #fff;
-  //   border-right:3px solid #fff;
-  // }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(-45deg) translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-bottom: 3px solid #fff;
+    border-right:3px solid #fff;
+  }
+}
+
+.submenu__trigger {
+  position: relative;
+  flex: 1 1 auto;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: rotate(-45deg) translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid;
+    border-right:1px solid;
+  }
+}
+
+.dropdown__close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5em .5em .7em 2.5em;
+  background-color: $light;
+  color: #fff;
+  font-weight: 700;
+  &:before {
+    content: '';
+    // display: inline-block;
+    // vertical-align: baseline;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    background-color: $primary;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border-bottom: 3px solid #fff;
+    border-left:3px solid #fff;
+  }
 }

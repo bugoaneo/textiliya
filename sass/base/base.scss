@@ -40,6 +40,13 @@ a {
  }
 }
 
+.mobil-sx {
+ display: none !important;
+ @include bp(400px) {
+  display: block !important;
+ }
+}
+
 /*grid*/
 
 .row, %row {

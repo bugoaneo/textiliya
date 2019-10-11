@@ -269,6 +269,12 @@ a {
     .mobil {
       display: block !important; } }
 
+.mobil-sx {
+  display: none !important; }
+  @media (max-width: 400px) {
+    .mobil-sx {
+      display: block !important; } }
+
 /*grid*/
 .row {
   display: -webkit-box;
@@ -343,7 +349,7 @@ a {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 0; }
+    right: -3px; }
 
 .header__main {
   padding: 14px 0; }
@@ -541,11 +547,12 @@ a {
         -ms-flex-pack: justify;
         justify-content: space-between;
         height: 100%; } }
-  @media (max-width: 400px) {
-    .header__nav {
-      width: 100%; } }
   .header__nav.open {
-    left: 0; }
+    left: 0;
+    width: 80%; }
+    @media (max-width: 400px) {
+      .header__nav.open {
+        width: 100%; } }
   .header__nav.fixed {
     position: fixed;
     top: 0;
@@ -595,7 +602,7 @@ a {
 
 .nav__link {
   display: block;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1em;
   font-size: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
@@ -634,11 +641,15 @@ a {
   transition: opacity 0.3s ease-in-out; }
   @media (max-width: 720px) {
     .dropdown__wrap {
-      /* max-height: 100vh; */
       position: fixed;
       top: 0;
       height: 100%;
-      overflow: auto; } }
+      overflow: auto;
+      width: 80%;
+      padding: 40px 20px 20px 20px; } }
+  @media (max-width: 400px) {
+    .dropdown__wrap {
+      width: 100%; } }
   .dropdown__wrap.open {
     left: 0;
     opacity: 1; }
@@ -683,12 +694,14 @@ a {
         -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
         flex: 1 1 100%;
-        margin-top: 20px; } }
+        margin-top: 20px;
+        padding: 0; } }
   @media (max-width: 720px) {
     .dropdown__col {
       -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
-      flex: 1 1 100%; } }
+      flex: 1 1 100%;
+      padding: 0; } }
 
 .dropdown__item {
   position: relative;
@@ -706,6 +719,10 @@ a {
     transition: 0.3s ease-in-out; }
   .dropdown__item:hover:after {
     background-color: #e3e3f2; }
+  .dropdown__item:hover:before {
+    -webkit-transform: translateY(-50%) rotateZ(135deg);
+    -ms-transform: translateY(-50%) rotate(135deg);
+    transform: translateY(-50%) rotateZ(135deg); }
 
 .dropdown__link,
 .submenu__link {
@@ -737,6 +754,9 @@ a {
 
 /*dropdown submenu*/
 .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 14px; }
   .submenu:before {
     content: "";
@@ -758,6 +778,20 @@ a {
     .submenu:hover .submenu__list {
       right: 0;
       opacity: 1; }
+      @media (max-width: 720px) {
+        .submenu:hover .submenu__list {
+          right: -9999px;
+          opacity: 0; } }
+      .submenu:hover .submenu__list.open {
+        right: 0;
+        opacity: 1; }
+  @media (max-width: 720px) {
+    .submenu {
+      padding-left: 0; }
+      .submenu:before {
+        display: none; } }
+  .submenu .dropdown__link {
+    width: auto; }
 
 .submenu__list {
   position: absolute;
@@ -770,7 +804,14 @@ a {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out; }
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2; }
+  .submenu__list.open {
+    right: 0;
+    opacity: 1; }
+  @media (max-width: 400px) {
+    .submenu__list {
+      max-width: 400px; } }
 
 @media (max-width: 720px) {
   .main {
@@ -1030,10 +1071,109 @@ a {
   @media (max-width: 720px) {
     .menu-trigger {
       display: block; } }
+  @media (max-width: 400px) {
+    .menu-trigger {
+      height: 25px;
+      padding: 11px 5px; }
+      .menu-trigger:before, .menu-trigger:after {
+        left: 5px;
+        right: 5px;
+        width: auto;
+        height: 3px; } }
+
+.menu-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -999px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 2; }
+  .menu-close:before, .menu-close:after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 50%;
+    height: 3px;
+    background-color: #222; }
+  .menu-close:before {
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg); }
+  .menu-close:after {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg); }
 
 .dropdown__trigger {
+  position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
+  .dropdown__trigger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    -ms-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff; }
+
+.submenu__trigger {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+  .submenu__trigger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    -ms-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid;
+    border-right: 1px solid; }
+
+.dropdown__close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5em .5em .7em 2.5em;
+  background-color: #e78f84;
+  color: #fff;
+  font-weight: 700; }
+  .dropdown__close:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    background-color: #d05252; }
+  .dropdown__close:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff; }
 
 /*# sourceMappingURL=main.css.map */
