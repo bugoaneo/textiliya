@@ -23,7 +23,9 @@
     margin-bottom: 20px;
   }
 }
-
+.net {
+  margin-top: -5px;
+}
 .net-item {
   margin-right: 8px;
   &:last-child {
@@ -255,20 +257,22 @@
   &.open {
     left: 0;
     width: 80%;
-  @include bp(400px){
-    width: 100%;
-  }   
+    @include bp(400px){
+      width: 100%;
+    }   
   }
   &.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 101;
+    @media (min-width: 720px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 101;
+    }
   }
 }
 .main.fixed {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .nav__list {

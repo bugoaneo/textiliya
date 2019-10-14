@@ -1,5 +1,33 @@
 .main {
+ margin-top: 20px;
+ margin-bottom: 5%;
  @include bp(720px) {
   margin-top: 80px;
+ }
+}
+
+.slider {
+ min-width: 0;
+ flex: 0 1 68%;
+ @include bp(720px) {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+ }
+}
+
+.banner__list.row {
+ flex: 0 1 30%;
+ flex-direction: column;
+ justify-content: space-between;
+ @include bp(720px) {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+  flex-direction: row
+ }
+ .banner__item {
+  flex: 0 1 47%;
+  @include bp(720px) {
+   padding-bottom: 25%;
+  } 
  }
 }
