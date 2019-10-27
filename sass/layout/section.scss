@@ -1,57 +1,231 @@
 .main {
- margin-top: 20px;
- margin-bottom: 5%;
- @include bp(720px) {
-  margin-top: 80px;
- }
+  margin-top: 20px;
+  margin-bottom: 5%;
+  @include bp(720px) {
+    margin-top: 80px;
+  }
 }
 
 .slider {
- min-width: 0;
- flex: 0 1 68%;
- @include bp(720px) {
-  flex: 1 1 100%;
-  margin-bottom: 20px;
- }
+  min-width: 0;
+  flex: 0 1 68%;
+  @include bp(720px) {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .banner__list.row {
- flex: 0 1 30%;
- flex-direction: column;
- justify-content: space-between;
- @include bp(720px) {
-  flex: 1 1 100%;
-  margin-bottom: 20px;
-  flex-direction: row
- }
- .banner__item {
-  flex: 0 1 47%;
+  flex: 0 1 30%;
+  flex-direction: column;
+  justify-content: space-between;
   @include bp(720px) {
-   padding-bottom: 25%;
-  } 
- }
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    flex-direction: row;
+  }
+  .banner__item {
+    flex: 1 1 47%;
+    margin-bottom: 14px;
+    @include bp(720px) {
+      padding-bottom: 25%;
+      margin-bottom: 0;
+      margin-right: 14px;
+      &-verticle {
+        margin-top: 10px;
+        padding-bottom: 166%;
+      }
+    }
+    &:last-child,
+    &:only-child {
+      margin-bottom: 0;
+      @include bp(720px) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.banner__item {
+  position: relative;
+  padding-bottom: 47.7%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /*section*/
 .section {
- margin: 40px 0;
+  margin: 40px 0;
 }
 
 .section__title {
- margin-bottom: 30px;
- font-size: 24px;
- font-weight: 900;
- text-transform: uppercase;
- text-align: center;
- * {
-  display: inline-block;
-  vertical-align: baseline;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  * {
+    display: inline-block;
+    vertical-align: baseline;
+   ~ a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-transform: initial;
+    color: $primary;
+   }
+  }
+}
+
+/*action*/
+
+.action {
+  .slider {
+    margin-right: 1%;
+    @include bp(720px) {
+      margin-right: 0;
+    }
+  }
+  .banner__list.row {
+    margin-top: 10px;
+    @include bp(720px) {
+      margin-top: 0;
+    }
+  }
+}
+
+/*offers*/
+
+.offers {
+  position: relative;
+  padding: 30px 0;
+  background-color: $light;
+  z-index: 0;
+}
+
+.offers__slider {
+  overflow: visible;
+  @include bp(500px) {
+    overflow: hidden;
+  }
+}
+
+.offers__list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 0;
+  @include bp(500px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.offers__item {
+  flex: 0 1 32%;
+  img,
+  a {
+    display: block;
+    width: 100%;
+  }
+  @include bp(500px) {
+    flex: 0 0 100%;
+  }
+}
+
+.offers-pager {
+  display: none;
+  @include bp(500px) {
+    display: block;
+  }
+}
+
+.news {
+ @include bp(500px) {
+  a {
+   display: none;
+  }
+  .title-button {
+   display: block;
+   color: #fff;
+   padding: 0.4em 1em;
+   background-color: $btn;
+   &.accent {
+    background-color: $second;
+   }
+  }
  }
- a {
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: underline;
-  text-transform: initial;
-  color: $primary;
+}
+
+.news__list {
+ @include bp(500px) {
+  display: none;
  }
+}
+
+.news__item {
+ display: flex;
+ flex-direction: column;
+ flex: 0 1 32%;
+ padding: 10px;
+ box-shadow: 0px 0px 6px 0px rgba(61, 61, 61, 0.2),0px 0px 6px 0px rgba(61, 61, 61, 0.2);
+ line-height: 1.5;
+}
+
+.news__pic {
+ position: relative;
+ padding-bottom: 45%;
+ margin-bottom: 20px;
+ img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+}
+
+.news__info {
+ margin-bottom: 20px;
+}
+
+.news__text {
+ margin-top: auto;
+ overflow: hidden;
+ display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+}
+
+.news__date {
+ margin-bottom: 5px;
+}
+
+.news__title {
+ overflow: hidden;
+ display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+ font-weight: 700;
+}
+
+.reviews {
+ padding: 20px 0;
+ background-color: $haze;
+}
+
+.reviews__list {
+ min-width: 0;
+ max-width: 80%;
+ margin: 0 auto;
+ background-color: #fff;
+}
+
+.reviews__body {
+ padding: 30px;
 }

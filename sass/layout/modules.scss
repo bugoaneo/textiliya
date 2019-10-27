@@ -1,0 +1,23 @@
+.tags {
+  padding: 20px;
+}
+
+.tags-module {
+  min-width: 0;
+  position: relative;
+  margin: 20px 0;
+  z-index: 0;
+}
+
+.tags__list {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.tags__item {
+  flex: 0 1 auto;
+  white-space: nowrap;
+  font-weight: 600;
+  padding: 6px 10px;
+  background-color: $mist;
+}
