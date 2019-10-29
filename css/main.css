@@ -1,24 +1,24 @@
 @-ms-viewport {
   width: device-width;
   initial-scale: 1; }
+
 @-moz-viewport {
   width: device-width;
   initial-scale: 1; }
+
 @-webkit-viewport {
   width: device-width;
   initial-scale: 1; }
-/* line 20, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 *, :before, :after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 27, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 html {
   min-height: 100%; }
 
-/* line 32, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 body {
   position: relative;
   min-height: 100%;
@@ -37,19 +37,15 @@ body {
   -ms-touch-action: manipulation;
   touch-action: manipulation; }
 
-/* line 66, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
   display: block; }
 
-/* line 70, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 video, audio, canvas {
   display: inline-block; }
 
-/* line 75, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 span {
   display: inline-block; }
 
-/* line 80, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 a, input, button, textarea, optgroup, select, fieldset, figure, legend, address {
   font: inherit;
   color: inherit;
@@ -60,29 +56,26 @@ a, input, button, textarea, optgroup, select, fieldset, figure, legend, address 
   background: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  -webkit-border-radius: 0;
   border-radius: 0;
   margin: 0;
   padding: 0; }
 
-/* line 95, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 a, button, [type='button'], [type='submit'] {
   -webkit-transition: color .25s, background .25s, opacity .25s;
   -o-transition: color .25s, background .25s, opacity .25s;
   transition: color .25s, background .25s, opacity .25s; }
 
-/* line 100, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 a {
   cursor: pointer;
   text-decoration: none;
   -webkit-text-decoration-skip: none; }
 
-/* line 109, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 button {
   overflow: visible;
   -webkit-font-smoothing: inherit;
   letter-spacing: inherit; }
 
-/* line 116, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 p {
   margin: 0;
   -ms-hyphens: auto;
@@ -91,51 +84,41 @@ p {
   hyphens: auto;
   overflow: hidden; }
 
-/* line 126, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 b, strong {
   font-weight: 700; }
 
-/* line 131, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 img, svg, embed, object, iframe, video, audio, canvas {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
   border: 0; }
 
-/* line 139, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 img {
   image-rendering: optimizeQuality; }
 
-/* line 144, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 svg {
   color: inherit; }
-  /* line 148, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
   svg:not(:root) {
     overflow: hidden; }
 
-/* line 154, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 progress {
   vertical-align: baseline; }
 
-/* line 159, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   font: inherit;
   color: inherit;
   margin: 0; }
 
-/* line 167, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 ul, ol, menu {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 174, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 input, select, button, button > *, a > * {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 180, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 button, label, select, summary, [type='button'], [type='submit'], [type='reset'], [type='checkbox'], [type='radio'], [type='range'] {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -143,248 +126,222 @@ button, label, select, summary, [type='button'], [type='submit'], [type='reset']
   user-select: none;
   cursor: pointer; }
 
-/* line 186, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 [type='button'], [type='submit'], [type='search'], [type="radio"], [type='range'], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-slider-thumb {
   -webkit-appearance: none; }
 
-/* line 190, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit; }
 
-/* line 196, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 ::-webkit-contacts-auto-fill-button, ::-webkit-credentials-auto-fill-button {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
   right: 0; }
 
-/* line 204, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 :-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #fff;
   box-shadow: inset 0 0 0 1000px #fff; }
 
-/* line 209, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 ::-webkit-details-marker {
   display: none; }
 
-/* line 214, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 [type="radio"] {
   -webkit-appearance: radio; }
 
-/* line 219, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 [type='number'] {
   -moz-appearance: textfield; }
 
-/* line 224, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 ::-ms-clear, ::-ms-reveal {
   display: none; }
 
-/* line 229, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 input, textarea {
   width: 100%; }
 
-/* line 234, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 input {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis; }
 
-/* line 239, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 textarea {
   overflow: auto;
   resize: none; }
 
-/* line 245, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 :active, :hover, :focus {
   outline: 0;
   outline-offset: 0; }
 
-/* line 251, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 :disabled {
   pointer-events: none; }
 
-/* line 256, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 ::-moz-focus-outer, ::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 267, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-/* line 273, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 td, th {
   padding: 0;
   text-align: center; }
 
-/* line 282, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
 article p:not(:empty) {
   margin-top: .7em;
   margin-bottom: .7em; }
-/* line 288, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 article img, article embed, article object, article iframe, article video {
   display: block;
   margin: auto; }
-/* line 294, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 article span {
   display: inline; }
-/* line 299, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 article ul, article ol, article menu {
   margin-top: .7em;
   margin-bottom: .7em; }
-  /* line 302, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
   article ul ul, article ul ol, article ul menu, article ol ul, article ol ol, article ol menu, article menu ul, article menu ol, article menu menu {
     margin: 0;
     padding-left: 1.3em; }
-  /* line 307, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
   article ul > li:before, article ol > li:before, article menu > li:before {
     margin-right: .7em; }
-  /* line 310, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
   article ul > li p, article ol > li p, article menu > li p {
     display: inline; }
-/* line 319, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 article ul > li:before, article menu > li:before {
   content: '';
   width: .4em;
   height: .4em;
   display: inline-block;
   vertical-align: 10%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #000;
   border: 1px solid #000; }
-/* line 330, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 article ul > li li:before, article menu > li li:before {
   background: transparent; }
-/* line 338, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
+
 article ol {
   counter-reset: count; }
-  /* line 341, D:/1Projects/02Textiliya/!textiliya/sass/base/godlike.scss */
   article ol > li:before {
     content: counter(count) ".";
     counter-increment: count; }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 html {
   font-family: "Open Sans", sans-serif;
   color: #000;
   font-size: 12px;
   line-height: 1; }
 
-/* line 8, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 body {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
 
-/* line 13, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .wrapper {
   position: relative;
   min-width: 320px;
   min-height: 100vh;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
 
-/* line 20, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .footer {
   -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0; }
 
-/* line 24, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .container {
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px; }
 
-/* line 31, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 a {
   display: inline-block;
   vertical-align: middle; }
 
-/* line 36, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .mobil {
   display: none !important; }
   @media (max-width: 720px) {
-    /* line 36, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
     .mobil {
       display: block !important; } }
 
-/* line 43, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .mobil-sx {
   display: none !important; }
   @media (max-width: 400px) {
-    /* line 43, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
     .mobil-sx {
       display: block !important; } }
 
+.accent {
+  color: #d05252; }
+
 /*grid*/
-/* line 52, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  /* line 58, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
   .row.ac {
     -webkit-box-align: center;
+    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-  /* line 61, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
   .row.as {
     -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch; }
-  /* line 64, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
   .row.ab {
     -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
     -ms-flex-align: baseline;
     align-items: baseline; }
-  /* line 67, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
   .row.jc {
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  /* line 70, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
   .row.jsb {
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  /* line 73, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
   .row.jsa {
+    -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
 
-/* line 78, D:/1Projects/02Textiliya/!textiliya/sass/base/base.scss */
 .hidden {
   display: none; }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/modules.scss */
 .tags {
   padding: 20px; }
 
-/* line 5, D:/1Projects/02Textiliya/!textiliya/sass/layout/modules.scss */
 .tags-module {
   min-width: 0;
   position: relative;
   margin: 20px 0;
   z-index: 0; }
 
-/* line 12, D:/1Projects/02Textiliya/!textiliya/sass/layout/modules.scss */
-.tags__list {
-  max-width: 80%;
+.tags {
+  max-width: 85%;
   margin: 0 auto; }
 
-/* line 17, D:/1Projects/02Textiliya/!textiliya/sass/layout/modules.scss */
 .tags__item {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   white-space: nowrap;
@@ -392,55 +349,133 @@ a {
   padding: 6px 10px;
   background-color: #dddddd; }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
+.reviews {
+  padding: 20px 0;
+  background-color: #e3e3f2; }
+
+.reviews__slider {
+  min-width: 0;
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: #fff; }
+
+.reviews__pic {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%; }
+  .reviews__pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  @media (max-width: 500px) {
+    .reviews__pic {
+      display: none; } }
+
+.reviews__body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 75%;
+  -ms-flex: 1 1 75%;
+  flex: 1 1 75%;
+  padding: 30px; }
+
+.reviews__autor {
+  margin-bottom: 30px; }
+
+.reviews__autor-name {
+  font-weight: 600; }
+
+.reviews__text {
+  line-height: 2; }
+
+/*tracting*/
+.trasting__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: 100%;
+  padding: 10px 0;
+  overflow: auto;
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 10px, #e78f84 10px, #e78f84 80%, #ffffff 80%);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 10px, #e78f84 10px, #e78f84 80%, #ffffff 80%);
+  background-image: linear-gradient(#ffffff, #ffffff 10px, #e78f84 10px, #e78f84 80%, #ffffff 80%);
+  -webkit-background-size: 95% auto;
+  background-size: 95% auto;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.tracting__item {
+  min-width: 180px;
+  width: 180px;
+  padding: 0 10px 15px 10px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(61, 61, 61, 0.2), 0px 0px 6px 0px rgba(61, 61, 61, 0.2);
+  box-shadow: 0px 0px 6px 0px rgba(61, 61, 61, 0.2), 0px 0px 6px 0px rgba(61, 61, 61, 0.2); }
+
+.trasting__pic {
+  margin-bottom: 15px; }
+
+.trasting__body p {
+  line-height: 1.5;
+  -webkit-hyphens: inherit;
+  -ms-hyphens: inherit;
+  hyphens: inherit; }
+
+.trasting__title {
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 600; }
+
 .header {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
 
-/* line 7, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .header__top {
   padding-top: 5px;
   background-color: #dddddd; }
   @media (max-width: 720px) {
-    /* line 7, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .header__top {
       display: none; } }
 
-/* line 15, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .adds {
   background-color: #dddddd;
   padding: 20px;
   margin: 0 -20px; }
-  /* line 19, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .adds .region,
   .adds .header__adress,
   .adds .chain,
   .adds .email {
     margin-bottom: 20px; }
 
-/* line 26, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .net {
   margin-top: -5px; }
 
-/* line 29, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .net-item {
   margin-right: 8px; }
-  /* line 31, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .net-item:last-child {
     margin-right: 0; }
 
-/* line 36, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .you-region {
   position: relative;
   padding-right: 10px;
   text-decoration: underline;
   cursor: pointer; }
-  /* line 41, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .you-region:after {
     content: "\25BC";
     position: absolute;
@@ -450,11 +485,9 @@ a {
     transform: translateY(-50%);
     right: -3px; }
 
-/* line 48, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .header__main {
   padding: 14px 0; }
   @media (max-width: 720px) {
-    /* line 48, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .header__main {
       position: fixed;
       top: 0;
@@ -463,47 +496,43 @@ a {
       background-color: #fff;
       z-index: 100; } }
 
-/* line 60, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .logo {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 40%;
   -ms-flex: 0 1 40%;
   flex: 0 1 40%; }
   @media (max-width: 720px) {
-    /* line 60, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .logo {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
+      -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
       -webkit-box-flex: 0;
+      -webkit-flex: 0 1 40%;
       -ms-flex: 0 1 40%;
       flex: 0 1 40%; } }
 
-/* line 69, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .logo__pic {
   display: inline-block;
   vertical-align: middle; }
-  /* line 72, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .logo__pic img {
     vertical-align: baseline;
     margin-right: 8px; }
     @media (max-width: 400px) {
-      /* line 72, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .logo__pic img {
         margin-right: 0; } }
 
 @media (max-width: 720px) {
-  /* line 81, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .logo__text {
     display: none; } }
 
-/* line 87, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .search__open-btn {
   display: none; }
   @media (max-width: 720px) {
-    /* line 87, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .search__open-btn {
       width: 40px;
       height: auto;
@@ -511,54 +540,43 @@ a {
 
 /*phones*/
 @media (max-width: 720px) {
-  /* line 97, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .phones {
     display: none; } }
 
-/* line 102, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .phones__item {
   margin-bottom: 8px;
   color: #333; }
-  /* line 105, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .phones__item a {
     font-weight: 700;
     font-size: 1.2em;
     color: #000; }
-  /* line 110, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .phones__item:last-child {
     margin-bottom: 0; }
-    /* line 112, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .phones__item:last-child a {
       font-size: 0.9em;
       color: #626262; }
-    /* line 116, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .phones__item:last-child img {
       margin-right: 5px; }
 
 /*user*/
-/* line 124, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .user {
   position: relative; }
 
 @media (max-width: 720px) {
-  /* line 131, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .user__wrap:hover .user__menu {
     left: 0;
     opacity: 1; } }
   @media (max-width: 720px) and (max-width: 400px) {
-    /* line 131, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .user__wrap:hover .user__menu {
       left: 50%;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); } }
 
-/* line 143, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .user__menu {
   position: relative;
   z-index: 100; }
   @media (max-width: 720px) {
-    /* line 143, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .user__menu {
       position: absolute;
       top: calc(100% + 20px);
@@ -573,7 +591,6 @@ a {
       -webkit-transition: opacity 0.3s ease-in-out;
       -o-transition: opacity 0.3s ease-in-out;
       transition: opacity 0.3s ease-in-out; }
-      /* line 157, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .user__menu:before {
         content: "";
         position: absolute;
@@ -583,78 +600,68 @@ a {
         width: 100%;
         height: 21px; } }
 
-/* line 170, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .user__menu-item:hover {
   cursor: pointer;
   color: #8183c2; }
 
-/* line 176, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .user__avatar {
   width: 48px;
   height: 48px;
   margin-right: 10px;
+  -webkit-border-radius: 100%;
   border-radius: 100%;
   overflow: hidden;
   cursor: pointer; }
-  /* line 183, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .user__avatar img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
   @media (max-width: 400px) {
-    /* line 176, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .user__avatar {
       width: 38px;
       height: 38px;
       margin-right: 0; } }
 
-/* line 196, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .user__menu-item a {
   display: block;
   padding: 3px; }
 
-/* line 202, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .bookmarks,
 .cart__link {
   position: relative;
   width: 48px; }
   @media (max-width: 400px) {
-    /* line 202, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .bookmarks,
     .cart__link {
       width: 38px; } }
 
-/* line 211, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .score {
   position: absolute;
   display: block;
   width: 18px;
   height: 18px;
+  -webkit-border-radius: 100%;
   border-radius: 100%;
   font-size: 10px;
   text-align: center;
   line-height: 17px;
   color: #fff; }
 
-/* line 222, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .bookmarks__score {
   top: 0;
   left: 0;
   background-color: #c63b3b; }
 
-/* line 227, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .cart__link-score {
   left: -5px;
   bottom: 0;
   background-color: #656798; }
 
 /*navigation*/
-/* line 235, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .header__nav {
   background-color: #d05252; }
   @media (max-width: 720px) {
-    /* line 235, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .header__nav {
       position: fixed;
       left: -100%;
@@ -668,29 +675,28 @@ a {
       -webkit-transition: left 0.3s ease;
       -o-transition: left 0.3s ease;
       transition: left 0.3s ease; }
-      /* line 249, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .header__nav .container {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between;
         height: 100%; } }
-  /* line 257, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .header__nav.open {
     left: 0;
     width: 80%; }
     @media (max-width: 400px) {
-      /* line 257, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .header__nav.open {
         width: 100%; } }
   @media (min-width: 720px) {
-    /* line 264, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .header__nav.fixed {
       position: fixed;
       top: 0;
@@ -698,55 +704,51 @@ a {
       width: 100%;
       z-index: 101; } }
 
-/* line 274, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .main.fixed {
   margin-top: 50px; }
 
-/* line 278, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .nav__list {
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
   z-index: 10; }
   @media (max-width: 720px) {
-    /* line 278, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .nav__list {
       display: block;
       margin: 0 -20px;
       background-color: #d05252; } }
 
-/* line 291, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .nav__item {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
-  /* line 295, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .nav__item.current {
     background-color: #c63b3b; }
-  /* line 298, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .nav__item.accent {
     background-color: #e78f84; }
-  /* line 301, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .nav__item:hover {
     background-color: #656798; }
   @media (max-width: 720px) {
-    /* line 291, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .nav__item {
       text-align: left; } }
 
-/* line 309, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .nav__link {
   display: block;
   padding: 0.5em 1em;
@@ -756,27 +758,24 @@ a {
   color: #fff; }
 
 /*dropdown*/
-/* line 322, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown:hover .dropdown__wrap {
   left: 0;
   opacity: 1; }
   @media (max-width: 720px) {
-    /* line 322, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown:hover .dropdown__wrap {
       left: -9999px;
       opacity: 0; } }
-  /* line 329, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown:hover .dropdown__wrap.open {
     left: 0;
     opacity: 1; }
+
 @media (max-width: 720px) {
-  /* line 320, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
 
-/* line 340, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown__wrap {
   position: absolute;
   padding: 20px;
@@ -791,7 +790,6 @@ a {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out; }
   @media (max-width: 720px) {
-    /* line 340, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown__wrap {
       position: fixed;
       top: 0;
@@ -800,79 +798,68 @@ a {
       width: 80%;
       padding: 40px 20px 20px 20px; } }
   @media (max-width: 400px) {
-    /* line 340, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown__wrap {
       width: 100%; } }
-  /* line 361, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__wrap.open {
     left: 0;
     opacity: 1; }
 
-/* line 367, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown__pic {
   padding-right: 10px; }
-  /* line 369, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__pic a {
     display: block;
     height: 100%; }
-    /* line 372, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown__pic a img {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
   @media (max-width: 880px) {
-    /* line 367, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown__pic {
       display: none; } }
 
-/* line 383, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown__col {
   padding: 0 10px;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0px;
   flex: 1 1 0; }
-  /* line 386, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__col.double {
     -webkit-box-flex: 2;
+    -webkit-flex: 2 1 1px;
     -ms-flex: 2 1 1px;
     flex: 2 1 1px; }
-    /* line 388, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown__col.double .dropdown__list {
       -webkit-column-count: 2;
       column-count: 2;
       -webkit-column-gap: 20px;
       column-gap: 20px; }
       @media (max-width: 720px) {
-        /* line 388, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
         .dropdown__col.double .dropdown__list {
           -webkit-column-count: 1;
           column-count: 1; } }
-      /* line 394, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .dropdown__col.double .dropdown__list .dropdown__item {
         display: inline-block;
         width: 100%; }
     @media (max-width: 720px) {
-      /* line 386, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .dropdown__col.double {
         -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
         -ms-flex: 1 1 100%;
         flex: 1 1 100%;
         margin-top: 20px;
         padding: 0; } }
   @media (max-width: 720px) {
-    /* line 383, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .dropdown__col {
       -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100%;
       -ms-flex: 1 1 100%;
       flex: 1 1 100%;
       padding: 0; } }
 
-/* line 411, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown__item {
   position: relative;
   z-index: 1; }
-  /* line 414, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__item:after {
     content: "";
     position: absolute;
@@ -884,22 +871,21 @@ a {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
-  /* line 425, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__item:hover:after {
     background-color: #e3e3f2; }
-  /* line 428, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__item:hover:before {
     -webkit-transform: translateY(-50%) rotateZ(135deg);
     -ms-transform: translateY(-50%) rotate(135deg);
     transform: translateY(-50%) rotateZ(135deg); }
 
-/* line 434, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown__link,
 .submenu__link {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
   text-align: left;
@@ -908,14 +894,12 @@ a {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
-  /* line 442, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .dropdown__link .link-count,
   .submenu__link .link-count {
     vertical-align: bottom;
     color: #626262;
     padding-left: 4px; }
 
-/* line 449, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .dropdown__title {
   padding-bottom: 0.8em;
   margin-bottom: 0.5em;
@@ -925,13 +909,12 @@ a {
   text-align: initial; }
 
 /*dropdown submenu*/
-/* line 460, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .submenu {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-left: 14px; }
-  /* line 463, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .submenu:before {
     content: "";
     position: absolute;
@@ -947,34 +930,26 @@ a {
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
-  /* line 475, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .submenu:hover {
     z-index: 2; }
-    /* line 477, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .submenu:hover .submenu__list {
       right: 0;
       opacity: 1; }
       @media (max-width: 720px) {
-        /* line 477, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
         .submenu:hover .submenu__list {
           right: -9999px;
           opacity: 0; } }
-      /* line 484, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .submenu:hover .submenu__list.open {
         right: 0;
         opacity: 1; }
   @media (max-width: 720px) {
-    /* line 460, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .submenu {
       padding-left: 0; }
-      /* line 492, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
       .submenu:before {
         display: none; } }
-  /* line 496, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .submenu .dropdown__link {
     width: auto; }
 
-/* line 501, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
 .submenu__list {
   position: absolute;
   top: 100%;
@@ -988,90 +963,83 @@ a {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   z-index: 2; }
-  /* line 512, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
   .submenu__list.open {
     right: 0;
     opacity: 1; }
   @media (max-width: 400px) {
-    /* line 501, D:/1Projects/02Textiliya/!textiliya/sass/layout/header.scss */
     .submenu__list {
       max-width: 400px; } }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .main {
   margin-top: 20px;
   margin-bottom: 5%; }
   @media (max-width: 720px) {
-    /* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .main {
       margin-top: 80px; } }
 
-/* line 9, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .slider {
   min-width: 0;
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 68%;
   -ms-flex: 0 1 68%;
   flex: 0 1 68%; }
   @media (max-width: 720px) {
-    /* line 9, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .slider {
       -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100%;
       -ms-flex: 1 1 100%;
       flex: 1 1 100%;
       margin-bottom: 20px; } }
 
-/* line 18, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .banner__list.row {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 30%;
   -ms-flex: 0 1 30%;
   flex: 0 1 30%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
   @media (max-width: 720px) {
-    /* line 18, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .banner__list.row {
       -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100%;
       -ms-flex: 1 1 100%;
       flex: 1 1 100%;
       margin-bottom: 20px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; } }
-  /* line 27, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .banner__list.row .banner__item {
     -webkit-box-flex: 1;
+    -webkit-flex: 1 1 47%;
     -ms-flex: 1 1 47%;
     flex: 1 1 47%;
     margin-bottom: 14px; }
     @media (max-width: 720px) {
-      /* line 27, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
       .banner__list.row .banner__item {
         padding-bottom: 25%;
         margin-bottom: 0;
         margin-right: 14px; }
-        /* line 34, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
         .banner__list.row .banner__item-verticle {
           margin-top: 10px;
           padding-bottom: 166%; } }
-    /* line 39, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .banner__list.row .banner__item:last-child, .banner__list.row .banner__item:only-child {
       margin-bottom: 0; }
       @media (max-width: 720px) {
-        /* line 39, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
         .banner__list.row .banner__item:last-child, .banner__list.row .banner__item:only-child {
           margin-right: 0; } }
 
-/* line 49, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .banner__item {
   position: relative;
   padding-bottom: 47.7%; }
-  /* line 52, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .banner__item img {
     position: absolute;
     top: 0;
@@ -1082,22 +1050,18 @@ a {
     object-fit: cover; }
 
 /*section*/
-/* line 63, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .section {
   margin: 40px 0; }
 
-/* line 67, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .section__title {
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center; }
-  /* line 73, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .section__title * {
     display: inline-block;
     vertical-align: baseline; }
-    /* line 76, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .section__title * ~ a {
       font-size: 14px;
       font-weight: 400;
@@ -1106,105 +1070,100 @@ a {
       color: #d05252; }
 
 /*action*/
-/* line 89, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .action .slider {
   margin-right: 1%; }
   @media (max-width: 720px) {
-    /* line 89, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .action .slider {
       margin-right: 0; } }
-/* line 95, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
+
 .action .banner__list.row {
   margin-top: 10px; }
   @media (max-width: 720px) {
-    /* line 95, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .action .banner__list.row {
       margin-top: 0; } }
 
 /*offers*/
-/* line 105, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .offers {
   position: relative;
   padding: 30px 0;
   background-color: #e78f84;
   z-index: 0; }
 
-/* line 112, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .offers__slider {
   overflow: visible; }
   @media (max-width: 500px) {
-    /* line 112, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .offers__slider {
+      width: 90%;
       overflow: hidden; } }
 
-/* line 119, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .offers__list {
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 0; }
   @media (max-width: 500px) {
-    /* line 119, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .offers__list {
+      -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; } }
 
-/* line 128, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .offers__item {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 32%;
   -ms-flex: 0 1 32%;
   flex: 0 1 32%; }
-  /* line 130, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .offers__item img,
   .offers__item a {
     display: block;
     width: 100%; }
   @media (max-width: 500px) {
-    /* line 128, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .offers__item {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
       flex: 0 0 100%; } }
 
-/* line 140, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
+.swiper-button-prev.offers-prev::after,
+.swiper-button-next.offers-next::after {
+  color: #fff; }
+
 .offers-pager {
   display: none; }
   @media (max-width: 500px) {
-    /* line 140, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .offers-pager {
       display: block; } }
 
 @media (max-width: 500px) {
-  /* line 149, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .news a {
     display: none; }
-  /* line 152, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .news .title-button {
     display: block;
     color: #fff;
     padding: 0.4em 1em;
     background-color: #8183c2; }
-    /* line 157, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
     .news .title-button.accent {
       background-color: #c63b3b; } }
 
 @media (max-width: 500px) {
-  /* line 164, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .news__list {
     display: none; } }
 
-/* line 170, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .news__item {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 32%;
   -ms-flex: 0 1 32%;
   flex: 0 1 32%;
   padding: 10px;
@@ -1212,12 +1171,10 @@ a {
   box-shadow: 0px 0px 6px 0px rgba(61, 61, 61, 0.2), 0px 0px 6px 0px rgba(61, 61, 61, 0.2);
   line-height: 1.5; }
 
-/* line 179, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .news__pic {
   position: relative;
   padding-bottom: 45%;
   margin-bottom: 20px; }
-  /* line 183, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
   .news__pic img {
     position: absolute;
     top: 0;
@@ -1227,11 +1184,9 @@ a {
     -o-object-fit: cover;
     object-fit: cover; }
 
-/* line 193, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .news__info {
   margin-bottom: 20px; }
 
-/* line 197, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .news__text {
   margin-top: auto;
   overflow: hidden;
@@ -1239,11 +1194,9 @@ a {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4; }
 
-/* line 205, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .news__date {
   margin-bottom: 5px; }
 
-/* line 209, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
 .news__title {
   overflow: hidden;
   display: -webkit-box;
@@ -1251,69 +1204,55 @@ a {
   -webkit-line-clamp: 2;
   font-weight: 700; }
 
-/* line 217, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
-.reviews {
-  padding: 20px 0;
-  background-color: #e3e3f2; }
-
-/* line 222, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
-.reviews__list {
-  min-width: 0;
-  max-width: 80%;
-  margin: 0 auto;
-  background-color: #fff; }
-
-/* line 229, D:/1Projects/02Textiliya/!textiliya/sass/layout/section.scss */
-.reviews__body {
-  padding: 30px; }
-
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog {
   overflow: visible; }
   @media (max-width: 500px) {
-    /* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog {
       overflow: hidden;
       padding-top: 5px;
       margin: 0 -20px; } }
 
-/* line 10, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__list {
+  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 0; }
   @media (max-width: 800px) {
-    /* line 10, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__list {
       -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
       justify-content: flex-start; } }
   @media (max-width: 500px) {
-    /* line 10, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__list {
+      -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; } }
 
-/* line 22, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__item {
   position: relative;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
   -ms-flex-pack: stretch;
   justify-content: stretch;
   height: auto;
   padding: 10px;
   margin-bottom: 50px;
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 16.65%;
   -ms-flex: 0 1 16.65%;
   flex: 0 1 16.65%;
   font-size: 12px;
@@ -1326,75 +1265,67 @@ a {
   transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   background-color: #fff; }
   @media (max-width: 1060px) {
-    /* line 22, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 1 18%;
       -ms-flex: 0 1 18%;
       flex: 0 1 18%; } }
   @media (max-width: 800px) {
-    /* line 22, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 1 33%;
       -ms-flex: 0 1 33%;
       flex: 0 1 33%; } }
   @media (max-width: 500px) {
-    /* line 22, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 0 60%;
       -ms-flex: 0 0 60%;
       flex: 0 0 60%;
       margin-bottom: 0;
       padding-bottom: 0; } }
-  /* line 46, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .catalog__item:last-child {
     margin-right: auto; }
     @media (max-width: 800px) {
-      /* line 46, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
       .catalog__item:last-child {
         margin-right: 0; } }
-  /* line 52, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .catalog__item .btn {
     width: 100%; }
-  /* line 55, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .catalog__item:hover {
     -webkit-box-shadow: 0.707px -0.707px 3px 0px rgba(61, 61, 61, 0.2), -2px 0px 3px 0px rgba(61, 61, 61, 0.2);
     box-shadow: 0.707px -0.707px 3px 0px rgba(61, 61, 61, 0.2), -2px 0px 3px 0px rgba(61, 61, 61, 0.2);
     z-index: 2; }
-    /* line 58, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item:hover .catalog__info {
       max-height: 550px; }
-    /* line 61, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item:hover .catalog__descr {
       -webkit-box-shadow: -2px 0px 3px 0px rgba(61, 61, 61, 0.2), 2px 1px 3px 0px rgba(61, 61, 61, 0.2);
       box-shadow: -2px 0px 3px 0px rgba(61, 61, 61, 0.2), 2px 1px 3px 0px rgba(61, 61, 61, 0.2); }
-    /* line 64, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item:hover .catalog__btn {
       margin: 0 -10px; }
 
-/* line 69, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__price {
   margin-top: -18px;
   margin-bottom: 10px;
   width: 100%; }
 
-/* line 74, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__price-row {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 3px 0 3px 5px;
   background-color: rgba(255, 255, 255, 0.8); }
 
-/* line 81, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .price__text {
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
 
-/* line 85, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .price__cost {
   padding: 0 5px;
   margin: -3px 0;
@@ -1403,31 +1334,25 @@ a {
   white-space: nowrap;
   line-height: 16px;
   background-color: #d0d5d7; }
-  /* line 94, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .price__cost.old {
     margin-left: auto;
     color: #626262;
     background-color: #f3f3f3; }
-  /* line 99, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .price__cost.sale {
     background-color: #c63b3b;
     color: #fff; }
-  /* line 103, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .price__cost.opt {
     background-color: #d05252;
     color: #fff; }
 
-/* line 109, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__item-title {
   text-align: center;
   font-weight: 700;
   line-height: 1.3; }
   @media (max-width: 500px) {
-    /* line 109, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__item-title {
       margin-bottom: 10px; } }
 
-/* line 118, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__descr {
   position: absolute;
   left: 0;
@@ -1437,20 +1362,20 @@ a {
   background-color: inherit;
   z-index: 1;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
   @media (max-width: 500px) {
-    /* line 118, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__descr {
       position: static;
       padding: 0;
       margin-top: auto; } }
 
-/* line 136, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__info {
   max-height: 0;
   overflow: hidden;
@@ -1458,11 +1383,9 @@ a {
   -o-transition: max-height 0.3s ease-in;
   transition: max-height 0.3s ease-in; }
   @media (max-width: 500px) {
-    /* line 136, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .catalog__info {
       display: none; } }
 
-/* line 145, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__item-fabric {
   padding: 5px 0;
   border-top: 1px solid;
@@ -1472,128 +1395,121 @@ a {
   line-height: 1.5;
   text-align: center; }
 
-/* line 155, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__item-color {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 10px; }
 
-/* line 162, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .color__list {
   margin-right: 3px; }
 
-/* line 165, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .color__item {
   display: inline-block;
   vertical-align: middle;
   width: 25px;
   height: 25px;
   margin-right: 3px; }
-  /* line 171, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
   .color__item:last-child {
     margin-right: 0; }
 
-/* line 176, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .more-color {
   font-size: 10px;
   font-weight: 600; }
 
-/* line 181, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .catalog__btn {
   margin-top: auto; }
 
-/* line 186, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
 .action__slider .catalog__item {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 25%;
   -ms-flex: 0 1 25%;
   flex: 0 1 25%; }
   @media (max-width: 800px) {
-    /* line 186, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .action__slider .catalog__item {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 1 33%;
       -ms-flex: 0 1 33%;
       flex: 0 1 33%; } }
   @media (max-width: 500px) {
-    /* line 186, D:/1Projects/02Textiliya/!textiliya/sass/layout/catalog.scss */
     .action__slider .catalog__item {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 0 60%;
       -ms-flex: 0 0 60%;
       flex: 0 0 60%; } }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
 .footer {
   padding: 30px 0 20px 0;
   background-color: #c63b3b;
   color: #fff; }
 
-/* line 7, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
 .footer__col {
   -webkit-box-flex: 0;
+  -webkit-flex: 0 1 20%;
   -ms-flex: 0 1 20%;
   flex: 0 1 20%;
   padding: 0 10px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
   @media (max-width: 1000px) {
-    /* line 7, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
     .footer__col {
       -webkit-box-flex: 0;
+      -webkit-flex: 0 1 30%;
       -ms-flex: 0 1 30%;
       flex: 0 1 30%;
       margin-bottom: 30px; }
-      /* line 16, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
       .footer__col.footer-net, .footer__col.payment {
         -webkit-box-flex: 0;
+        -webkit-flex: 0 1 30%;
         -ms-flex: 0 1 30%;
         flex: 0 1 30%;
         margin-bottom: 0; } }
   @media (max-width: 1000px) and (max-width: 720px) {
-    /* line 7, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
     .footer__col {
       -webkit-box-flex: 1;
+      -webkit-flex: 1 1 100%;
       -ms-flex: 1 1 100%;
       flex: 1 1 100%;
       margin-bottom: 0; }
-      /* line 23, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
       .footer__col.footer-net, .footer__col.payment {
         -webkit-box-flex: 0;
+        -webkit-flex: 0 1 50%;
         -ms-flex: 0 1 50%;
         flex: 0 1 50%;
         margin-top: 18px; }
-        /* line 26, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
         .footer__col.footer-net .footer__title:after, .footer__col.payment .footer__title:after {
           display: none; } }
-
     @media (max-width: 1000px) and (max-width: 720px) and (max-width: 400px) {
-      /* line 23, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
       .footer__col.footer-net, .footer__col.payment {
         -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
         -ms-flex: 1 1 100%;
         flex: 1 1 100%; } }
 
-/* line 36, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
 .footer__title {
   position: relative;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 15px; }
   @media (max-width: 720px) {
-    /* line 36, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
     .footer__title {
       cursor: pointer; }
-      /* line 43, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
       .footer__title:after {
         content: '\25BC';
         display: inline-block;
@@ -1601,62 +1517,50 @@ a {
         margin-left: 10px; } }
 
 @media (max-width: 720px) {
-  /* line 54, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
   .footer__list {
     max-height: 0;
     overflow: hidden;
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
-    /* line 59, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
     .footer__list.open {
       max-height: 500px;
       margin-bottom: 20px; } }
-/* line 64, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
+
 .footer__list + .footer__title {
   margin-top: auto; }
 
-/* line 75, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
 .footer__item a, .footer-net__item a {
   display: block;
   padding: 3px 0; }
-  /* line 78, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
   .footer__item a > *, .footer-net__item a > * {
     vertical-align: bottom; }
-  /* line 81, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
   .footer__item a > img, .footer-net__item a > img {
     margin-right: 10px; }
 
-/* line 87, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
 .payment__item {
   width: 55px;
   padding: 0 5px;
   margin-bottom: 10px; }
 
-/* line 93, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
 .footer__bottom {
   margin-top: 30px; }
   @media (max-width: 500px) {
-    /* line 93, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
     .footer__bottom {
       display: block;
       text-align: center; }
-      /* line 98, D:/1Projects/02Textiliya/!textiliya/sass/layout/footer.scss */
       .footer__bottom p {
         display: inline;
         vertical-align: bottom; } }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/controls/sliders.scss */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color: #626262; }
 
-/* line 6, D:/1Projects/02Textiliya/!textiliya/sass/controls/sliders.scss */
 .banner-pagination {
   width: auto !important;
   margin-left: 15px; }
 
-/* line 11, D:/1Projects/02Textiliya/!textiliya/sass/controls/sliders.scss */
 .swiper-pagination-bullet {
   background: #dddddd;
   border: 3px solid #dddddd;
@@ -1666,28 +1570,23 @@ a {
   -webkit-box-shadow: 2px 2px 2px rgba(98, 98, 98, 0.5);
   box-shadow: 2px 2px 2px rgba(98, 98, 98, 0.5); }
 
-/* line 19, D:/1Projects/02Textiliya/!textiliya/sass/controls/sliders.scss */
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #757575;
   border: 3px solid #e78f84; }
 
 @media (max-width: 500px) {
-  /* line 24, D:/1Projects/02Textiliya/!textiliya/sass/controls/sliders.scss */
   .swiper-button-prev:after,
   .swiper-button-next:after {
     font-size: 30px; } }
 
-/* line 31, D:/1Projects/02Textiliya/!textiliya/sass/controls/sliders.scss */
 .tag-prev:after,
 .tag-next:after {
   font-size: 20px;
   font-weight: bold; }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .search__wrap {
   margin-top: 10px; }
   @media (max-width: 720px) {
-    /* line 1, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
     .search__wrap {
       position: absolute;
       width: calc(100% - 40px);
@@ -1698,26 +1597,24 @@ a {
       -webkit-transition: opacity .3s ease-in-out;
       -o-transition: opacity .3s ease-in-out;
       transition: opacity .3s ease-in-out; }
-      /* line 11, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
       .search__wrap.open {
         left: 20px;
         opacity: 1; } }
 
-/* line 17, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .search__form-label {
   position: relative;
   display: block; }
   @media (max-width: 720px) {
-    /* line 17, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
     .search__form-label {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
+      -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; } }
 
-/* line 26, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .search-form__button {
   position: absolute;
   top: 0;
@@ -1727,11 +1624,11 @@ a {
   text-indent: -9999px;
   background: url(../img/search.svg) center center/auto 80% no-repeat; }
   @media (max-width: 720px) {
-    /* line 26, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
     .search-form__button {
       position: relative;
       width: auto;
       padding: .7em 1.4em;
+      -webkit-border-radius: 25px;
       border-radius: 25px;
       margin-left: 10px;
       text-transform: uppercase;
@@ -1740,14 +1637,13 @@ a {
       text-indent: 0;
       background: #8183c2; } }
 
-/* line 48, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .search__form-input {
   display: block;
   padding: .5em 1em .5em 3em;
+  -webkit-border-radius: 25px;
   border-radius: 25px;
   background-color: #dddddd; }
 
-/* line 55, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .user__login {
   position: absolute;
   left: -9999px;
@@ -1763,34 +1659,27 @@ a {
   -o-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   z-index: 100; }
-  /* line 67, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
   .user__login.open {
     left: 0;
     opacity: 1; }
     @media (max-width: 400px) {
-      /* line 67, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
       .user__login.open {
         left: 50%;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%); } }
 
-/* line 77, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .user__title {
   margin-bottom: 10px;
   font-weight: 700; }
 
-/* line 82, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .form__row {
   position: relative;
   margin-bottom: 14px; }
-  /* line 85, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
   .form__row:last-of-type {
     margin-bottom: 0; }
-  /* line 89, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
   .form__row.password [type="password"] {
     padding: 4px 25px 4px 4px; }
-  /* line 92, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
   .form__row.password:after {
     content: '';
     position: absolute;
@@ -1800,20 +1689,17 @@ a {
     height: 11px;
     background: url(../img/misc/eye.svg) center center/contain no-repeat; }
 
-/* line 104, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .form__label {
   position: relative;
   display: block;
   margin-bottom: 5px; }
 
-/* line 110, D:/1Projects/02Textiliya/!textiliya/sass/controls/forms.scss */
 .form__input {
   display: block;
   width: 100%;
   padding: 5px;
   border: 1px solid #757575; }
 
-/* line 1, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .btn {
   padding: 0.9em 1.4em;
   text-transform: uppercase;
@@ -1821,11 +1707,9 @@ a {
   font-weight: 700;
   background-color: #8183c2; }
 
-/* line 9, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .btn-link {
   padding: 5px 4px 5px 9px; }
 
-/* line 13, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .close {
   position: absolute;
   right: -7px;
@@ -1836,18 +1720,17 @@ a {
   line-height: 40px;
   font-size: 1.5em; }
 
-/* line 24, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .menu-trigger {
   display: none;
   position: relative;
   width: 35px;
   height: 28px;
   padding: 12px 0;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   background-clip: content-box;
   background-color: #222;
   cursor: pointer; }
-  /* line 34, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .menu-trigger:before, .menu-trigger:after {
     content: "";
     position: absolute;
@@ -1855,29 +1738,23 @@ a {
     width: 100%;
     height: 4px;
     background-color: #222; }
-  /* line 43, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .menu-trigger:before {
     top: 0; }
-  /* line 46, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .menu-trigger:after {
     bottom: 0; }
   @media (max-width: 720px) {
-    /* line 24, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
     .menu-trigger {
       display: block; } }
   @media (max-width: 400px) {
-    /* line 24, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
     .menu-trigger {
       height: 25px;
       padding: 11px 5px; }
-      /* line 55, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
       .menu-trigger:before, .menu-trigger:after {
         left: 5px;
         right: 5px;
         width: auto;
         height: 3px; } }
 
-/* line 65, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .menu-close {
   position: absolute;
   top: 0;
@@ -1888,7 +1765,6 @@ a {
   height: 50px;
   cursor: pointer;
   z-index: 2; }
-  /* line 75, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .menu-close:before, .menu-close:after {
     content: "";
     position: absolute;
@@ -1897,24 +1773,21 @@ a {
     top: 50%;
     height: 3px;
     background-color: #222; }
-  /* line 85, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .menu-close:before {
     -webkit-transform: translateY(-50%) rotate(45deg);
     -ms-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg); }
-  /* line 88, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .menu-close:after {
     -webkit-transform: translateY(-50%) rotate(-45deg);
     -ms-transform: translateY(-50%) rotate(-45deg);
     transform: translateY(-50%) rotate(-45deg); }
 
-/* line 93, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .dropdown__trigger {
   position: relative;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
-  /* line 96, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .dropdown__trigger:after {
     content: "";
     display: block;
@@ -1929,13 +1802,12 @@ a {
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff; }
 
-/* line 110, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .submenu__trigger {
   position: relative;
   -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
-  /* line 113, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .submenu__trigger:after {
     content: "";
     display: block;
@@ -1950,7 +1822,6 @@ a {
     border-bottom: 1px solid;
     border-right: 1px solid; }
 
-/* line 127, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .dropdown__close {
   position: absolute;
   top: 0;
@@ -1959,7 +1830,6 @@ a {
   background-color: #e78f84;
   color: #fff;
   font-weight: 700; }
-  /* line 135, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .dropdown__close:before {
     content: "";
     position: absolute;
@@ -1968,7 +1838,6 @@ a {
     bottom: 0;
     width: 25px;
     background-color: #d05252; }
-  /* line 146, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
   .dropdown__close:after {
     content: "";
     display: block;
@@ -1983,18 +1852,16 @@ a {
     border-bottom: 3px solid #fff;
     border-left: 3px solid #fff; }
 
-/* line 160, D:/1Projects/02Textiliya/!textiliya/sass/controls/buttons.scss */
 .to-top {
   position: fixed;
   bottom: 20%;
   left: 20px;
   width: 48px;
   height: 48px;
+  -webkit-border-radius: 100%;
   border-radius: 100%;
   overflow: hidden;
   opacity: 1;
   z-index: 10; }
-
-
 
 /*# sourceMappingURL=main.css.map */

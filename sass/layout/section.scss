@@ -112,6 +112,7 @@
 .offers__slider {
   overflow: visible;
   @include bp(500px) {
+    width: 90%;
     overflow: hidden;
   }
 }
@@ -135,6 +136,11 @@
   @include bp(500px) {
     flex: 0 0 100%;
   }
+}
+
+.swiper-button-prev.offers-prev::after, 
+.swiper-button-next.offers-next::after {
+  color: #fff;
 }
 
 .offers-pager {
@@ -212,20 +218,4 @@
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
  font-weight: 700;
-}
-
-.reviews {
- padding: 20px 0;
- background-color: $haze;
-}
-
-.reviews__list {
- min-width: 0;
- max-width: 80%;
- margin: 0 auto;
- background-color: #fff;
-}
-
-.reviews__body {
- padding: 30px;
 }
