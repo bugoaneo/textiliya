@@ -110,3 +110,48 @@
 .breadcrambs__list {
   @extend .row;
 }
+
+/*shild*/
+.shild {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.shild__list {
+  @extend %row;
+}
+
+.shild__item {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.new {
+    background-color: #99c349;
+  }
+  &.opt {
+    background-color: #ecb124;
+  }
+  &.sale {
+    background-color: #c84476;
+  }
+  &.hit {
+    background-color: $btn;
+  }
+}
+
+/*breadcrambs*/
+.breadcrambs {
+  margin-bottom: 20px;
+}
