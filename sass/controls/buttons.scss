@@ -1,9 +1,12 @@
 .btn {
-  padding: 0.9em 1.4em;
+  padding: 0.5em 1.4em;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
   background-color: $btn;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .btn-link {

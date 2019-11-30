@@ -193,7 +193,8 @@
 }
 
 .user__menu-item {
-  a {
+  a,
+  span {
     display: block;
     padding: 3px;
   }
@@ -257,9 +258,9 @@
   &.open {
     left: 0;
     width: 80%;
-    @include bp(400px){
+    @include bp(400px) {
       width: 100%;
-    }   
+    }
   }
   &.fixed {
     @media (min-width: 720px) {
@@ -319,7 +320,7 @@
 
 .dropdown {
   &:hover {
-    .dropdown__wrap  {
+    .dropdown__wrap {
       left: 0;
       opacity: 1;
       @include bp(720px) {
@@ -332,8 +333,8 @@
       }
     }
   }
-  @include bp(720px){
-    display: flex;     
+  @include bp(720px) {
+    display: flex;
   }
 }
 
@@ -355,10 +356,10 @@
     width: 80%;
     padding: 40px 20px 20px 20px;
   }
-  @include bp(400px){
+  @include bp(400px) {
     width: 100%;
   }
-  &.open {  
+  &.open {
     left: 0;
     opacity: 1;
   }
@@ -426,7 +427,7 @@
       background-color: $haze;
     }
     &:before {
-       transform: translateY(-50%) rotateZ(135deg);
+      transform: translateY(-50%) rotateZ(135deg);
     }
   }
 }

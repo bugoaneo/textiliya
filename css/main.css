@@ -488,7 +488,7 @@ a {
 .trasting__title {
   line-height: 1.5;
   text-transform: uppercase;
-  font-weight: 600; }
+  font-weight: 700; }
 
 /*breadcrumbs*/
 .breadcrambs {
@@ -716,7 +716,8 @@ a {
       height: 38px;
       margin-right: 0; } }
 
-.user__menu-item a {
+.user__menu-item a,
+.user__menu-item span {
   display: block;
   padding: 3px; }
 
@@ -1153,7 +1154,8 @@ a {
   text-align: center; }
   .section__title * {
     display: inline-block;
-    vertical-align: baseline; }
+    vertical-align: baseline;
+    letter-spacing: 1px; }
     .section__title * ~ a {
       font-size: 14px;
       font-weight: 400;
@@ -1955,11 +1957,14 @@ a {
   border: 1px solid #757575; }
 
 .btn {
-  padding: 0.9em 1.4em;
+  padding: 0.5em 1.4em;
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
-  background-color: #8183c2; }
+  background-color: #8183c2;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center; }
 
 .btn-link {
   padding: 5px 4px 5px 9px; }
