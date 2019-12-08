@@ -7,6 +7,23 @@
   letter-spacing: 1px;
   font-size: 15px;
   text-align: center;
+  &-small {
+    padding: 0.2em 0.5em 0.3em 0.5em;
+    color: #fff;
+    margin-right: 10px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    * {
+      vertical-align: baseline;
+    }
+  }
+  &--accent {
+    background-color: $primary;
+  }
+  &--grey {
+    background-color: $text;
+  }
 }
 
 .btn-link {

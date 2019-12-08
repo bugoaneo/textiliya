@@ -19,7 +19,7 @@
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic-ext"
     rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -789,11 +789,94 @@ http://browsehappy.com/">обновите</a>
     </div>
   </footer>
   <a href="#top" data-target="anchor" class="to-top"><img src="img/up.svg" alt=""></a>
+  <!-- popup CITY -->
+
+  <div class="popup popup-city">
+    <p>Ваш город — </p>
+    <div class="popup__title accent">Новосибирск</div>
+    <p>Угадали?</p>
+    <div class="popup__btn">
+      <button class="btn-small btn--accent" type="button"><b>ДА</b>, это так!</button><button
+        class="btn-small btn--grey" type="button"><b>НЕТ</b>,
+        исправить</button>
+    </div>
+  </div>
+  <!-- popup CITY -->
+
+  <!-- popup GEO -->
+  <div class="overlay overlay-geo">
+    <div class="popup popup-geo">
+      <p class="accent"><b>Мы доставляем ткани по всему миру</b></p>
+      <p>Введите ваш населённый пункт:</p>
+      <div class="region-wrap">
+        <select class="region__select" name="state">
+          <option></option>
+          <option value="AL">Alabama</option>
+          <option value="1">Lorem ipsum </option>
+          <option value="2">dolor sit amet consectetur </option>
+          <option value="3">adipisicing elit. </option>
+          <option value="4">Eius reiciendis </option>
+          <option value="5">labore</option>
+          <option value="6"> eos iusto,</option>
+          <option value="7">ullam magnam eum fugit </option>
+          <option value="8">totam sunt molestias </option>
+          <option value="9">minus recusandae </option>
+          <option value="10">quidem itaque possimus </option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </div>
+      <div class="region__prefer">
+        <ul class="region__list">
+          <li class="region__item proirity"><span data-city="">Москва</span></li>
+          <li class="region__item proirity"><span data-city="">Санкт-Петербург</span></li>
+          <li class="proirity-devider"></li>
+          <li class="region__item"><span data-city="">Екатеринбург</span></li>
+          <li class="region__item"><span data-city="">Казань</span></li>
+          <li class="region__item"><span data-city="">Кемерово </span></li>
+          <li class="region__item"><span data-city="">Краснодар</span></li>
+          <li class="region__item"><span data-city="">Красноярск</span></li>
+          <li class="region__item"><span data-city="">Новосибирск</span></li>
+          <li class="region__item"><span data-city="">Нижний Новгород</span></li>
+          <li class="region__item"><span data-city="">Челябинск</span>
+          </li>
+          <li class="region__item"><span data-city="">Нижний Новгород</span></li>
+          <li class="region__item"><span data-city="">Омск</span></li>
+          <li class="region__item"><span data-city="">Перьмь</span></li>
+          <li class="region__item"><span data-city="">Ростов-на-Дону</span></li>
+          <li class="region__item"><span data-city="">Самара</span></li>
+          <li class="region__item"><span data-city="">Тюмень</span></li>
+          <li class="region__item"><span data-city="">Челябинск</span></li>
+          <li class="region__item"><span data-city="">Новосибирск</span></li>
+          <li class="region__item"><span data-city="">Нижний Новгород</span></li>
+          <li class="region__item"><span data-city="">Челябинск</span>
+          </li>
+          <li class="region__item"><span data-city="">Нижний Новгород</span></li>
+          <li class="region__item"><span data-city="">Омск</span></li>
+          <li class="region__item"><span data-city="">Перьмь</span></li>
+          <li class="region__item"><span data-city="">Ростов-на-Дону</span></li>
+          <li class="region__item"><span data-city="">Самара</span></li>
+          <li class="region__item"><span data-city="">Тюмень</span></li>
+          <li class="region__item"><span data-city="">Челябинск</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- popup GEO -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/shave.js"></script>
+  <script src="js/select2.min.js"></script>
   <script src="js/scripts.js"></script>
   <script>
     $('.dropdown__text').shave(20);
+  </script>
+  <script>
+    $(".region__select").select2({
+      placeholder: '<i class="icon-search"></i> Например, Москва',
+      width: '100%',
+      escapeMarkup: function (markup) {
+        return markup;
+      }
+    });
   </script>
 </body>
 
