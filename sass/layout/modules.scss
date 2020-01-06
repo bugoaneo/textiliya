@@ -1,3 +1,42 @@
+/*spinner*/
+.spinner-bg {
+  background-color: transparent;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  &.invisible {
+    visibility: hidden;
+  }
+}
+
+.spinner-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  width: 90px;
+  height: 90px;
+  animation: spinner 2s infinite linear;
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/*tags*/
 .tags {
   padding: 20px;
 }
@@ -62,7 +101,7 @@
   line-height: 2;
 }
 
-/*tracting*/
+/*trasting*/
 
 .trasting__list {
   display: flex;
@@ -109,6 +148,49 @@
 }
 .breadcrambs__list {
   @extend .row;
+  a {
+    display: block;
+    padding: 5px;
+    color: $text;
+  }
+}
+
+.breadcrambs__item {
+  position: relative;
+  padding-right: 20px;
+  &:last-child {
+    padding: 5px;
+    &:after {
+      display: none;
+    }
+  }
+  &:after {
+    content: "/";
+    @include center(y);
+    right: 10px;
+  }
+}
+
+/*pagination*/
+
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__item {
+  background-color: $mist;
+  a {
+    display: block;
+    padding: 0.75em 1em;
+  }
+  &.active {
+    background-color: $btn;
+  }
+  &:hover {
+    background-color: $btn;
+  }
 }
 
 /*shild*/
@@ -149,11 +231,6 @@
   &.hit {
     background-color: $btn;
   }
-}
-
-/*breadcrambs*/
-.breadcrambs {
-  margin-bottom: 20px;
 }
 
 /*popup*/
@@ -255,4 +332,9 @@
   padding: 6px 1.5em;
   margin-bottom: 1em;
   font-size: 1.25em;
+}
+
+/*breadcrambs*/
+.breadcrambs {
+  margin-bottom: 20px;
 }

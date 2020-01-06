@@ -124,3 +124,10 @@
   bottom: 0;
   top: auto;
 }
+
+.product__info,
+.product__catalog {
+  position: relative;
+  z-index: 1;
+  break-inside: avoid;
+}

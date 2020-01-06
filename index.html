@@ -48,10 +48,10 @@ http://browsehappy.com/">обновите</a>
             <div class="chain"><a href="/**/">Магазины у метро</a></div>
             <div class="net">
               <ul class="net-list row">
-                <li class="net-item fst"><a href="/*/*/"><img src="img/misc/01.png" alt=""></a></li>
-                <li class="net-item scnd"><a href="/*/*/"><img src="img/misc/02.png" alt=""></a></li>
-                <li class="net-item frd"><a href="/*/*/"><img src="img/misc/03.png" alt=""></a></li>
-                <li class="net-item fos"><a href="/*/*/"><img src="img/misc/04.png" alt=""></a></li>
+                <li class="net-item fst"><a href=""><img src="img/misc/01.png" alt=""></a></li>
+                <li class="net-item scnd"><a href=""><img src="img/misc/02.png" alt=""></a></li>
+                <li class="net-item frd"><a href=""><img src="img/misc/03.png" alt=""></a></li>
+                <li class="net-item fos"><a href=""><img src="img/misc/04.png" alt=""></a></li>
               </ul>
             </div>
           </div>
@@ -115,7 +115,7 @@ http://browsehappy.com/">обновите</a>
             <a href="/***/" class="bookmarks"><span class="score bookmarks__score">45</span><img src="img/like.svg"
                 alt=""></a>
             <div class="cart">
-              <a href="*/*/*/*/" class="cart__link">
+              <a href="**/" class="cart__link">
                 <span class="score cart__link-score">99</span>
                 <img src="img/cart.svg" alt="">
               </a>
@@ -137,7 +137,7 @@ http://browsehappy.com/">обновите</a>
                 <div class="dropdown__wrap">
                   <button class="mobil dropdown__close" type="button">В меню</button>
                   <div class="row">
-                    <div class="dropdown__pic"><a href="/*/*/*/*"><img src="img/box.jpg" alt=""></a></div>
+                    <div class="dropdown__pic"><a href="*/*"><img src="img/box.jpg" alt=""></a></div>
                     <div class="dropdown__col">
                       <div class="dropdown__title">По назначению</div>
                       <ul class="dropdown__list">
@@ -428,7 +428,7 @@ http://browsehappy.com/">обновите</a>
                 <div class="dropdown__wrap">
                   <button class="mobil dropdown__close" type="button">В меню</button>
                   <div class="row">
-                    <div class="dropdown__pic"><a href="/*/*/*/*"><img src="img/box.jpg" alt=""></a></div>
+                    <div class="dropdown__pic"><a href="*/*"><img src="img/box.jpg" alt=""></a></div>
                     <div class="dropdown__col">
                       <div class="dropdown__title">По назначению</div>
                       <ul class="dropdown__list">
@@ -736,16 +736,21 @@ http://browsehappy.com/">обновите</a>
             <div class="email"><a href="mailto:sale@tkani-textiliya.ru">sale@tkani-textiliya.ru</a></div>
             <div class="chain"><a href="/**/">Магазины у метро</a></div>
             <ul class="net-list row">
-              <li class="net-item fst"><a href="/*/*/"><img src="img/misc/01.png" alt=""></a></li>
-              <li class="net-item scnd"><a href="/*/*/"><img src="img/misc/02.png" alt=""></a></li>
-              <li class="net-item frd"><a href="/*/*/"><img src="img/misc/03.png" alt=""></a></li>
-              <li class="net-item fos"><a href="/*/*/"><img src="img/misc/04.png" alt=""></a></li>
+              <li class="net-item fst"><a href=""><img src="img/misc/01.png" alt=""></a></li>
+              <li class="net-item scnd"><a href=""><img src="img/misc/02.png" alt=""></a></li>
+              <li class="net-item frd"><a href=""><img src="img/misc/03.png" alt=""></a></li>
+              <li class="net-item fos"><a href=""><img src="img/misc/04.png" alt=""></a></li>
             </ul>
 
           </div>
         </div>
       </div>
     </header>
+    <div class="spinner-bg invisible" id="loading-indicator">
+      <div class="spinner-center">
+        <img class="spinner" src="img/misc/spinner.svg">
+      </div>
+    </div>
     <main class="main">
       <section class="section ">
         <div class="container">
@@ -2021,53 +2026,44 @@ http://browsehappy.com/">обновите</a>
       <section class="section news">
         <div class="container">
           <div class="row jsb">
-            <h2 class="section__title"><a href="/*" class="title-button">Новости</a> </h2>
-            <h2 class="section__title"><a href="/*" class="title-button">Блог</a> <a href="/*">Все статьи</a>
-            </h2>
-          </div>
-          <div class="row jsb news__list">
-            <div class="news__item">
-              <div class="news__pic"><img src="img/n1.jpg" alt=""></div>
-              <div class="news__info">
-                <div class="news__date"> <time datetime="2019-06-13T08:23:11+07:00">13.06.19</time> </div>
-                <h3 class="news__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, repellendus.
-                </h3>
-              </div>
-              <div class="news__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis atque labore facilis eaque obcaecati cum
-                eius excepturi. Vero voluptatem incidunt nisi ipsum reprehenderit accusamus nobis excepturi quidem,
-                expedita asperiores nesciunt quas temporibus animi perspiciatis eos molestias omnis quasi sit atque!
-                Maiores odit ne.
-              </div>
+            <div class="news__inner">
+              <h2 class="section__title"><a href="/*" class="title-button">Новости</a> <a href="/*">Все новости</a></h2>
+              <a class="news__item">
+                <div class="news__pic"><img src="img/n1.jpg" alt=""></div>
+                <div class="news__info">
+                  <div class="news__date"> <time datetime="2019-06-13T08:23:11+07:00">13.06.19</time> </div>
+                  <h3 class="news__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
+                    repellendus.
+                  </h3>
+                </div>
+                <div class="news__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis atque labore facilis eaque obcaecati
+                  cum
+                  eius excepturi. Vero voluptatem incidunt nisi ipsum reprehenderit accusamus nobis excepturi quidem,
+                  expedita asperiores nesciunt quas temporibus animi perspiciatis eos molestias omnis quasi sit atque!
+                  Maiores odit ne.
+                </div>
+              </a>
             </div>
-            <div class="news__item">
-              <div class="news__pic"><img src="img/box2.jpg" alt=""></div>
-              <div class="news__info">
-                <div class="news__date"> <time datetime="2019-06-13T08:23:11+07:00">13.06.19</time> </div>
-                <h3 class="news__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, repellendus.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, repellendus.</h3>
-              </div>
-              <div class="news__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis atque labore facilis eaque obcaecati cum
-                eius
-                excepturi. Vero voluptatem incidunt nisi ipsum reprehenderit accusamus nobis excepturi quidem, expedita
-                asperiores
-                nesciunt quas temporibus animi perspiciatis eos molestias omnis quasi sit atque! Maiores odit ne.
-              </div>
-            </div>
-            <div class="news__item">
-              <div class="news__pic"><img src="img/n2.jpg" alt=""></div>
-              <div class="news__info">
-                <div class="news__date"> <time datetime="2019-06-13T08:23:11+07:00">13.06.19</time> </div>
-                <h3 class="news__title">Lorem ipsum dolor sit.</h3>
-              </div>
-              <div class="news__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis atque labore facilis eaque obcaecati cum
-                eius
-                excepturi. Vero voluptatem incidunt nisi ipsum reprehenderit accusamus nobis excepturi quidem, expedita
-                asperiores
-                nesciunt quas temporibus animi perspiciatis eos molestias omnis quasi sit atque! Maiores odit ne.
-              </div>
+            <div class="blog__inner">
+              <h2 class="section__title"><a href="/*" class="title-button">Блог</a> <a href="/*">Все статьи</a>
+              </h2>
+              <a class="blog__item">
+                <div class="blog__pic"><img src="img/n2.jpg" alt=""></div>
+                <div class="blog__info">
+                  <div class="blog__date"> <time datetime="2019-06-13T08:23:11+07:00">13.06.19</time> </div>
+                  <h3 class="blog__title">Lorem ipsum dolor sit.</h3>
+                </div>
+                <div class="blog__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis atque labore facilis eaque obcaecati
+                  cum
+                  eius
+                  excepturi. Vero voluptatem incidunt nisi ipsum reprehenderit accusamus nobis excepturi quidem,
+                  expedita
+                  asperiores
+                  nesciunt quas temporibus animi perspiciatis eos molestias omnis quasi sit atque! Maiores odit ne.
+                </div>
+              </a>
             </div>
           </div>
         </div>

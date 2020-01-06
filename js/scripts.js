@@ -60,6 +60,9 @@ $(document).ready(function () {
   $('.dropdown__close').click(function () {
     $('.dropdown__wrap').removeClass('open');
   });
+
+  /*breadcrumbs behavior*/
+  $('.breadcrambs__item a').shave(33);
 });
 
 $(window).scroll(function () {
