@@ -36,6 +36,42 @@
   }
 }
 
+/*notice*/
+.notice {
+  position: fixed;
+  top: 30%;
+  right: 20px;
+  max-width: 420px;
+  padding: 15px 35px 15px 20px;
+  background-color: $light;
+  font-size: 16px;
+  z-index: 10;
+  color: #fff;
+  transition: right 0.5s ease-in-out;
+  b {
+    vertical-align: baseline;
+  }
+  @include bp(600px) {
+    right: 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+  &.invisible {
+    right: -100%;
+  }
+}
+
+.close-notice {
+  @extend .close;
+}
+
+.notice__icon {
+  width: 15px;
+  margin-right: 3px;
+  vertical-align: baseline;
+}
+
 /*tags*/
 .tags {
   padding: 20px;

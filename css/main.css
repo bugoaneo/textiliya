@@ -315,7 +315,7 @@ body {
 
 a {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: baseline; }
 
 .mobil {
   display: none !important; }
@@ -426,6 +426,35 @@ a {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+/*notice*/
+.notice {
+  position: fixed;
+  top: 30%;
+  right: 20px;
+  max-width: 420px;
+  padding: 15px 35px 15px 20px;
+  background-color: #e78f84;
+  font-size: 16px;
+  z-index: 10;
+  color: #fff;
+  -webkit-transition: right 0.5s ease-in-out;
+  -o-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out; }
+  .notice b {
+    vertical-align: baseline; }
+  @media (max-width: 600px) {
+    .notice {
+      right: 0; } }
+  .notice a {
+    text-decoration: underline; }
+  .notice.invisible {
+    right: -100%; }
+
+.notice__icon {
+  width: 15px;
+  margin-right: 3px;
+  vertical-align: baseline; }
+
 /*tags*/
 .tags {
   padding: 20px; }
@@ -2327,7 +2356,7 @@ a {
 .btn-link {
   padding: 5px 4px 5px 9px; }
 
-.close {
+.close, .close-notice {
   position: absolute;
   right: -7px;
   top: -7px;
