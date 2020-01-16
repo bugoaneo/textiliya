@@ -15,6 +15,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   flex-grow: 1;
+  background-color: #fbfbfb;
 }
 
 .footer {
@@ -80,6 +81,37 @@ a {
   }
   &.jsa {
     justify-content: space-around;
+  }
+  .col {
+    flex: 1 1 0;
+    margin-right: 1.5%;
+    @include bp(800px) {
+      flex: 0 1 100%;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.aside {
+  flex: 0 1 230px;
+  @include bp(800px) {
+    flex: 0 1 100%;
+  }
+}
+
+.content {
+  flex: 0 1 calc(100% - 260px);
+  padding: 30px 20px;
+  background-color: #fff;
+  font-size: 14px;
+
+  @include bp(800px) {
+    flex: 0 1 100%;
+    font-size: 12px;
+  }
+  @include bp(600px) {
+    padding: 20px 0;
   }
 }
 
