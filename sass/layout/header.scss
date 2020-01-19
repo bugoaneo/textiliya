@@ -348,6 +348,7 @@
   box-shadow: 0 1px 4px 0 rgba(76, 76, 76, 0.6);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 100;
   @include bp(720px) {
     position: fixed;
     top: 0;
@@ -440,6 +441,7 @@
   width: 100%;
   padding: 4px 0;
   transition: 0.3s ease-in-out;
+  color: initial;
   .link-count {
     vertical-align: bottom;
     color: $text;
@@ -483,12 +485,14 @@
         opacity: 0;
       }
       &.open {
+        position: relative;
         right: 0;
         opacity: 1;
       }
     }
   }
   @include bp(720px) {
+    flex-wrap: wrap;
     padding-left: 0;
     &:before {
       display: none;
@@ -513,6 +517,7 @@
   &.open {
     right: 0;
     opacity: 1;
+    position: relative;
   }
   @include bp(400px) {
     max-width: 400px;

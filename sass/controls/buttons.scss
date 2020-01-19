@@ -1,7 +1,7 @@
 .btn {
   padding: 0.5em 1.4em;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
   background-color: $btn;
   letter-spacing: 1px;
@@ -9,7 +9,7 @@
   text-align: center;
   &-small {
     padding: 0.2em 0.5em 0.3em 0.5em;
-    color: #fff;
+    color: #fff !important;
     margin-right: 10px;
     &:last-of-type {
       margin-right: 0;
@@ -30,6 +30,9 @@
   }
   &--light {
     background-color: $btn-light;
+  }
+  &--lowcaps {
+    text-transform: none;
   }
 }
 
@@ -141,8 +144,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 43%;
+    right: 10px;
     transform: rotate(-45deg) translateY(-50%);
     width: 8px;
     height: 8px;

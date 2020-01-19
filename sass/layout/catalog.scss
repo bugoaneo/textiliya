@@ -3,7 +3,7 @@
   @include bp(500px) {
     overflow: hidden;
     padding-top: 5px;
-    margin: 0 -20px;
+    margin: 0 -5px;
   }
 }
 
@@ -65,6 +65,9 @@
       margin: 0 -10px;
     }
   }
+}
+.catalog__link {
+  color: initial;
 }
 .catalog__price {
   margin-top: -18px;
@@ -179,7 +182,58 @@
 }
 
 .catalog__btn {
+  display: flex;
   margin-top: auto;
+  span {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: #d7d9f2;
+    &:before,
+    &:after {
+      content: "";
+      @include center;
+      width: 12px;
+      height: 2px;
+      background-color: $btn;
+    }
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+  .like {
+    background-color: $light;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      width: 12px;
+      height: 6px;
+      background-color: #fff;
+      transform-origin: 50% 0%;
+    }
+    &:before {
+      transform: rotate(-45deg);
+      border-radius: 0 3px 3px 0;
+    }
+    &:after {
+      transform: rotate(45deg);
+      border-radius: 3px 0 0 3px;
+    }
+    &.add {
+      &:before,
+      &:after {
+        background-color: $second;
+      }
+    }
+  }
 }
 
 .action__slider {

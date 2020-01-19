@@ -297,7 +297,8 @@
     @include bp(800px) {
       background-color: $second;
     }
-    a {
+    a,
+    span {
       color: $second;
       @include bp(800px) {
         color: #fff;
@@ -309,7 +310,8 @@
       color: $second;
     }
   }
-  a {
+  a,
+  span {
     display: block;
     padding: 2px 0;
     line-height: 1.2;
@@ -329,5 +331,92 @@
   }
   @include bp(600px) {
     width: 30%;
+  }
+}
+
+.map {
+  position: relative;
+  padding-bottom: 55%;
+  margin: 2em 0;
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*tabs*/
+.r-tabs .r-tabs-tab {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  &:before {
+    display: none;
+  }
+}
+.r-tabs .r-tabs-nav {
+  margin: 0;
+}
+.r-tabs .r-tabs-panel {
+  padding: 0 15px 15px 15px;
+  display: none;
+  .map {
+    margin: 0;
+  }
+}
+
+.r-tabs .r-tabs-accordion-title {
+  display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+  display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 800px) {
+  .r-tabs .r-tabs-nav {
+    display: none;
+  }
+
+  .r-tabs .r-tabs-accordion-title {
+    display: block;
+  }
+}
+
+.content__tabs {
+  margin: 0 -10px;
+  .r-tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .r-tabs-tab {
+    flex: 0 1 25%;
+  }
+  .r-tabs-tab.r-tabs-state-default {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $mist;
+  }
+  .r-tabs-tab.r-tabs-state-active {
+    border: 1px solid $mist;
+    border-bottom: none;
+  }
+  .r-tabs-anchor {
+    display: block;
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: $btn;
+    text-align: center;
+  }
+  .tabs-container {
+    border: 1px solid $mist;
+    border-top: none;
+    .content__row {
+      margin: 0 0 10px 0;
+      font-size: 13px;
+    }
   }
 }

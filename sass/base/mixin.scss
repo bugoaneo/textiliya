@@ -4,6 +4,12 @@
   }
 }
 
+@mixin bpm($point) {
+  @media (min-width: $point) {
+    @content;
+  }
+}
+
 @mixin land {
   @media screen and (orientation: landscape) {
     @content;

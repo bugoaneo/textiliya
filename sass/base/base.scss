@@ -26,17 +26,41 @@ body {
   position: relative;
   max-width: $container;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 a {
   display: inline-block;
   vertical-align: baseline;
+  // color: $btn;
+}
+em {
+  font-style: oblique;
+}
+b {
+  font-weight: bold;
+}
+p {
+  line-height: 1.45;
+}
+
+.desc {
+  display: inherit;
+  @include bp(800px) {
+    display: none;
+  }
 }
 
 .mobil {
   display: none !important;
   @include bp(720px) {
+    display: block !important;
+  }
+}
+
+.mobil-sm {
+  display: none !important;
+  @include bp(600px) {
     display: block !important;
   }
 }
@@ -54,6 +78,14 @@ a {
 
 .accent2 {
   color: $third;
+}
+
+.toright {
+  text-align: right;
+}
+
+.bg-light {
+  background-color: $haze;
 }
 
 /*grid*/
@@ -82,9 +114,42 @@ a {
   &.jsa {
     justify-content: space-around;
   }
+  &.reverse {
+    flex-direction: row-reverse;
+    @include bp(800px) {
+      flex-direction: initial;
+    }
+  }
   .col {
     flex: 1 1 0;
-    margin-right: 1.5%;
+    margin: 0 0.75%;
+    &-10 {
+      flex: 0 1 8.5%;
+    }
+    &-20 {
+      flex: 0 1 18.5%;
+    }
+    &-30 {
+      flex: 0 1 28.5%;
+    }
+    &-40 {
+      flex: 0 1 38.5%;
+    }
+    &-50 {
+      flex: 0 1 48.5%;
+    }
+    &-60 {
+      flex: 0 1 58.5%;
+    }
+    &-70 {
+      flex: 0 1 68.5%;
+    }
+    &-80 {
+      flex: 0 1 78.5%;
+    }
+    &-90 {
+      flex: 0 1 88.5%;
+    }
     @include bp(800px) {
       flex: 0 1 100%;
       margin-right: 0;
@@ -117,4 +182,78 @@ a {
 
 .hidden {
   display: none;
+}
+
+table {
+  table-layout: fixed;
+  font-size: 12px;
+  th,
+  td {
+    padding: 8px 5px;
+    text-align: left;
+    @include bp(600px) {
+      word-break: break-all;
+    }
+  }
+  td {
+    border: 1px solid $text;
+    a {
+      color: $btn;
+      font-weight: 600;
+    }
+    &.order__namber {
+      a {
+        display: block;
+      }
+    }
+    &.order__sum {
+      white-space: nowrap;
+      @include bp(600px) {
+        white-space: initial;
+      }
+    }
+  }
+  th {
+    border-right: 1px solid $text;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  @include bp(600px) {
+    font-size: 10px;
+    a.btn {
+      font-size: 14px;
+    }
+  }
+}
+
+#order {
+  @include bp(800px) {
+    .order__date,
+    .order__deliv,
+    .order__pay {
+      display: none;
+    }
+  }
+  .order__wait {
+    background-color: $haze;
+  }
+  .order__ready {
+    background-color: $order;
+  }
+}
+
+.table__caption {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  background-color: #e4e7e9;
+  font-size: 15px;
+}
+
+.table-wrap {
+  margin-bottom: 30px;
+  @include bp(600px) {
+    margin: 0 -5px;
+  }
 }
