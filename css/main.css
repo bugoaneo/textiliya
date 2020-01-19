@@ -2677,11 +2677,13 @@ ul.care__table {
   .article h3 {
     font-size: 18px;
     font-weight: 800; }
-  .article p {
+  .article p,
+  .article * {
     font-size: 16px;
     line-height: 1.5; }
     @media (max-width: 600px) {
-      .article p {
+      .article p,
+      .article * {
         font-size: 14px; } }
   .article ul,
   .article ol {
@@ -2693,6 +2695,9 @@ ul.care__table {
   @media (max-width: 600px) {
     .article {
       padding: 20px; } }
+  .article img {
+    display: inline-block;
+    margin: 5px; }
 
 .article__title {
   margin-bottom: 20px;
