@@ -453,305 +453,44 @@ http://browsehappy.com/">обновите</a>
       </div>
     </header>
     <main class="main">
-      <div class="container account">
+      <div class="container logout">
         <div class="breadcrambs">
           <ul class="breadcrambs__list">
             <li class="breadcrambs__item"><a href="">Главная</a></li>
-            <li class="breadcrambs__item last">Личный кабинет</li>
+            <li class="breadcrambs__item"><a href="">Личный кабинет</a></li>
+            <li class="breadcrambs__item last">Выход</li>
           </ul>
         </div>
-        <div class="row jsb reverse">
-          <div class="aside">
-            <div class="aside__menuwidget">
-              <div class="aside__title">Личный кабинет</div>
-              <ul class="aside__menu">
-                <li class="aside__menu-item current"><a href="about.html">Связь со мной</a></li>
-                <li class="aside__menu-item"><a href="password.html">Мой пароль</a></li>
-                <li class="aside__menu-item"><a href="adress.html">Мои адреса доставки</a></li>
-                <li class="aside__menu-item"><a href="wishlist.html">Список желаний</a></li>
-                <li class="aside__menu-item"><a href="order.html">История заказов</a></li>
-                <li class="aside__menu-item"><a href="newsletter.html">Подписка на рассылку</a></li>
-                </li>
-                <li class="aside__menu-item"><a href="logout.html" class="logout">Выйти</a></li>
-              </ul>
-
-            </div>
-          </div>
-          <div class="content">
-            <h2 class="content__lead">Здравствуйте, <span class="user">{USERNAME}</span> !</h2>
-            <p>С Личным кабинетом делать покупки быстрее и проще. Воспользуйтесь меню справа,
-              чтобы изменить личные данные, сменить пароль или узнать детали заказа.</p>
-            <div class="content__inner table">
-              <div class="table-wrap">
-                <div class="table__caption">Последние заказы</div>
-                <table id="order">
-                  <tr class="table__header">
-                    <th class="order__namber">№ заказа</th>
-                    <th class="order__status">Статус</th>
-                    <th class="order__date">Дата</th>
-                    <th class="order__amount">Всего товаров</th>
-                    <th class="order__deliv">Способ доставки</th>
-                    <th class="order__pay">Оплата</th>
-                    <th class="order__sum">Итого, руб.</th>
-                    <th class="order__note"></th>
-                  </tr>
-                  <tr>
-                    <td class="order__namber"><a href="">185545</a></td>
-                    <td class="order__status">Новый</td>
-                    <td class="order__date">14.05.20</td>
-                    <td class="order__amount">10</td>
-                    <td class="order__deliv">До пункта самовывоза СДЭК:
-                      г. Новосибирск,
-                      ул. Выборная, 89/2. 2–3 дня</td>
-                    <td class="order__pay">Требуется согласование заказа</td>
-                    <td class="order__sum">77 897</td>
-                    <td class="order__note">Менеджер уточняет наличие</td>
-                  </tr>
-                  <tr class="order__wait">
-                    <td class="order__namber"><a href="">1855</a></td>
-                    <td class="order__status">Согласован к оплате</td>
-                    <td class="order__date">08.09.20</td>
-                    <td class="order__amount">111</td>
-                    <td class="order__deliv">г. Новосибирск,
-                      ул. Дуси Ковальчук, 260. 2–3 дня</td>
-                    <td class="order__pay">Онлайн+оплата через Сбербанк</td>
-                    <td class="order__sum">798 526</td>
-                    <td><a href="" class="btn btn-small">Оплатить</a></td>
-                  </tr>
-                  <tr>
-                    <td class="order__namber"><a href="">18554665</a></td>
-                    <td class="order__status">Комплектуется</td>
-                    <td class="order__date">12.12.20</td>
-                    <td class="order__amount">5</td>
-                    <td class="order__deliv">г. Новосибирск,
-                      ул. Дуси Ковальчук, 260. 2–3 дня</td>
-                    <td class="order__pay">Онлайн+оплата через Сбербанк</td>
-                    <td class="order__sum">100</td>
-                    <td class="order__note">Заказ в доставке</td>
-                  </tr>
-                  <tr class="order__ready">
-                    <td class="order__namber"><a href="">165</a></td>
-                    <td class="order__status">Отправлен</td>
-                    <td class="order__date">12.12.20</td>
-                    <td class="order__amount">5</td>
-                    <td class="order__deliv">г. Барнаул,
-                      ул. Победная, 260. 2–3 дня</td>
-                    <td class="order__pay">Онлайн+оплата через Сбербанк</td>
-                    <td class="order__sum">1 000 000</td>
-                    <td class="order__note">Заказ оплачен</td>
-                  </tr>
-                </table>
-              </div>
-              <a href="" class="toright">Смотреть все заказы</a>
-            </div>
-            <div class="content__inner wish">
-              <div class="table__caption">Последние товары в списке желаний (<span class="wish-amount">9</span>)</div>
-              <div class="row wish__catalog">
-                <div class="catalog__item">
-                  <a href="/*" class="catalog__link">
-                    <div class="catalog__pic">
-                      <img src="img/catalog/03.jpg" alt="">
-                    </div>
-                    <div class="catalog__price">
-                      <div class="catalog__price-row">
-                        <div class="price__text">Старая цена</div>
-                        <div class="price__cost old"><s>4780 &#8381;</s></div>
-                      </div>
-                      <div class="catalog__price-row">
-                        <div class="price__text">Опт от</div>
-                        <div class="price__cost opt">780 &#8381;</div>
-                      </div>
-                    </div>
-                    <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                  </a>
-                  <div class="catalog__descr">
-                    <div class="catalog__info">
-                      <div class="catalog__item-fabric">
-                        50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                      </div>
-                      <div class="catalog__item-color">
-                        <ul class="color__list">
-                          <li class="color__item">
-                            <img src="img/catalog/001.jpg" alt="">
-                          </li>
-                          <li class="color__item">
-                            <img src="img/catalog/002.jpg" alt="">
-                          </li>
-                          <li class="color__item">
-                            <img src="img/catalog/003.jpg" alt="">
-                          </li>
-                        </ul>
-                        <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                      </div>
-                    </div>
-
-                    <div class="catalog__btn">
-                      <button class="btn">Купить </button><span class="delete"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog__item">
-                  <a href="/*" class="catalog__link">
-                    <div class="catalog__pic">
-                      <img src="img/catalog/03.jpg" alt="">
-                    </div>
-                    <div class="catalog__price">
-                      <div class="catalog__price-row">
-                        <div class="price__text">Старая цена</div>
-                        <div class="price__cost old"><s>4780 &#8381;</s></div>
-                      </div>
-                      <div class="catalog__price-row">
-                        <div class="price__text">Опт от</div>
-                        <div class="price__cost opt">780 &#8381;</div>
-                      </div>
-                    </div>
-                    <h3 class="catalog__item-title">Костюмная 9540 29540</h3>
-                  </a>
-                  <div class="catalog__descr">
-                    <div class="catalog__info">
-                      <div class="catalog__item-fabric">
-                        50% вискоза, 42% полиэстер
-                      </div>
-                      <div class="catalog__item-color">
-                        <ul class="color__list">
-                          <li class="color__item">
-                            <img src="img/catalog/001.jpg" alt="">
-                          </li>
-
-                        </ul>
-                        <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                      </div>
-                    </div>
-
-                    <div class="catalog__btn">
-                      <button class="btn">Купить </button><span class="delete"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog__item">
-                  <a href="/*" class="catalog__link">
-                    <div class="catalog__pic">
-                      <img src="img/catalog/03.jpg" alt="">
-                    </div>
-                    <div class="catalog__price">
-                      <div class="catalog__price-row">
-                        <div class="price__text">Старая цена</div>
-                        <div class="price__cost old"><s>4780 &#8381;</s></div>
-                      </div>
-                      <div class="catalog__price-row">
-                        <div class="price__text">Опт от</div>
-                        <div class="price__cost opt">780 &#8381;</div>
-                      </div>
-                    </div>
-                    <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                  </a>
-                  <div class="catalog__descr">
-                    <div class="catalog__info">
-                      <div class="catalog__item-fabric">
-                        50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                      </div>
-                      <div class="catalog__item-color">
-                        <ul class="color__list">
-                          <li class="color__item">
-                            <img src="img/catalog/001.jpg" alt="">
-                          </li>
-                          <li class="color__item">
-                            <img src="img/catalog/002.jpg" alt="">
-                          </li>
-                          <li class="color__item">
-                            <img src="img/catalog/003.jpg" alt="">
-                          </li>
-                        </ul>
-                        <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                      </div>
-                    </div>
-
-                    <div class="catalog__btn">
-                      <button class="btn">Купить </button><span class="delete"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="catalog__item">
-                  <a href="/*" class="catalog__link">
-                    <div class="catalog__pic">
-                      <img src="img/catalog/03.jpg" alt="">
-                    </div>
-                    <div class="catalog__price">
-                      <div class="catalog__price-row">
-                        <div class="price__text">Старая цена</div>
-                        <div class="price__cost old"><s>4780 &#8381;</s></div>
-                      </div>
-                      <div class="catalog__price-row">
-                        <div class="price__text">Опт от</div>
-                        <div class="price__cost opt">780 &#8381;</div>
-                      </div>
-                    </div>
-                    <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                  </a>
-                  <div class="catalog__descr">
-                    <div class="catalog__info">
-                      <div class="catalog__item-fabric">
-                        50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                      </div>
-                      <div class="catalog__item-color">
-                        <ul class="color__list">
-                          <li class="color__item">
-                            <img src="img/catalog/001.jpg" alt="">
-                          </li>
-                          <li class="color__item">
-                            <img src="img/catalog/002.jpg" alt="">
-                          </li>
-                          <li class="color__item">
-                            <img src="img/catalog/003.jpg" alt="">
-                          </li>
-                        </ul>
-                        <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                      </div>
-                    </div>
-                    <div class="catalog__btn">
-                      <button class="btn">Купить </button><span class="delete"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a href="" class="toright">Больше товаров из списка желаний</a>
-            </div>
-            <!-- TODO if no data!!! -->
-            <div class="content__inner">
-              <div class="table__caption">Последние заказы</div>
-              <div class="account__row bg-light no-order">
-                <div class="col col-50">
-                  <p>Кажется, вы ещё не делали заказов
-                    в интернет-магазине «Текстилия» :(
-                    Но это легко исправить!</p>
-                  <p><a href="" class="btn btn--lowcase">Начать покупки</a></p>
-                </div>
-                <div class="col col-50 desc">
-                  <img src="img/content/admin1.png" alt="">
-                </div>
-              </div>
+        <div class="content content--account">
+          <h2 class="content__lead">Приятных вам покупок</h2>
+          <div class="row">
+            <div class="logout__text col col-70">
+              <p>Вы вышли из личного кабинета</p>
+              <p>Ваша Корзина сохранена. Она будет восстановлена при следующим входе в Личный кабинет.</p>
+              <a href="" class="btn btn--big">Перейти к покупкам</a>
             </div>
             <div class="content__inner">
-              <div class="table__caption">Последние товары в списке желаний</div>
-              <div class="account__row bg-light no-wish">
-                <div class="col col-20 desc">
-                  <img src="img/content/admin2.png" alt="">
-                </div>
-                <div class="col col-70">
-                  <p>Пока что ваш Список желаний пуст.</p>
-                  <p>Добавить сюда можно любой товар нажав
-                    на кнопку-сердце под его фотографией.</p>
-                  <p></p>
-                  <p>Список желаний облегчает планирование покупок.
-                    Вы также можете использовать его как источник
-                    вдохновения в своих рукодельных проектах.</p>
-                </div>
-
+              <p><b>Давайте дружить!</b></p>
+              <p>«Текстилия» в социальных сетях:</p>
+              <div class="content__row">
+                <a href="" class="friends-btn inst">
+                  <span class="friends-btn__pic"><img src="img/misc/ins.svg" alt=""></span>
+                  <span class="friends-btn__text">Instagram</span></a>
+                <a href="" class="friends-btn vkt">
+                  <span class="friends-btn__pic"><img src="img/misc/vkt.svg" alt=""></span>
+                  <span class="friends-btn__text">ВКонтакте</span>
+                </a>
+                <a href="" class="friends-btn ytb">
+                  <span class="friends-btn__pic"><img src="img/misc/ytb.svg" alt=""></span>
+                  <span class="friends-btn__text">Youtube</span>
+                </a>
               </div>
+            </div>
+            <div class="logout__pic col col-50">
+              <img src="img/content/admin3.png" alt="">
             </div>
           </div>
         </div>
-      </div>
 
     </main>
   </div>

@@ -99,6 +99,35 @@
       background: url(../img/misc/eye.svg) center center/contain no-repeat;
     }
   }
+  // input[type="checkbox"]:checked + .form__label::after
+  input[type="radio"] + .form__label {
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #000;
+      border-radius: 100%;
+      transform: translateY(-50%);
+    }
+  }
+  input[type="radio"]:checked + .form__label {
+    &:after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      transform: translateY(-50%);
+      background-color: $btn;
+    }
+  }
 }
 
 .form__label {

@@ -8,12 +8,14 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  /****/
+  min-height: 100vh;
 }
 
 .wrapper {
   position: relative;
   min-width: 320px;
-  min-height: 100vh;
+
   flex-grow: 1;
   background-color: #fbfbfb;
 }
@@ -153,7 +155,7 @@ p {
     @include bp(800px) {
       flex: 0 1 100%;
       margin-right: 0;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
   }
 }
@@ -170,13 +172,16 @@ p {
   padding: 30px 20px;
   background-color: #fff;
   font-size: 14px;
-
   @include bp(800px) {
     flex: 0 1 100%;
     font-size: 12px;
   }
   @include bp(600px) {
     padding: 20px 0;
+  }
+  &--account {
+    background-color: transparent;
+    padding: 0;
   }
 }
 
@@ -191,12 +196,22 @@ table {
   td {
     padding: 8px 5px;
     text-align: left;
+    border-right: 1px solid $text;
+    vertical-align: top;
+    &:last-child {
+      border-right: none;
+    }
     @include bp(600px) {
       word-break: break-all;
+    }
+    &[colspan] {
+      text-align: right;
+      font-weight: 700;
     }
   }
   td {
     border: 1px solid $text;
+    border-left: none;
     a {
       color: $btn;
       font-weight: 600;
@@ -225,6 +240,32 @@ table {
       font-size: 14px;
     }
   }
+  &.table__wide {
+    width: 100%;
+    td {
+      border: none;
+      padding: 3px 5px;
+      line-height: 1.45;
+      //vertical-align: top;
+    }
+  }
+  .wide-cell {
+    width: 55%;
+    @include bp(600px) {
+      width: 45%;
+    }
+  }
+}
+
+.table-inner {
+  @include bp(600px) {
+    display: block;
+    width: 100%;
+    tr,
+    td {
+      display: block;
+    }
+  }
 }
 
 #order {
@@ -240,6 +281,27 @@ table {
   }
   .order__ready {
     background-color: $order;
+  }
+}
+
+#order-onfo {
+  @include bp(800px) {
+    .order__date,
+    .order__deliv,
+    .order__pay {
+      display: block;
+    }
+  }
+  p {
+    margin: 0 0 10px 0;
+  }
+}
+
+#order-list,
+#order-history {
+  width: 100%;
+  p {
+    margin: 0 0 10px 0;
   }
 }
 

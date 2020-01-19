@@ -31,7 +31,10 @@
   &--light {
     background-color: $btn-light;
   }
-  &--lowcaps {
+  &--haze {
+    background-color: #9d9d9d;
+  }
+  &--lowcase {
     text-transform: none;
   }
 }

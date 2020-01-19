@@ -107,6 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none !important;
 }
 
 .pagination__item {
@@ -293,6 +294,10 @@
 }
 
 .aside__menu-item {
+  margin-bottom: 5px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
   &.current {
     @include bp(800px) {
       background-color: $second;
@@ -300,6 +305,7 @@
     a,
     span {
       color: $second;
+      font-weight: 700;
       @include bp(800px) {
         color: #fff;
       }
@@ -331,6 +337,12 @@
   }
   @include bp(600px) {
     width: 30%;
+  }
+  .logout {
+    margin-top: 20px;
+    @include bp(800px) {
+      margin-top: 0;
+    }
   }
 }
 

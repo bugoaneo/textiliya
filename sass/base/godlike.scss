@@ -142,10 +142,10 @@ button {
 // Remove default margins, add hyphenation, add correct highlight
 p {
   margin: 0;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  // -ms-hyphens: auto;
+  // -moz-hyphens: auto;
+  // -webkit-hyphens: auto;
+  // hyphens: auto;
   overflow: hidden;
 }
 
