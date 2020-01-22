@@ -432,3 +432,45 @@
     }
   }
 }
+
+/*quantity*/
+
+.quantity {
+  display: flex;
+  font-size: 12px;
+}
+
+.quantity__btn {
+  position: relative;
+  --bgc: #7174c2;
+  flex: 0 1 2.4em;
+  // font-size: 14px;
+  background-color: var(--bgc);
+  color: #fff;
+  border: 1px solid var(--bgc);
+  &:before,
+  &:after {
+    content: "";
+    background-color: currentColor;
+    @include center;
+  }
+  &:before {
+    width: 45%;
+    height: 2px;
+  }
+  &.up {
+    &:after {
+      height: 42%;
+      width: 2px;
+    }
+  }
+}
+
+.quantity__input {
+  width: auto;
+  padding: 0.5em;
+  border-top: 1px solid $text;
+  border-bottom: 1px solid $text;
+  text-align: center;
+  line-height: 1;
+}

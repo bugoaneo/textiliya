@@ -466,7 +466,7 @@ http://browsehappy.com/">обновите</a>
             <div class="aside__menuwidget">
               <div class="aside__title">Личный кабинет</div>
               <ul class="aside__menu">
-                <li class="aside__menu-item"><a href="about.html">Связь со мной</a></li>
+                <li class="aside__menu-item"><a href="simpleedit.html">Связь со мной</a></li>
                 <li class="aside__menu-item"><a href="password.html">Мой пароль</a></li>
                 <li class="aside__menu-item current"><span>Мои адреса доставки</span></li>
                 <li class="aside__menu-item"><a href="wishlist.html">Список желаний</a></li>
@@ -486,7 +486,8 @@ http://browsehappy.com/">обновите</a>
                   <div class="adress__text">г. Новосибирск,
                     ул. Дуси Ковальчук, 260.</div>
                   <div class="adess__change">
-                    <a href="" class="accent2"><b>Редактировать</b></a><a href="">Удалить</a>
+                    <button type="button" class="accent2 edit-adress"><b>Редактировать</b></button><button
+                      class="remove-adress" type="button">Удалить</button>
                   </div>
                 </div>
                 <div class="adress__col">
@@ -495,7 +496,8 @@ http://browsehappy.com/">обновите</a>
                     ул. Дуси Ковальчук, 260. г. Новосибирск,
                     ул. Дуси Ковальчук, 260.</div>
                   <div class="adess__change">
-                    <a href="" class="accent2"><b>Редактировать</b></a><a href="">Удалить</a>
+                    <button type="button" class="accent2 edit-adress"><b>Редактировать</b></button><button
+                      class="remove-adress" type="button">Удалить</button>
                   </div>
                 </div>
                 <div class="adress__col">
@@ -503,12 +505,33 @@ http://browsehappy.com/">обновите</a>
                     ул. Дуси Ковальчук, 260. г. Новосибирск,
                     ул. Дуси Ковальчук, 260.</div>
                   <div class="adess__change">
-                    <a href="" class="accent2"><b>Редактировать</b></a><a href="">Удалить</a>
+                    <button type="button" class="accent2 edit-adress"><b>Редактировать</b></button><button
+                      class="remove-adress" type="button">Удалить</button>
                   </div>
                 </div>
               </div>
+              <a href="" class="btn btn--lowcase">Новый адрес</a>
             </div>
-            <a href="" class="btn btn--lowcase">Новый адрес</a>
+            <!-- TODO Эта форма скрыта и вызывается по требованию? Если да, навешиваем класс hidden на ниже лежащий content__inner и удаляем его по требованию -->
+            <div class="content__inner row">
+              <div class="content__form">
+                <form action="" method="post" name="adress-change">
+                  <div class="form__row">
+                    <label class="form__label" for="old_adress"><b>Старый адрес</b></label>
+                    <input class="form__input" type="text" name="old_adress" id="old_adress" value="">
+                  </div>
+                  <div class="form__row">
+                    <label class="form__label" for="new_adress-confirm"><b>Ваш новый адрес</b></label>
+                    <input class="form__input" type="text" name="new_adress-confirm" id="new_adress-confirm"
+                      placeholder="Введите новый адрес доставки">
+                  </div>
+                  <div class="form__row">
+                    <button class="btn btn--lowcase">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+              <div class="content__pic"><img src="img/content/admin4.png" alt=""></div>
+            </div>
           </div>
         </div>
       </div>

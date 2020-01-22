@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html {
   font-family: $ff;
   color: #000;
@@ -90,6 +92,10 @@ p {
   background-color: $haze;
 }
 
+.hidden {
+  display: none;
+}
+
 /*grid*/
 
 .row,
@@ -167,6 +173,8 @@ p {
   }
 }
 
+/*blog + account*/
+
 .content {
   flex: 0 1 calc(100% - 260px);
   padding: 30px 20px;
@@ -185,9 +193,30 @@ p {
   }
 }
 
-.hidden {
-  display: none;
+/*cart*/
+
+.cart__contents {
+  flex: 0 1 calc(100% - 320px);
+  font-size: 14px;
+  @include bp(800px) {
+    flex: 0 1 100%;
+    font-size: 12px;
+  }
+  @include bp(600px) {
+    padding: 15px 0;
+  }
 }
+
+.cart__aside {
+  flex: 0 1 300px;
+  font-size: 14px;
+  @include bp(800px) {
+    flex: 0 1 100%;
+    font-size: 12px;
+  }
+}
+
+/*tables*/
 
 table {
   table-layout: fixed;

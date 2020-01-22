@@ -6,13 +6,16 @@
 @import "base/base";
 @import "layout/modules";
 
-@import "layout/header";
-@import "layout/section";
-@import "layout/catalog";
-@import "layout/product";
-@import "layout/blog_news";
-@import "layout/footer";
-
 @import "controls/sliders";
 @import "controls/forms";
 @import "controls/buttons";
+
+@import "layout/header";
+@import "layout/section";
+@import "layout/footer";
+
+@import "page/account";
+@import "page/blog_news";
+@import "page/catalog";
+@import "page/product";
+@import "page/cart";
