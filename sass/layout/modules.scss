@@ -388,6 +388,10 @@
 }
 
 /* Accordion responsive breakpoint */
+.r-tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
 @media only screen and (max-width: 800px) {
   .r-tabs .r-tabs-nav {
     display: none;
@@ -395,41 +399,6 @@
 
   .r-tabs .r-tabs-accordion-title {
     display: block;
-  }
-}
-
-.content__tabs {
-  margin: 0 -10px;
-  .r-tabs-nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .r-tabs-tab {
-    flex: 0 1 25%;
-  }
-  .r-tabs-tab.r-tabs-state-default {
-    border: 1px solid transparent;
-    border-bottom: 1px solid $mist;
-  }
-  .r-tabs-tab.r-tabs-state-active {
-    border: 1px solid $mist;
-    border-bottom: none;
-  }
-  .r-tabs-anchor {
-    display: block;
-    padding: 10px 5px;
-    font-size: 12px;
-    font-weight: 600;
-    color: $btn;
-    text-align: center;
-  }
-  .tabs-container {
-    border: 1px solid $mist;
-    border-top: none;
-    .content__row {
-      margin: 0 0 10px 0;
-      font-size: 13px;
-    }
   }
 }
 
@@ -473,4 +442,22 @@
   border-bottom: 1px solid $text;
   text-align: center;
   line-height: 1;
+}
+
+/*share*/
+.share__row {
+  @extend %row;
+  justify-content: space-between;
+}
+
+.share__cell {
+  background-color: #e0e2e6;
+  a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  [class*="icon"] {
+    font-size: 30px;
+  }
 }

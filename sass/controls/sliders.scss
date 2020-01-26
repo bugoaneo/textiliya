@@ -37,3 +37,26 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+/*product colors*/
+
+.colors__item {
+  width: 26px;
+  height: 26px;
+  @include bp(800px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+.color-prev {
+  left: -10px;
+}
+.color-next {
+  right: -10px;
+}
+
+.color-prev:after,
+.color-next:after {
+  font-size: 20px;
+  font-weight: bold;
+}

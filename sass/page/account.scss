@@ -191,6 +191,37 @@
   }
 }
 
+.content__tabs {
+  margin: 0 -10px;
+  .r-tabs-tab {
+    flex: 0 1 25%;
+  }
+  .r-tabs-tab.r-tabs-state-default {
+    border: 1px solid transparent;
+    border-bottom: 1px solid $mist;
+  }
+  .r-tabs-tab.r-tabs-state-active {
+    border: 1px solid $mist;
+    border-bottom: none;
+  }
+  .r-tabs-anchor {
+    display: block;
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: $btn;
+    text-align: center;
+  }
+  .tabs-container {
+    border: 1px solid $mist;
+    border-top: none;
+    .content__row {
+      margin: 0 0 10px 0;
+      font-size: 13px;
+    }
+  }
+}
+
 .logout__text {
   margin-bottom: 10%;
   font-size: 16px;

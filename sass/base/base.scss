@@ -17,7 +17,6 @@ body {
 .wrapper {
   position: relative;
   min-width: 320px;
-
   flex-grow: 1;
   background-color: #fbfbfb;
 }
@@ -90,6 +89,10 @@ p {
 
 .bg-light {
   background-color: $haze;
+}
+
+.smaller {
+  font-size: 0.85em;
 }
 
 .hidden {
