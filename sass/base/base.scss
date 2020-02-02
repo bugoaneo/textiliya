@@ -19,6 +19,8 @@ body {
   min-width: 320px;
   flex-grow: 1;
   background-color: #fbfbfb;
+  /******/
+  overflow: hidden;
 }
 
 .footer {
@@ -87,6 +89,10 @@ p {
   text-align: right;
 }
 
+.center {
+  text-align: center;
+}
+
 .bg-light {
   background-color: $haze;
 }
@@ -97,6 +103,26 @@ p {
 
 .hidden {
   display: none;
+}
+
+ul.list {
+  display: block;
+  list-style: disc outside none;
+  list-style-position: inside;
+  margin: 1em 0;
+
+  li {
+    margin-bottom: 5px;
+    display: list-item;
+    line-height: 1.4;
+  }
+  hr {
+    max-width: 70%;
+    margin: 20px 0;
+  }
+  a {
+    color: $btn;
+  }
 }
 
 /*grid*/
@@ -297,57 +323,5 @@ table {
     td {
       display: block;
     }
-  }
-}
-
-#order {
-  @include bp(800px) {
-    .order__date,
-    .order__deliv,
-    .order__pay {
-      display: none;
-    }
-  }
-  .order__wait {
-    background-color: $haze;
-  }
-  .order__ready {
-    background-color: $order;
-  }
-}
-
-#order-onfo {
-  @include bp(800px) {
-    .order__date,
-    .order__deliv,
-    .order__pay {
-      display: block;
-    }
-  }
-  p {
-    margin: 0 0 10px 0;
-  }
-}
-
-#order-list,
-#order-history {
-  width: 100%;
-  p {
-    margin: 0 0 10px 0;
-  }
-}
-
-.table__caption {
-  padding: 5px 10px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  background-color: #e4e7e9;
-  font-size: 15px;
-}
-
-.table-wrap {
-  margin-bottom: 30px;
-  @include bp(600px) {
-    margin: 0 -5px;
   }
 }

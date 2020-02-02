@@ -488,8 +488,8 @@ http://browsehappy.com/">обновите</a>
                       href="img/catalog/10.jpg"><img src="img/catalog/10.jpg"></a></div>
                   <div class="swiper-slide product__galery-img"><a class="popup-gallery__item"
                       href="img/catalog/08.jpg"><img src="img/catalog/08.jpg"></a></div>
-                  <div class="swiper-slide product__galery-img"><a class="popup-gallery__item"
-                      href="img/catalog/03.jpg"><img src="img/catalog/video"></a></div>
+                  <div class="swiper-slide product__galery-img"><a class="popup-gallery__item video"
+                      href="https://youtu.be/dQAfNOcXCMs"><img src="img/misc/video.svg"></a></div>
                 </div>
                 <span class="icon-zoom-in">&nbsp;</span>
                 <!-- If we need pagination -->
@@ -527,7 +527,8 @@ http://browsehappy.com/">обновите</a>
                     <div class="swiper-slide product__thumbs-pic"><img src="img/catalog/09.jpg"></div>
                     <div class="swiper-slide product__thumbs-pic"><img src="img/catalog/10.jpg"></div>
                     <div class="swiper-slide product__thumbs-pic"><img src="img/catalog/08.jpg"></div>
-                    <div class="swiper-slide product__thumbs-pic"><img src="img/catalog/video.jpg"></div>
+                    <div class="swiper-slide product__thumbs-pic video"><a class="product__video-link"
+                        href="https://youtu.be/dQAfNOcXCMs"><img src="img/misc/video.svg"></a></div>
                   </div>
                 </div>
                 <!-- Add Arrows -->
@@ -544,7 +545,7 @@ http://browsehappy.com/">обновите</a>
 
             </div>
           </div>
-          <!-- product descr -->
+          <!-- product info -->
           <div class="product__info">
             <h2 class="product__title">Футер 2-х ниточный петля 80037 Футер 2-х ниточный петля 80037 Футер 2-х ниточный
               петля 80037</h2>
@@ -585,6 +586,7 @@ http://browsehappy.com/">обновите</a>
                 <button type="button" class="product__descr-btn">Полное описание и характеристики</button>
               </div>
             </div>
+            <!-- color slider -->
             <div class="product__color">
               <div class="row ac">
                 <div class="col-30">Выберите цвет</div>
@@ -626,6 +628,112 @@ http://browsehappy.com/">обновите</a>
                 </div>
               </div>
             </div>
+            <!-- price "table" -->
+            <!-- TODO if SALE - add class .sale!!! -->
+            <div class="product__price sale">
+              <div class="row roll ac">
+                <div class="col-20">от рулона</div>
+                <div class="col-30"><span class="roll__old-prise"></span></div>
+                <div class="col-20 row"><span class="roll__price">9875р</span><span class="help tooltip-triger"
+                    onclick="return true"><img src="img/misc/help.png"></span>
+                  <div class="tooltip-dropdown">
+                    <ul class="list">
+                      <li>Покупка по оптовым ценам доступна при заказе от одного артикула минимальным оптовым метражом
+                        (одёжные материалы — от 3 м, вспомогательные — от 6 м, для дома — от 12 м).</li>
+                      <li>Максимально допустимый процент брака в оптовом метраже — 7%</li>
+                      <li>У нас нет ограничения на минимальную сумму заказа. Даже для опта :)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-30"></div>
+              </div>
+              <div class="row ac from12">
+                <div class="col-30">от 12 м</div>
+                <div class="col-20"><span class="from12__old-price"></span></div>
+                <div class="col-20"><span class="from3__defolt-price">4р</span></div>
+                <div class="col-30"></div>
+              </div>
+              <div class="row ac from3">
+                <div class="col-30">от 3 м</div>
+                <div class="col-20"><span class="from3__old-price">456454</span></div>
+                <div class="col-20"><span class="from3__defolt-price">4р</span></div>
+                <div class="col-30"></div>
+              </div>
+              <div class="row ac retail">
+                <div class="col-30">розница</div>
+                <div class="col-20"><span class="retail__old-price">78784l5454р</span></div>
+                <div class="col-20"><span class="retail__defolt-price">545 1212р</span></div>
+                <div class="col-30"><a href="" class="sale-report">Сообщить о скидке</a></div>
+              </div>
+              <div class="row ac jsb product__meter">
+                <div class="col-80 toright">общее кол-во ткани, м.</div>
+                <div class="col-20">
+                  <div class="quantity red">
+                    <button type="button" class="quantity__btn down"></button>
+                    <input type="text" class="quantity__input" size="4" value="12.35" data-current="2.05"
+                      data-minimum="0.1" data-maximum="9999" data-step="0.05" data-decimals="2" data-key="">
+                    <button type="button" class="quantity__btn up"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row ac jsb product__related">
+                <div class="col-50 row ac">+
+                  <span class="product__cotton-title">STIEGLITZ 6067</span>
+                  <span class="help tooltip-triger" onclick="return true"><img src="img/misc/help_bobbin.png"></span>
+                  <div class="tooltip-dropdown">
+                    <ul class="list">
+                      <li>Покупка по оптовым ценам доступна при заказе от одного артикула минимальным оптовым метражом
+                        (одёжные материалы — от 3 м, вспомогательные — от 6 м, для дома — от 12 м).</li>
+                      <li>Максимально допустимый процент брака в оптовом метраже — 7%</li>
+                      <li>У нас нет ограничения на минимальную сумму заказа. Даже для опта :)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-30 "><span class="product__related-prace">4568p</span></div>
+                <div class="col-20">
+                  <div class="quantity red">
+                    <button type="button" class="quantity__btn down"></button>
+                    <input type="text" class="quantity__input" size="4" value="35" data-current="2.05"
+                      data-minimum="0.1" data-maximum="9999" data-step="0.05" data-decimals="2" data-key="">
+                    <button type="button" class="quantity__btn up"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row ac jsb product__related">
+                <div class="col-50 row ac">+
+                  <span class="product__cotton-title">STIEGLITZ STIEGLITZ 6067</span>
+                  <span class="help tooltip-triger" onclick="return true"><img src="img/misc/help_bobbin.png"></span>
+                  <div class="tooltip-dropdown">
+                    <ul class="list">
+                      <li>Покупка по оптовым ценам доступна при заказе от одного артикула минимальным оптовым метражом
+                        (одёжные материалы — от 3 м, вспомогательные — от 6 м, для дома — от 12 м).</li>
+                      <li>Максимально допустимый процент брака в оптовом метраже — 7%</li>
+                      <li>У нас нет ограничения на минимальную сумму заказа. Даже для опта :)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-30"><span class="product__related-prace">48p</span></div>
+                <div class="col-20">
+                  <div class="quantity red">
+                    <button type="button" class="quantity__btn down"></button>
+                    <input type="text" class="quantity__input" size="4" value="4" data-current="2.05" data-minimum="0.1"
+                      data-maximum="9999" data-step="0.05" data-decimals="2" data-key="">
+                    <button type="button" class="quantity__btn up"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="row ac jsb product__total">
+                <div class="col-80 toright">ИТОГО</div>
+                <div class="col-20"><span class="product__total_price">3 654 987 р</span></div>
+              </div>
+            </div>
+            <div class="product__btn-list row ac jsb">
+              <!-- if add in wishlist toggle class .add -->
+              <button class="product__btn-item wish-btn" type="button"><span class="icon-heart"></span></button>
+              <a class="product__btn-item" href="">Создать дизайн</a>
+              <a class="product__btn-item" href="">Купить&nbsp;в 1&nbsp;клик</a>
+              <button class="btn">В корзину</button>
+            </div>
           </div>
           <!-- all about general product info -->
           <div class="product__common">
@@ -651,7 +759,7 @@ http://browsehappy.com/">обновите</a>
               </ul>
               <div class="product__tabs-container">
                 <div id="tab-1">
-                  <ul class="tab-list">
+                  <ul class="list">
                     <li><b>Почта России</b>, 5-14 дней | от 300 р</li>
                     <li><b>Транспортная компания</b>, 2-14 дней | от 125р*</li>
                     <ul class="row product__tabs-deliver">
@@ -698,7 +806,7 @@ http://browsehappy.com/">обновите</a>
                 <div id="tab-2">
                   <p><b>Отправка товара осуществляется только после 100% предоплаты!</b></p>
                   <p>Почему мы не работаем с наложенным платежом:</p>
-                  <ul class="tab-list">
+                  <ul class="list">
                     <li>Отправка наложенным платежом увеличивает стоимость доставки для покупателя на 30%. Это
                       дополнительные расходы связанные
                       с оплатой страховки посылки и последующим переводом денег продавцу.</li>
@@ -712,7 +820,7 @@ http://browsehappy.com/">обновите</a>
                   </p>
                 </div>
                 <div id="tab-3">
-                  <ul class="tab-list">
+                  <ul class="list">
                     <li>Покупка по оптовым ценам доступна при заказе от одного артикула минимальным оптовым метражом
                       (одёжные материалы — от 3 м, вспомогательные — от 6 м, для дома — от 12 м).</li>
                     <li>Максимально допустимый процент брака в оптовом метраже — 7%</li>
@@ -720,7 +828,7 @@ http://browsehappy.com/">обновите</a>
                   </ul>
                 </div>
                 <div id="tab-4">
-                  <ul class="tab-list">
+                  <ul class="list">
                     <li>Если отправленная нами посылка не дошла, необходимо связаться с консультантом интернет-магазина.
                       Мы постараемся выяснить причину, связавшись с почтой России или транспортной компанией. В свою
                       очередь просим Вас, при оформлении заказа внимательно проверить адрес доставки, включая ИНДЕКС,
@@ -737,359 +845,707 @@ http://browsehappy.com/">обновите</a>
                   </ul>
                 </div>
                 <div id="tab-5">
-                  <div class="product__pic rate"><img src="img/content/rate.jpg" alt=""></div>
+                  <div class="product__pic rate"><a href="img/content/rate.jpg" class="image-popup"><img
+                        src="img/content/rate.jpg" alt=""></a></div>
                 </div>
               </div>
             </div>
-
           </div>
           <!-- compliment goods -->
           <div class="product__additional">
-            <div class="row">
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
+            <p class="product__subtitle">С этим товаром часто покупают:</h3>
+              <div class="swiper-container product__additional-slider">
+                <div class="swiper-wrapper">
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/04.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/05.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная 9540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
                     </div>
                   </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/08.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
                     </div>
                   </div>
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить</button><span class="like"></span>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/07.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/06.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/03.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/03.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="catalog__item swiper-slide">
+                    <a href="/*" class="catalog__link">
+                      <div class="catalog__pic">
+                        <img src="img/catalog/03.jpg">
+                      </div>
+                      <div class="catalog__price">
+                        <div class="catalog__price-row">
+                          <div class="price__text">Старая цена</div>
+                          <div class="price__cost old"><s>4780 &#8381;</s></div>
+                        </div>
+                        <div class="catalog__price-row">
+                          <div class="price__text">Опт от</div>
+                          <div class="price__cost opt">780 &#8381;</div>
+                        </div>
+                      </div>
+                      <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                    </a>
+                    <div class="catalog__descr">
+                      <div class="catalog__info">
+                        <div class="catalog__item-fabric">
+                          50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                        </div>
+                        <div class="catalog__item-color">
+                          <ul class="color__list">
+                            <li class="color__item">
+                              <img src="img/catalog/001.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/002.jpg">
+                            </li>
+                            <li class="color__item">
+                              <img src="img/catalog/003.jpg">
+                            </li>
+                          </ul>
+                          <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                        </div>
+                      </div>
+
+                      <div class="catalog__btn">
+                        <button class="btn btn--bookmark">Купить </button>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next additional-next"></div>
+                <div class="swiper-button-prev additional-prev"></div>
               </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
+              <p class="product__subtitle">Вы также просматривали:</h3>
+                <div class="swiper-container product__looked-slider">
+                  <div class="swiper-wrapper">
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/04.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить</button>
+                        </div>
+                      </div>
                     </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная 9540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/05.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная 9540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
 
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/08.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/07.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/06.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/03.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/03.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="catalog__item swiper-slide">
+                      <a href="/*" class="catalog__link">
+                        <div class="catalog__pic">
+                          <img src="img/catalog/03.jpg">
+                        </div>
+                        <div class="catalog__price">
+                          <div class="catalog__price-row">
+                            <div class="price__text">Старая цена</div>
+                            <div class="price__cost old"><s>4780 &#8381;</s></div>
+                          </div>
+                          <div class="catalog__price-row">
+                            <div class="price__text">Опт от</div>
+                            <div class="price__cost opt">780 &#8381;</div>
+                          </div>
+                        </div>
+                        <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
+                      </a>
+                      <div class="catalog__descr">
+                        <div class="catalog__info">
+                          <div class="catalog__item-fabric">
+                            50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
+                          </div>
+                          <div class="catalog__item-color">
+                            <ul class="color__list">
+                              <li class="color__item">
+                                <img src="img/catalog/001.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/002.jpg">
+                              </li>
+                              <li class="color__item">
+                                <img src="img/catalog/003.jpg">
+                              </li>
+                            </ul>
+                            <div class="more-color">+ <span class="color-count">99</span> цвета</div>
+                          </div>
+                        </div>
+
+                        <div class="catalog__btn">
+                          <button class="btn btn--bookmark">Купить </button>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next looked-next"></div>
+                  <div class="swiper-button-prev looked-prev"></div>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
-                </div>
-
-              </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
-                </div>
-
-              </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
-                </div>
-
-              </div>
-              <div class="catalog__item">
-                <a href="/*" class="catalog__link">
-                  <div class="catalog__pic">
-                    <img src="img/catalog/03.jpg">
-                  </div>
-                  <div class="catalog__price">
-                    <div class="catalog__price-row">
-                      <div class="price__text">Старая цена</div>
-                      <div class="price__cost old"><s>4780 &#8381;</s></div>
-                    </div>
-                    <div class="catalog__price-row">
-                      <div class="price__text">Опт от</div>
-                      <div class="price__cost opt">780 &#8381;</div>
-                    </div>
-                  </div>
-                  <h3 class="catalog__item-title">Костюмная клетка Принц Уэльский Принц Уэльский 29540 29540</h3>
-                </a>
-                <div class="catalog__descr">
-                  <div class="catalog__info">
-                    <div class="catalog__item-fabric">
-                      50% вискоза, 42% полиэстер, 3% полиэфир, 5% эластан
-                    </div>
-                    <div class="catalog__item-color">
-                      <ul class="color__list">
-                        <li class="color__item">
-                          <img src="img/catalog/001.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/002.jpg">
-                        </li>
-                        <li class="color__item">
-                          <img src="img/catalog/003.jpg">
-                        </li>
-                      </ul>
-                      <div class="more-color">+ <span class="color-count">99</span> цвета</div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__btn">
-                    <button class="btn btn--bookmark">Купить </button><span class="like"></span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
           </div>
-
         </div>
       </div>
     </main>
@@ -1228,12 +1684,37 @@ http://browsehappy.com/">обновите</a>
 
     });
 
+    $('.image-popup').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile',
+      image: {
+        verticalFit: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300
+      }
+
+    });
+
+    $('.popup-gallery__item.video, .product__video-link').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+
+      fixedContentPos: false
+    });
+
     /*description of product*/
     $('.product__descr-btn').click(function () {
       $('.product__descr-text').toggleClass('open');
     });
 
-    /*colors slider*/
+
+    /*slider*/
 
     var colorsSlider = new Swiper('.colors', {
       slidesPerView: 'auto',
@@ -1242,13 +1723,45 @@ http://browsehappy.com/">обновите</a>
       navigation: {
         nextEl: '.color-next',
         prevEl: '.color-prev',
-      },
-      breakpoints: {
-        // 600: {
-        //   slidesPerView: 4,
-        // },
       }
     });
+
+    var complimentSlider = new Swiper('.product__additional-slider', {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      // slidesPerColumnFill: 'row',
+      a11y: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.additional-next',
+        prevEl: '.additional-prev',
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        }
+      }
+    });
+
+    // if (complimentSlider.slides.length > 6) {
+    //     complimentSlider.params.slidesPerColumn = 2;
+    //   }
+
+    var lookedSlider = new Swiper('.product__looked-slider', {
+      slidesPerView: 3,
+      a11y: true,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.looked-next',
+        prevEl: '.looked-prev',
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        }
+      }
+    });
+
 
     /*tabs*/
 

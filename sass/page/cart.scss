@@ -2,6 +2,58 @@
   position: relative;
 }
 
+#order {
+  @include bp(800px) {
+    .order__date,
+    .order__deliv,
+    .order__pay {
+      display: none;
+    }
+  }
+  .order__wait {
+    background-color: $haze;
+  }
+  .order__ready {
+    background-color: $order;
+  }
+}
+
+#order-onfo {
+  @include bp(800px) {
+    .order__date,
+    .order__deliv,
+    .order__pay {
+      display: block;
+    }
+  }
+  p {
+    margin: 0 0 10px 0;
+  }
+}
+
+#order-list,
+#order-history {
+  width: 100%;
+  p {
+    margin: 0 0 10px 0;
+  }
+}
+
+.table__caption {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  background-color: #e4e7e9;
+  font-size: 15px;
+}
+
+.table-wrap {
+  margin-bottom: 30px;
+  @include bp(600px) {
+    margin: 0 -5px;
+  }
+}
+
 .cart__row {
   position: relative;
   @extend %row;
@@ -52,6 +104,9 @@
     margin-bottom: 10px;
     font-size: 12px;
     line-height: 1;
+  }
+  .quantity {
+    max-width: 120px;
   }
   @include bp(800px) {
     .caption {

@@ -346,6 +346,8 @@
   }
 }
 
+/*map*/
+
 .map {
   position: relative;
   padding-bottom: 55%;
@@ -407,16 +409,21 @@
 .quantity {
   display: flex;
   font-size: 12px;
+  &.red {
+    .quantity__btn {
+      background-color: $light;
+      border: 1px solid $light;
+    }
+  }
 }
 
 .quantity__btn {
   position: relative;
-  --bgc: #7174c2;
   flex: 0 1 2.4em;
   // font-size: 14px;
-  background-color: var(--bgc);
+  background-color: $cart-btn;
   color: #fff;
-  border: 1px solid var(--bgc);
+  border: 1px solid $cart-btn;
   &:before,
   &:after {
     content: "";
@@ -436,7 +443,8 @@
 }
 
 .quantity__input {
-  width: auto;
+  // width: auto;
+  flex: 1 1 0;
   padding: 0.5em;
   border-top: 1px solid $text;
   border-bottom: 1px solid $text;
@@ -460,4 +468,37 @@
   [class*="icon"] {
     font-size: 30px;
   }
+}
+
+.tooltip-triger {
+  position: relative;
+  &:hover {
+    ~ .tooltip-dropdown {
+      left: 0;
+      opacity: 1;
+    }
+    .tooltip-dropdown {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+
+.tooltip-dropdown {
+  position: absolute;
+  left: 9999px;
+  top: 99%;
+  padding: 5px 15px;
+  width: 250px;
+  background-color: #fff;
+  text-align: left;
+  z-index: 10;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.47);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.close-tooltip {
+  @extend .close;
+  @extend .mobil-sm;
 }
