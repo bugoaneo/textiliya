@@ -1230,12 +1230,13 @@ table {
   -webkit-flex: 0 1 2.4em;
   -ms-flex: 0 1 2.4em;
   flex: 0 1 2.4em;
-  padding: 10px;
+  padding: 5px 10px;
   background-color: #7174c2;
   color: #fff;
   border: 1px solid #7174c2; }
 
-.quantity__input {
+.quantity__input,
+.quantity_input.form-control {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0px;
