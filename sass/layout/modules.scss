@@ -409,37 +409,43 @@
 .quantity {
   display: flex;
   font-size: 12px;
+
   &.red {
-    .quantity__btn {
+    .quantity__btn,
+    .bootstrap-touchspin-down,
+    .bootstrap-touchspin-up {
       background-color: $light;
       border: 1px solid $light;
     }
   }
 }
 
-.quantity__btn {
+.quantity__btn,
+.bootstrap-touchspin-down,
+.bootstrap-touchspin-up {
   position: relative;
   flex: 0 1 2.4em;
+  padding: 10px;
   // font-size: 14px;
   background-color: $cart-btn;
   color: #fff;
   border: 1px solid $cart-btn;
-  &:before,
-  &:after {
-    content: "";
-    background-color: currentColor;
-    @include center;
-  }
-  &:before {
-    width: 45%;
-    height: 2px;
-  }
-  &.up {
-    &:after {
-      height: 42%;
-      width: 2px;
-    }
-  }
+  // &:before,
+  // &:after {
+  //   content: "";
+  //   background-color: currentColor;
+  //   @include center;
+  // }
+  // &:before {
+  //   width: 45%;
+  //   height: 2px;
+  // }
+  // &.up {
+  //   &:after {
+  //     height: 42%;
+  //     width: 2px;
+  //   }
+  // }
 }
 
 .quantity__input {
