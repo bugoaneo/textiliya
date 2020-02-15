@@ -128,6 +128,44 @@
       background-color: $btn;
     }
   }
+  &.valid,
+  &.error {
+    > input {
+      border: 1px solid;
+    }
+    &:after {
+      position: absolute;
+      right: 10px;
+      bottom: 2px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+  }
+  &.error {
+    > input {
+      color: $second;
+      border: 1px solid;
+    }
+    &:after {
+      content: "\000D7";
+      color: $second;
+    }
+  }
+  &.valid {
+    > input {
+      color: #a2d986;
+    }
+    &:after {
+      content: "\02714";
+      color: #a2d986;
+      font-size: 20px;
+    }
+  }
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
 }
 
 .form__label {
@@ -141,6 +179,7 @@
   width: 100%;
   padding: 5px;
   border: 1px solid #757575;
+  background-color: #fff;
 }
 
 .contact__form {

@@ -238,3 +238,34 @@
     margin-top: 0;
   }
 }
+
+/*login*/
+
+.login__row {
+  font-size: 14px;
+  .col {
+    padding: 20px 20px 15px 20px;
+  }
+}
+
+.login__exist {
+  background-color: darken($haze, 3%);
+  form {
+    margin-top: 15px;
+  }
+}
+
+.login__registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $haze;
+}
+.login__text {
+  margin: 20px 0;
+}
+
+.login__aside {
+  background-color: #e4e7e9;
+}

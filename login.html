@@ -452,153 +452,51 @@ http://browsehappy.com/">обновите</a>
         </div>
       </div>
     </header>
-    <main class="main cart">
-      <div class="container cart">
+    <main class="main">
+      <div class="container login">
         <div class="breadcrambs">
           <ul class="breadcrambs__list">
             <li class="breadcrambs__item"><a href="">Главная</a></li>
-            <li class="breadcrambs__item last">Корзина</li>
+            <li class="breadcrambs__item"><a href="">Личный кабинет</a></li>
+            <li class="breadcrambs__item last">Вход</li>
           </ul>
         </div>
-
-        <p class="mobil">Пролистайте страницу, чтобы перейти к оформлению заказа</p>
-
-        <div class="row jsb">
-          <div class="cart__contents">
-            <div class="cart__table">
-              <div class="cart__row">
-                <button class="cart__delete-btn delete" type="button"></button>
-                <div class="cart__thumb"><img src="img/catalog/03.jpg" alt=""></div>
-                <div class="cart__staff">
-                  <a href="" class="cart__product-name">Трикотаж кулирка гладкокрашеная (#80/26)</a>
-                  <div class="cart__product-amount">
-                    <p class="caption">кол-во, м</p>
-                    <div class="quantity">
-                      <button type="button" class="quantity__btn down"></button>
-                      <input type="text" class="quantity__input" size="4" value="12.35" data-current="2.05"
-                        data-minimum="0.1" data-maximum="9999" data-step="0.05" data-decimals="2" data-key="">
-                      <button type="button" class="quantity__btn up"></button>
-                    </div>
-                  </div>
-                  <div class="cart__product-price">
-                    <p>Цена</p>
-                    <p>
-                      <span class="cart__new-price">% 2547р</span>
-                      <span class="cart__old-price">2547р</span>
-                    </p>
-                  </div>
-                  <div class="cart__product-cost">
-                    <p class="caption">Стоимость</p class="caption">
-                    <p>
-                      <span class="cart__cost-new">4545р</span>
-                      <span class="cart__cost-old">322 452</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="cart__remove-notice shown">
-                  <div class="cart__remove-wrap">
-                    <p>Вы уверены, что хотите убрать из корзины товар <b><span class="product-name">Трикотаж кулирка
-                          гладкокрашеная (#80/26)</span></b></p>
-                    <div class="cart__remove-btn">
-                      <button type="button" class=" cancel-remove"><b>Оставить</b></button>
-                      <button class="confirm-remove" type="button">Удалить</button>
-                    </div>
-                  </div>
-                </div>
+        <div class="row jsb login__row">
+          <div class="col login__exist">
+            <p><b>Вход в личный кабинет</b></p>
+            <form action="/**/" method="POST" name="login-form" id="login-form" class="login-form">
+              <div class="form__row error">
+                <label class="form__label" for="login-email">E-mail</label>
+                <input class="form__input" type="email" name="login-email" id="login-email"
+                  placeholder="Введите ваш e-mail">
               </div>
-              <div class="cart__row">
-                <button class="cart__delete-btn delete" type="button"></button>
-                <div class="cart__thumb"><img src="img/catalog/04.jpg" alt=""></div>
-                <div class="cart__staff">
-                  <a href="" class="cart__product-name">Атлас стрейч однотонный
-                    «Русский» 14/123</a>
-                  <div class="cart__product-amount">
-                    <p class="caption">кол-во, м</p>
-                    <div class="quantity">
-                      <button type="button" class="quantity__btn down"></button>
-                      <input type="text" class="quantity__input" size="4" value="12.35" data-current="2.05"
-                        data-minimum="0.1" data-maximum="9999" data-step="0.05" data-decimals="2" data-key="">
-                      <button type="button" class="quantity__btn up"></button>
-                    </div>
-                  </div>
-                  <div class="cart__product-price">
-                    <p>Цена</p>
-                    <p>
-                      <span class="cart__trade-price"><span>опт</span> 254р</span>
-                      <span class="cart__old-price">2547р</span>
-                    </p>
-                  </div>
-                  <div class="cart__product-cost">
-                    <p class="caption">Стоимость</p>
-                    <p>
-                      <span class="cart__cost-defolt">4545р</span>
-                      <span class="cart__cost-old">322 452р</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="cart__remove-notice"></div>
+              <div class="form__row password">
+                <label class="form__label" for="login-password">Пароль</label>
+                <input class="form__input" type="password" name="login-password" id="login-password"
+                  placeholder="Введите ваш пароль">
               </div>
-              <div class="cart__row">
-                <button class="cart__delete-btn delete" type="button"></button>
-                <div class="cart__thumb"><img src="img/catalog/01.jpg" alt=""></div>
-                <div class="cart__staff">
-                  <a href="" class="cart__product-name">Трикотаж кулирка гладкокрашеная (#80/26) Трикотаж кулирка
-                    гладкокрашеная (#80/26)</a>
-                  <div class="cart__product-amount">
-                    <p class="caption">кол-во, м</p>
-                    <div class="quantity">
-                      <button type="button" class="quantity__btn down"></button>
-                      <input type="text" class="quantity__input" size="4" value="12.35" data-current="2.05"
-                        data-minimum="0.1" data-maximum="9999" data-step="0.05" data-decimals="2" data-key="">
-                      <button type="button" class="quantity__btn up"></button>
-                    </div>
-                  </div>
-                  <div class="cart__product-price">
-                    <p>Цена</p>
-                    <p>
-                      <span class="cart__defolt-price">2258р</span>
-                    </p>
-                  </div>
-                  <div class="cart__product-cost">
-                    <p class="caption">Стоимость</p class="caption">
-                    <p>
-                      <span class="cart__defolt-defolt">2584р</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="cart__remove-notice"></div>
+              <div class="form__row">
+                <button class="btn" id="btn-login" type="submit">Войти</button> <a href="/**/" class="btn-link">Забыли
+                  пароль?</a>
               </div>
-            </div>
+            </form>
           </div>
-          <div class="cart__aside">
-            <div class="cart__asidewidget">
-              <div class="row">
-                <div class="col">Сумма в розницу: </div>
-                <div class="col"><span class="cart__retailsumm">583 013.65p</span></div>
-              </div>
-              <div class="row">
-                <div class="col"><label for="cart__points">Оплата баллами:</label></div>
-                <div class="col"><input type="number" value="0.00" class="cart__points" id="cart__points"> <span
-                    class="cart__points-available">Доступно <span class="points-available">150.8</span></span></div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <b>Ваша выгода</b>
-                </div>
-                <div class="col"><b><span class="cart__profit">-242 470 р</span></b></div>
-              </div>
-              <div class="row total">
-                <div class="col"><b>ИТОГО</b></div>
-                <div class="col"><b><span class="cart__total">340 543.65р</span></b></div>
-              </div>
-              <div class="row ac">
-                <div class="col"><label for="discount-cupon">Ваш купон</label></div>
-                <div class="col"><input type="text" placeholder="ДИЗАЙН" class="discount-cupon" id="discount-cupon">
-                  <button class="delete-cupon" type="button"><img src="img/misc/delete.png" alt=""></button></div>
-              </div>
-              <button class="btn btn--alert" type="button">Заказать</button>
-            </div>
+          <div class="col login__registration">
+            <p><b>Регистрация</b></p>
+            <p class="login__text">Учётная запись поможет покупать быстрее.
+              Нажмите «Продолжить», чтобы создать Личный кабинет.</p>
+            <a href="" class="btn">Продолжить</a>
           </div>
+          <div class="col login__aside">
+            <p>С личным кабинетом вы можете</p>
+            <ul class="list">
+              <li>Узнать <b>состояние заказа</b> без звонка менеджеру</li>
+              <li>Добавлять товары в свой <b>Список желаний</b></li>
+              <li>Первыми получать информацию <b>о новинках и акциях</b> по электронной почте</li>
+            </ul>
+          </div>
+
+
         </div>
       </div>
 

@@ -50,9 +50,11 @@
 }
 .color-prev {
   left: -10px;
+  z-index: 1;
 }
 .color-next {
   right: -10px;
+  z-index: 1;
 }
 
 .color-prev:after,

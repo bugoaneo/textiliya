@@ -189,7 +189,7 @@ ul.list {
     }
     @include bp(800px) {
       flex: 0 1 100%;
-      margin-right: 0;
+      margin: 0;
       margin-bottom: 20px;
     }
   }
@@ -225,7 +225,7 @@ ul.list {
 /*cart*/
 
 .cart__contents {
-  flex: 0 1 calc(100% - 320px);
+  flex: 0 1 calc(100% - 340px);
   font-size: 14px;
   @include bp(800px) {
     flex: 0 1 100%;
@@ -237,7 +237,7 @@ ul.list {
 }
 
 .cart__aside {
-  flex: 0 1 300px;
+  flex: 0 1 320px;
   font-size: 14px;
   @include bp(800px) {
     flex: 0 1 100%;

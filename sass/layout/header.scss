@@ -15,7 +15,7 @@
 .adds {
   background-color: $mist;
   padding: 20px;
-  margin: 0 -20px;
+  margin: 0 -10px;
   .region,
   .header__adress,
   .chain,
@@ -285,7 +285,7 @@
   z-index: 10;
   @include bp(720px) {
     display: block;
-    margin: 0 -20px;
+    margin: 0 -10px;
     background-color: $primary;
   }
 }
