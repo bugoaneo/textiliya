@@ -1216,34 +1216,24 @@ table {
   display: -ms-flexbox;
   display: flex;
   font-size: 12px; }
-  .quantity.red .quantity__btn {
+  .quantity.red .quantity__btn,
+  .quantity.red .bootstrap-touchspin-down,
+  .quantity.red .bootstrap-touchspin-up {
     background-color: #e78f84;
     border: 1px solid #e78f84; }
 
-.quantity__btn {
+.quantity__btn,
+.bootstrap-touchspin-down,
+.bootstrap-touchspin-up {
   position: relative;
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 2.4em;
   -ms-flex: 0 1 2.4em;
   flex: 0 1 2.4em;
+  padding: 10px;
   background-color: #7174c2;
   color: #fff;
   border: 1px solid #7174c2; }
-  .quantity__btn:before, .quantity__btn:after {
-    content: "";
-    background-color: currentColor;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .quantity__btn:before {
-    width: 45%;
-    height: 2px; }
-  .quantity__btn.up:after {
-    height: 42%;
-    width: 2px; }
 
 .quantity__input {
   -webkit-box-flex: 1;
