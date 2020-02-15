@@ -510,3 +510,15 @@
   @extend .close;
   @extend .mobil-sm;
 }
+
+/*alert*/
+.alert {
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: $primary;
+  font-weight: 600;
+  background: $order;
+}

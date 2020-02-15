@@ -165,6 +165,23 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+    padding-right: 30px;
+  }
+  .form__select-wrap {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: #000 transparent transparent transparent;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      right: 1rem;
+      z-index: 1;
+      margin-top: -3px;
+    }
   }
 }
 
