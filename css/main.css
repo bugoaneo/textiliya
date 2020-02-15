@@ -1215,12 +1215,19 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-size: 12px; }
+  font-size: 12px;
+  margin-left: -10px; }
   .quantity.red .quantity__btn,
   .quantity.red .bootstrap-touchspin-down,
   .quantity.red .bootstrap-touchspin-up {
     background-color: #e78f84;
-    border: 1px solid #e78f84; }
+    border: 1px solid #e78f84;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 2.4em;
+    -ms-flex: 0 1 2.4em;
+    flex: 0 1 2.4em;
+    padding: 5px 10px;
+    color: #fff; }
 
 .quantity__btn,
 .bootstrap-touchspin-down,

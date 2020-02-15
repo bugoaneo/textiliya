@@ -409,13 +409,16 @@
 .quantity {
   display: flex;
   font-size: 12px;
-
+  margin-left: -10px;
   &.red {
     .quantity__btn,
     .bootstrap-touchspin-down,
     .bootstrap-touchspin-up {
       background-color: $light;
       border: 1px solid $light;
+      flex: 0 1 2.4em;
+      padding: 5px 10px;
+      color: #fff;
     }
   }
 }
@@ -426,7 +429,6 @@
   position: relative;
   flex: 0 1 2.4em;
   padding: 5px 10px;
-  // font-size: 14px;
   background-color: $cart-btn;
   color: #fff;
   border: 1px solid $cart-btn;
