@@ -21,6 +21,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -451,96 +452,45 @@ http://browsehappy.com/">обновите</a>
         </div>
       </div>
     </header>
-    <main class="main checkout">
-      <div class="container cart">
+    <main class="main">
+      <div class="container not_found">
         <div class="breadcrambs">
           <ul class="breadcrambs__list">
             <li class="breadcrambs__item"><a href="">Главная</a></li>
-            <li class="breadcrambs__item last">Оформление заказа</li>
+            <li class="breadcrambs__item last">Запрашиваемая страница не найдена!</li>
           </ul>
         </div>
-
-        <div class="row jsb">
-          <div class="cart__contents">
-
-          </div>
-          <div class="cart__aside">
-            <div class="cart__asidewidget">
-              <div class="cart__asidewidget-title">Как с вами связаться?</div>
-              <form action="" id="" method="POST" name="">
-                <div class="form__row valid">
-                  <label class="form__label" for="checkout__name">* Имя</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__name" placeholder="Иванна"
-                    required>
-                </div>
-                <div class="form__row error">
-                  <label class="form__label" for="checkout__name">* Фамилия</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__name" placeholder="Иванова"
-                    required>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__name">* Телефон</label>
-                  <input class="form__input" type="tel" name="checkout__name" id="checkout__name"
-                    placeholder="от 6 до 32 симв" required>
-                </div>
-              </form>
+        <div class="content content--account">
+          <h2 class="content__lead">Запрашиваемая страница не найдена!</h2>
+          <div class="row">
+            <div class="logout__text col col-70">
+              <p>К сожалению, запрашиваемая Вами страница не найдена.</p>
+              <p>Вероятно, Вы указали несуществующий адрес, страница была удалена,
+                перемещена или сейчас она временно недоступна!</p>
+              <a href="" class="btn btn--big">Вернуться обратно</a>
             </div>
-            <div class="cart__asidewidget">
-              <div class="cart__asidewidget-title">Адрес доставки</div>
-              <form action="" method="POST" name="" id="">
-                <div class="form__row">
-                  <label class="form__label" for="">* Выберите из ваших шаблонов</label>
-                  <div class="form__select-wrap">
-                    <select name="" id="" class="form__input" required>
-                      <option value="">г. Новосибирск, ул. Дуси Ковальчук, 260.</option>
-                      <option value="" class="moreS">г. Новосибирск, ул. Дуси Ковальчук, 260. г. Новосибирск, ул. Дуси
-                        Ковальчук, 260.</option>
-                      <option value="">г. Новосибирск, ул. Тихая, 26.</option>
-                    </select>
-                  </div>
-                </div>
-              </form>
-              <p>либо добавьте новый</p>
-              <form action="" method="POST" name="" id="">
-                <div class="form__row">
-                  <label class="form__label" for="checkout__country">* Страна</label>
-                  <div class="form__select-wrap">
-                    <select name="" id="checkout__country" class="form__input" required>
-                      <option value="">Россия</option>
-                      <option value="">Украина</option>
-                      <option value="">Узбекестан</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__region">* Регион</label>
-                  <div class="form__select-wrap">
-                    <select name="" id="checkout__region" class="form__input" required>
-                      <option value="">Алтайский край</option>
-                      <option value="">Новосибирская область</option>
-                      <option value="">Кемеровский край</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__city">* Город</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__city"
-                    placeholder="Ваш город" required>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__zip"> Индекс</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__zip" placeholder="656000">
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__adress"> Индекс</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__adress"
-                    placeholder="Улица, дом, кв..." required>
-                </div>
-              </form>
+            <div class="content__inner">
+              <p><b>Давайте дружить!</b></p>
+              <p>«Текстилия» в социальных сетях:</p>
+              <div class="content__row">
+                <a href="" class="friends-btn inst">
+                  <span class="friends-btn__pic"><img src="img/misc/ins.svg" alt=""></span>
+                  <span class="friends-btn__text">Instagram</span></a>
+                <a href="" class="friends-btn vkt">
+                  <span class="friends-btn__pic"><img src="img/misc/vkt.svg" alt=""></span>
+                  <span class="friends-btn__text">ВКонтакте</span>
+                </a>
+                <a href="" class="friends-btn ytb">
+                  <span class="friends-btn__pic"><img src="img/misc/ytb.svg" alt=""></span>
+                  <span class="friends-btn__text">Youtube</span>
+                </a>
+              </div>
+            </div>
+            <div class="logout__pic col col-50">
+              <img src="img/content/admin4.png" alt="">
             </div>
           </div>
         </div>
-      </div>
 
     </main>
   </div>
@@ -625,6 +575,7 @@ http://browsehappy.com/">обновите</a>
   <script>
     $('.dropdown__text').shave(20);
   </script>
+
 </body>
 
 </html>

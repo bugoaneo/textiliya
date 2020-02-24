@@ -1,0 +1,27 @@
+[data-valid="false"] {
+  color: $second;
+  border: 1px solid;
+  + .dropdown-menu {
+    margin: 5px 0;
+    color: $second;
+    li {
+      list-style: none;
+      a:only-child {
+        display: block;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.simplecheckout-rule-group {
+  margin-top: 5px;
+}
+
+.simplecheckout-error-text.simplecheckout-rule {
+  color: $second;
+}
+
+.simpleregister-button-block.buttons {
+  margin-top: 15px;
+}

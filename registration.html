@@ -21,6 +21,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -451,90 +452,285 @@ http://browsehappy.com/">обновите</a>
         </div>
       </div>
     </header>
-    <main class="main checkout">
-      <div class="container cart">
+    <main class="main">
+      <div class="container registration">
         <div class="breadcrambs">
           <ul class="breadcrambs__list">
             <li class="breadcrambs__item"><a href="">Главная</a></li>
-            <li class="breadcrambs__item last">Оформление заказа</li>
+            <li class="breadcrambs__item last">Быстрая регистрация</li>
           </ul>
         </div>
+        <div class="row jsb reverse">
+          <div class="aside">
+            <div class="aside__menuwidget">
+              <div class="aside__title">Личный кабинет</div>
+              <ul class="aside__menu">
 
-        <div class="row jsb">
-          <div class="cart__contents">
 
-          </div>
-          <div class="cart__aside">
-            <div class="cart__asidewidget">
-              <div class="cart__asidewidget-title">Как с вами связаться?</div>
-              <form action="" id="" method="POST" name="">
-                <div class="form__row valid">
-                  <label class="form__label" for="checkout__name">* Имя</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__name" placeholder="Иванна"
-                    required>
-                </div>
-                <div class="form__row error">
-                  <label class="form__label" for="checkout__name">* Фамилия</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__name" placeholder="Иванова"
-                    required>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__name">* Телефон</label>
-                  <input class="form__input" type="tel" name="checkout__name" id="checkout__name"
-                    placeholder="от 6 до 32 симв" required>
-                </div>
-              </form>
+                <li class="aside__menu-item "> <a href="http://devel.tkani-textiliya.ru/login"
+                    class="list-group-item">Вход</a></li>
+                <li class="aside__menu-item current "> <a href="http://devel.tkani-textiliya.ru/register"
+                    class="list-group-item">Регистрация</a></li>
+                <li class="aside__menu-item  "><a
+                    href="http://devel.tkani-textiliya.ru/index.php?route=account/forgotten"
+                    class="list-group-item">Забыли пароль?</a></li>
+                <!--<li class="aside__menu-item"> <a href="http://devel.tkani-textiliya.ru/index.php?route=account/account" class="list-group-item list-group-item-info"><strong>Личный кабинет</strong></a></li>-->
+
+
+                <li class="aside__menu-item  "><a href="http://devel.tkani-textiliya.ru/index.php?route=account/address"
+                    class="list-group-item">Мои адреса доставки</a></li>
+                <li class="aside__menu-item   "><a
+                    href="http://devel.tkani-textiliya.ru/index.php?route=account/wishlist" class="list-group-item">Мои
+                    закладки</a></li>
+                <li class="aside__menu-item  "><a href="http://devel.tkani-textiliya.ru/index.php?route=account/order"
+                    class="list-group-item">История заказов</a></li>
+                <!--<a href="" class="list-group-item"></a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+                <li class="aside__menu-item   "><a
+                    href="http://devel.tkani-textiliya.ru/index.php?route=account/newsletter"
+                    class="list-group-item">E-Mail рассылка</a></li>
+                <!--    <a href="/index.php?route=account/bonus" class="list-group-item">Бонусная карта</a>-->
+                <!--<a href="" class="list-group-item"></a>-->
+
+
+
+
+                <li class="aside__menu-item "><span>Связь со мной</span></li>
+                <li class="aside__menu-item"><a href="password.html">Мой пароль</a></li>
+                <li class="aside__menu-item"><a href="adress.html">Мои адреса доставки</a></li>
+                <li class="aside__menu-item"><a href="wishlist.html">Список желаний</a></li>
+                <li class="aside__menu-item"><a href="order.html">История заказов</a></li>
+                <li class="aside__menu-item"><a href="newsletter.html">Подписка на рассылку</a></li>
+
+
+              </ul>
+
             </div>
-            <div class="cart__asidewidget">
-              <div class="cart__asidewidget-title">Адрес доставки</div>
-              <form action="" method="POST" name="" id="">
-                <div class="form__row">
-                  <label class="form__label" for="">* Выберите из ваших шаблонов</label>
-                  <div class="form__select-wrap">
-                    <select name="" id="" class="form__input" required>
-                      <option value="">г. Новосибирск, ул. Дуси Ковальчук, 260.</option>
-                      <option value="" class="moreS">г. Новосибирск, ул. Дуси Ковальчук, 260. г. Новосибирск, ул. Дуси
-                        Ковальчук, 260.</option>
-                      <option value="">г. Новосибирск, ул. Тихая, 26.</option>
-                    </select>
+          </div>
+          <div class="content content--account">
+            <h2 class="content__lead">Быстрая регистрация</h2>
+            <div class="simple-content">
+              <form action="index.php?route=account/simpleregister" method="post" enctype="multipart/form-data"
+                id="simplepage_form" onsubmit="dataLayer.push ({'event':'client_registration'});">
+                <div class="simpleregister" id="simpleregister">
+                  <p class="simpleregister-have-account">Если Вы уже зарегистрированы, перейдите на страницу <a
+                      href="https://stage.tkani-textiliya.ru/login">входа в систему</a>.</p>
+                  <div class="simpleregister-block-content">
+                    <fieldset class="form-horizontal">
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_email">*Email</label>
+                        <input class="form-control form__input" type="email" name="register[email]" id="register_email"
+                          value="" placeholder="Обязательно для заполнения" data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_email">
+                          <div style="display:none;" data-for="register_email" data-rule="api"
+                            class="simplecheckout-error-text simplecheckout-rule" data-method="checkEmailForUniqueness"
+                            data-filter="register_register" data-filter-value="1" data-required="true">Вы уже совершали
+                            покупки,
+                            нажмите <strong>ВОЙТИ</strong> (выше справа)!</div>
+                          <div style="display:none;" data-for="register_email" data-rule="regexp"
+                            class="simplecheckout-error-text simplecheckout-rule" data-regexp=".+@.+"
+                            data-required="true">
+                            Некорректный адрес электронной почты!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_password">*Пароль</label>
+
+                        <input class="form-control form__input" type="password" name="register[password]"
+                          id="register_password" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true" data-valid="false">
+                        <div class="simplecheckout-rule-group" data-for="register_password">
+                          <div style="" data-for="register_password" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="4"
+                            data-length-max="20" data-required="true">Пароль должен быть от 4 до 20 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_firstname">*Имя</label>
+
+                        <input class="form-control form__input" type="text" name="register[firstname]"
+                          id="register_firstname" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_firstname">
+                          <div style="display:none;" data-for="register_firstname" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Имя должно быть от 1 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_lastname">*Фамилия</label>
+
+                        <input class="form-control form__input" type="text" name="register[lastname]"
+                          id="register_lastname" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_lastname">
+                          <div style="display:none;" data-for="register_lastname" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Фамилия должна быть от 1 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_patronymic">Отчество</label>
+
+                        <input class="form-control form__input" type="text" name="register[patronymic]"
+                          id="register_patronymic" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_patronymic">
+                          <div style="display:none;" data-for="register_patronymic" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32">Отчество
+                            должна быть от 1 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_telephone">*Телефон</label>
+
+                        <input class="form-control form__input" type="tel" name="register[telephone]"
+                          id="register_telephone" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_telephone">
+                          <div style="display:none;" data-for="register_telephone" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="3"
+                            data-length-max="32" data-required="true">Телефон должен быть от 3 до 32 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_address_1">Адрес</label>
+
+                        <input class="form-control form__input" type="text" name="register[address_1]"
+                          id="register_address_1" value="" placeholder="" data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_address_1">
+                          <div style="display:none;" data-for="register_address_1" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="3"
+                            data-length-max="128">Адрес
+                            должен быть от 3 до 128 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_postcode">Индекс</label>
+
+                        <input class="form-control form__input" type="text" name="register[postcode]"
+                          id="register_postcode" value="" placeholder="" data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="register_postcode">
+                          <div style="display:none;" data-for="register_postcode" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="2"
+                            data-length-max="10">Индекс
+                            должен быть от 2 до 10 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_city">*Город</label>
+
+                        <input class="form-control form__input" type="text" name="register[city]" id="register_city"
+                          value="" placeholder="" data-reload-payment-form="true" minlength="2" autocomplete="off"
+                          style="" data-valid="false"><!-- display: none;-->
+                        <ul class="dropdown-menu" style="top: 41px; left: 0px;">
+                          <li data-value="0"><a href="#">Приносим свои
+                              извинения,<br> в нашей
+                              базе пока нет такого населенного пункта.<br><strong>Пожалуйста, выберите Страну и Регион
+                                вручную</strong></a></li>
+                        </ul>
+                        <div class="simplecheckout-rule-group" data-for="register_city">
+                          <div style="display:none;" data-for="register_city" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="2"
+                            data-length-max="128" data-required="true">Город должен быть от 2 до 128 символов!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_zone_id">*Регион</label>
+
+                        <div class="form__select-wrap">
+                          <select class="form__input" name="register[zone_id]" id="register_zone_id"
+                            data-reload-payment-form="true">
+                            <option value="" selected="selected"> --- Выберите --- </option>
+                            <option value="0" selected="selected"> --- Не выбрано --- </option>
+                          </select>
+                        </div>
+
+                        <div class="simplecheckout-rule-group" data-for="register_zone_id">
+                          <div style="display:none;" data-for="register_zone_id" data-rule="notEmpty"
+                            class="simplecheckout-error-text simplecheckout-rule" data-not-empty="1"
+                            data-required="true">Выберите
+                            регион!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-2" for="register_country_id">*Страна</label>
+
+                        <div class="form__select-wrap">
+                          <select class="form__input" name="register[country_id]" id="register_country_id"
+                            data-onchange="reloadAll">
+                            <option value="" selected="selected"> --- Выберите --- </option>
+                            <option value="81">Азербайджан</option>
+                            <option value="245">Армения</option>
+                            <option value="248">Беларусь</option>
+                            <option value="1280">Грузия</option>
+                            <option value="1894">Казахстан</option>
+                            <option value="2303">Киргызстан</option>
+                            <option value="2448">Латвия</option>
+                            <option value="2514">Литва</option>
+                            <option value="2788">Молдова</option>
+                            <option value="3159">Россия</option>
+                            <option value="9575">Таджикистан</option>
+                            <option value="9638">Туркменистан</option>
+                            <option value="277569">Туркмения</option>
+                            <option value="9787">Узбекистан</option>
+                            <option value="9908">Украина</option>
+                            <option value="10968">Эстония</option>
+                          </select>
+                        </div>
+
+                        <div class="simplecheckout-rule-group" data-for="register_country_id">
+                          <div style="display:none;" data-for="register_country_id" data-rule="notEmpty"
+                            class="simplecheckout-error-text simplecheckout-rule" data-not-empty="1"
+                            data-required="true">Выберите
+                            страну!</div>
+                        </div>
+
+                      </div>
+                      <div class="form__row form-group ">
+                        <label class="form__label control-label col-sm-2" for="register_newsletter">Подписаться на
+                          новости и
+                          акции</label>
+
+
+                        <div class="form__row row">
+                          <div class="col col-20">
+                            <input class="hidden" type="radio" name="register[newsletter]" id="1" value="1"
+                              checked="checked" data-reload-payment-form="true">
+                            <label class="form__label" for="1">Да</label>
+                          </div>
+                          <div class="col col-20">
+                            <input class="hidden" type="radio" name="register[newsletter]" id="0" value="0"
+                              data-reload-payment-form="true">
+                            <label class="form__label" for="0">Нет</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </fieldset> <input type="hidden" name="register[current_address_id]"
+                      id="register_current_address_id" value="0">
                   </div>
-                </div>
-              </form>
-              <p>либо добавьте новый</p>
-              <form action="" method="POST" name="" id="">
-                <div class="form__row">
-                  <label class="form__label" for="checkout__country">* Страна</label>
-                  <div class="form__select-wrap">
-                    <select name="" id="checkout__country" class="form__input" required>
-                      <option value="">Россия</option>
-                      <option value="">Украина</option>
-                      <option value="">Узбекестан</option>
-                    </select>
+                  <div class="simpleregister-button-block buttons">
+                    <div class="simpleregister-button-right">
+                      <a class="button btn-primary button_oc btn" data-onclick="submit"
+                        id="simpleregister_button_confirm"><span>Продолжить</span></a>
+                    </div>
                   </div>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__region">* Регион</label>
-                  <div class="form__select-wrap">
-                    <select name="" id="checkout__region" class="form__input" required>
-                      <option value="">Алтайский край</option>
-                      <option value="">Новосибирская область</option>
-                      <option value="">Кемеровский край</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__city">* Город</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__city"
-                    placeholder="Ваш город" required>
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__zip"> Индекс</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__zip" placeholder="656000">
-                </div>
-                <div class="form__row">
-                  <label class="form__label" for="checkout__adress"> Индекс</label>
-                  <input class="form__input" type="text" name="checkout__name" id="checkout__adress"
-                    placeholder="Улица, дом, кв..." required>
+
+
                 </div>
               </form>
             </div>
@@ -625,6 +821,7 @@ http://browsehappy.com/">обновите</a>
   <script>
     $('.dropdown__text').shave(20);
   </script>
+
 </body>
 
 </html>

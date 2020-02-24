@@ -1452,6 +1452,9 @@ table {
   margin-bottom: 10px;
   font-weight: 700; }
 
+form a {
+  text-decoration: underline; }
+
 .form__row {
   position: relative;
   margin-bottom: 14px; }
@@ -1539,7 +1542,8 @@ table {
 .form__label {
   position: relative;
   display: block;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-weight: 700; }
 
 .form__input {
   display: block;
@@ -2814,6 +2818,27 @@ ul.care__table {
         vertical-align: bottom; }
       .footer__bottom a {
         color: #fff; } }
+
+[data-valid="false"] {
+  color: #c63b3b;
+  border: 1px solid; }
+  [data-valid="false"] + .dropdown-menu {
+    margin: 5px 0;
+    color: #c63b3b; }
+    [data-valid="false"] + .dropdown-menu li {
+      list-style: none; }
+      [data-valid="false"] + .dropdown-menu li a:only-child {
+        display: block;
+        text-decoration: none; }
+
+.simplecheckout-rule-group {
+  margin-top: 5px; }
+
+.simplecheckout-error-text.simplecheckout-rule {
+  color: #c63b3b; }
+
+.simpleregister-button-block.buttons {
+  margin-top: 15px; }
 
 /*Clients page*/
 .content__row {
