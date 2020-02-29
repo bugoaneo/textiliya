@@ -290,6 +290,8 @@ ul.care__nav-list {
   li {
     margin-bottom: 0;
     transition: 0.3s ease-in-out;
+    list-style: none;
+    margin: 0;
     @include bp(600px) {
       &.hide {
         display: none;

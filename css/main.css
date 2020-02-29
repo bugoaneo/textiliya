@@ -1115,8 +1115,6 @@ table {
 
 .aside__menu-item {
   margin-bottom: 5px; }
-  .aside__menu-item:last-of-type {
-    margin-bottom: 0; }
   @media (max-width: 800px) {
     .aside__menu-item.current {
       background-color: #c63b3b; } }
@@ -2659,7 +2657,9 @@ ul.care__nav-list {
     margin-bottom: 0;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
+    transition: 0.3s ease-in-out;
+    list-style: none;
+    margin: 0; }
     @media (max-width: 600px) {
       ul.care__nav-list li.hide {
         display: none;
@@ -2819,17 +2819,20 @@ ul.care__table {
       .footer__bottom a {
         color: #fff; } }
 
-[data-valid="false"] {
+.simpleregister [data-valid="false"] {
   color: #c63b3b;
   border: 1px solid; }
-  [data-valid="false"] + .dropdown-menu {
-    margin: 5px 0;
+  .simpleregister [data-valid="false"] + .dropdown-menu {
     color: #c63b3b; }
-    [data-valid="false"] + .dropdown-menu li {
-      list-style: none; }
-      [data-valid="false"] + .dropdown-menu li a:only-child {
-        display: block;
-        text-decoration: none; }
+.simpleregister ul.dropdown-menu {
+  margin: 5px 0; }
+  .simpleregister ul.dropdown-menu li {
+    list-style: none; }
+    .simpleregister ul.dropdown-menu li a:only-child {
+      display: block;
+      text-decoration: none; }
+.simpleregister .form__label {
+  margin-bottom: 10px; }
 
 .simplecheckout-rule-group {
   margin-top: 5px; }
@@ -2959,12 +2962,18 @@ ul.care__table {
   -webkit-flex: 0 1 25%;
   -ms-flex: 0 1 25%;
   flex: 0 1 25%; }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .wish__catalog .catalog__item {
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 50%;
       -ms-flex: 0 1 50%;
       flex: 0 1 50%; } }
+  @media (max-width: 600px) {
+    .wish__catalog .catalog__item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%; } }
 
 .adress__row {
   -webkit-box-pack: justify;
@@ -2990,14 +2999,14 @@ ul.care__table {
   padding: 15px;
   font-size: 12px;
   line-height: 1.5;
-  background-color: #e3e3f2; }
+  background-color: #e3e3f2;
+  margin-bottom: 20px; }
   @media (max-width: 600px) {
     .adress__col {
       -webkit-box-flex: 0;
       -webkit-flex: 0 1 100%;
       -ms-flex: 0 1 100%;
-      flex: 0 1 100%;
-      margin-bottom: 20px; }
+      flex: 0 1 100%; }
       .adress__col:last-of-type {
         margin-bottom: 0; } }
 
@@ -3393,8 +3402,7 @@ ul.care__table {
       -webkit-flex: 0 0 60%;
       -ms-flex: 0 0 60%;
       flex: 0 0 60%;
-      margin-bottom: 0;
-      padding-bottom: 0; } }
+      margin-bottom: 0; } }
   .catalog__item:last-child {
     margin-right: auto; }
     @media (max-width: 800px) {
@@ -3409,10 +3417,8 @@ ul.care__table {
     .catalog__item:hover .catalog__info {
       max-height: 550px; }
     .catalog__item:hover .catalog__descr {
-      -webkit-box-shadow: -2px 0px 3px 0px rgba(61, 61, 61, 0.2), 2px 1px 3px 0px rgba(61, 61, 61, 0.2);
-      box-shadow: -2px 0px 3px 0px rgba(61, 61, 61, 0.2), 2px 1px 3px 0px rgba(61, 61, 61, 0.2); }
-    .catalog__item:hover .catalog__btn {
-      margin: 0 -10px; }
+      -webkit-box-shadow: -2px 1px 3px 0px rgba(61, 61, 61, 0.2), 2px 1px 3px 0px rgba(61, 61, 61, 0.2);
+      box-shadow: -2px 1px 3px 0px rgba(61, 61, 61, 0.2), 2px 1px 3px 0px rgba(61, 61, 61, 0.2); }
 
 .catalog__link {
   color: initial; }
@@ -3473,7 +3479,7 @@ ul.care__table {
   left: 0;
   top: 100%;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
   background-color: inherit;
   z-index: 1;
   display: -webkit-box;
@@ -4179,6 +4185,13 @@ ul.care__table {
   background-color: #e3e3f2; }
 #order .order__ready {
   background-color: #fde5e5; }
+#order tr:not(.table__header) {
+  cursor: pointer; }
+  #order tr:not(.table__header):hover {
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(61, 61, 61, 0.2);
+    box-shadow: 0px 3px 3px 0px rgba(61, 61, 61, 0.2);
+    position: relative;
+    z-index: 1; }
 
 @media (max-width: 800px) {
   #order-onfo .order__date,

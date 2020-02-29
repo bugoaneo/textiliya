@@ -127,8 +127,11 @@
 .wish__catalog {
   .catalog__item {
     flex: 0 1 25%;
-    @include bp(600px) {
+    @include bp(800px) {
       flex: 0 1 50%;
+    }
+    @include bp(600px) {
+      flex: 0 1 100%;
     }
   }
 }
@@ -147,9 +150,9 @@
   font-size: 12px;
   line-height: 1.5;
   background-color: $haze;
+  margin-bottom: 20px;
   @include bp(600px) {
     flex: 0 1 100%;
-    margin-bottom: 20px;
     &:last-of-type {
       margin-bottom: 0;
     }

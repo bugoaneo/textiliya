@@ -1,9 +1,14 @@
-[data-valid="false"] {
-  color: $second;
-  border: 1px solid;
-  + .dropdown-menu {
-    margin: 5px 0;
+.simpleregister {
+  [data-valid="false"] {
     color: $second;
+    border: 1px solid;
+    + .dropdown-menu {
+      color: $second;
+    }
+  }
+
+  ul.dropdown-menu {
+    margin: 5px 0;
     li {
       list-style: none;
       a:only-child {
@@ -11,6 +16,10 @@
         text-decoration: none;
       }
     }
+  }
+
+  .form__label {
+    margin-bottom: 10px;
   }
 }
 
