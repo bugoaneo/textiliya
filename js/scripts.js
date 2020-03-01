@@ -61,6 +61,15 @@ $(document).ready(function () {
     $('.dropdown__wrap').removeClass('open');
   });
 
+  $('.dropdown-btn').click(function () {
+    $('.dropdown-body').toggleClass('open');
+  });
+
+  $('.dropdown-close').click(function () {
+    $('.dropdown-body').removeClass('open');
+  });
+
+
   /*breadcrumbs behavior*/
   $('.breadcrambs__item a').shave(33);
 });

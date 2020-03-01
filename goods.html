@@ -731,7 +731,28 @@ http://browsehappy.com/">обновите</a>
               <!-- if add in wishlist toggle class .add -->
               <button class="product__btn-item wish-btn" type="button"><span class="icon-heart"></span></button>
               <a class="product__btn-item" href="">Создать дизайн</a>
-              <a class="product__btn-item" href="">Купить&nbsp;в 1&nbsp;клик</a>
+              <div class="dropdown-container">
+                <span class="product__btn-item dropdown-btn">Купить&nbsp;в 1&nbsp;клик</span>
+                <div class="dropdown-body">
+                  <button class="dropdown-close" type="button">x</button>
+                  <p>Пожалуйста, укажите свой номер телефона и мы свяжемся с Вами в самое ближайшее время:</p></br>
+                  <form action="" metod="POST" id="recall_form" name="recall_form">
+                    <div class="form__row">
+                      <label class="form__label" for="recall_form-phone">Как с вами связаться?</label>
+                      <input class="form__input" type="tel" name="recall_form-phone" id="recall_form-phone"
+                        placeholder="Ваш телефон">
+                    </div>
+                    <div class="form__row">
+                      <label class="form__label" for="recall_form-email">Удобно сразу указать E-Mail</label>
+                      <input class="form__input" type="email" name="recall_form-email" id="recall_form-email"
+                        placeholder="Ваша почта">
+                    </div>
+                    <div class="form__row">
+                      <button class="btn" id="recall_form-login" type="submit">Заказать звонок</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
               <button class="btn">В корзину</button>
             </div>
           </div>

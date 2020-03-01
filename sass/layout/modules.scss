@@ -522,3 +522,34 @@
   font-weight: 600;
   background: $order;
 }
+
+/*dropdown-container*/
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-body {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  margin-top: 5px;
+  padding: 20px;
+  min-width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.47);
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  &.open {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+.dropdown-close {
+  @extend .close;
+}
