@@ -410,15 +410,19 @@
   display: flex;
   font-size: 12px;
   margin-left: -10px;
+  .quantity__btn,
+  .bootstrap-touchspin-down,
+  .bootstrap-touchspin-up {
+    flex: 0 1 2.4em;
+    padding: 5px 10px;
+    color: #fff;
+  }
   &.red {
     .quantity__btn,
     .bootstrap-touchspin-down,
     .bootstrap-touchspin-up {
       background-color: $light;
       border: 1px solid $light;
-      flex: 0 1 2.4em;
-      padding: 5px 10px;
-      color: #fff;
     }
   }
 }

@@ -272,3 +272,17 @@
 .login__aside {
   background-color: #e4e7e9;
 }
+
+/*search*/
+.search-page__catalog {
+  @extend %row;
+  .catalog__item {
+    flex: 0 1 25%;
+    @include bp(800px) {
+      flex: 0 1 50%;
+    }
+    @include bp(600px) {
+      flex: 0 1 100%;
+    }
+  }
+}

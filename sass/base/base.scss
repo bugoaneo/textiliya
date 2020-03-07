@@ -187,6 +187,9 @@ ul.list {
     &-90 {
       flex: 0 1 88.5%;
     }
+    &.ac {
+      align-self: center;
+    }
     @include bp(800px) {
       flex: 0 1 100%;
       margin: 0;

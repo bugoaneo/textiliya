@@ -267,3 +267,27 @@
     margin-right: 10px;
   }
 }
+
+/*checkout*/
+
+.simplecheckout-cart {
+  width: 100%;
+  .remove {
+    position: relative;
+  }
+  .quantity {
+    margin-left: 0;
+  }
+  @include bp(900px) {
+    table-layout: auto;
+    .image,
+    .model {
+      display: none;
+    }
+    .quantity-cell {
+      width: 30%;
+    }
+  }
+  @include bp(800px) {
+  }
+}

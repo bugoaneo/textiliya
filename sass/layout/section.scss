@@ -340,3 +340,36 @@ ul.care__table {
   font-weight: 600;
   color: $btn;
 }
+/*search page form*/
+.search-page__filteres,
+.search-page__sorting {
+  .form__label {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  select {
+    height: 100%;
+  }
+  @include bp(800px) {
+    .col {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.search-page__filteres {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $mist;
+  margin-bottom: 30px;
+}
+
+.search-page__sorting {
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  .form__label {
+    margin: 0 5px 5px 0;
+  }
+  @include bp(800px) {
+    margin-bottom: 0;
+  }
+}

@@ -99,3 +99,37 @@ TODO НЕ ВЫВОДИТЬ ИХ если ничего нет!!!!
   }
   
  Как-то так, НО я не могу его вызвать. Не получается.
+ 
+ 
+МОДУЛЬ ДРОПДАУНА
+
+Поясняю разметку
+
+<div class="dropdown-container"> - обертка модуля. Имеет position: relative;
+
+<span class="product__btn-item dropdown-btn">Купить&nbsp;в 1&nbsp;клик</span>
+главный класс dropdown-btn - это тригер, кнопка по клику на которую появляется дропдаун.
+
+ <div class="dropdown-body"> - контейнер дропдауна с позиционированием,  паддингами, бекграундом и прочим.
+
+<button class="dropdown-close" type="button">x</button> - закрывает дропдаун
+
+Класс ответственный за показ дропдауна - open.
+Вешается на dropdown-body
+
+Общая разметка для дропдауна. По Умолчанию СКРЫТ
+<div class="dropdown-container"> - контейнер.
+  <span class="dropdown-btn">Купить&nbsp;в 1&nbsp;клик</span> - тригер
+  <div class="dropdown-body"> - дропдаун
+    <button class="dropdown-close" type="button">x</button> - закрывашка дропдауна.
+  </div>
+</div>
+
+Разметка для дропдауна ОТКРЫТ
+
+<div class="dropdown-container"> - контейнер.
+  <span class="dropdown-btn">Купить&nbsp;в 1&nbsp;клик</span> - тригер
+  <div class="dropdown-body open"> - дропдаун ОТКРЫТ
+    <button class="dropdown-close" type="button">x</button> - закрывашка дропдауна.
+  </div>
+</div>
