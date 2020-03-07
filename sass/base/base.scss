@@ -37,7 +37,6 @@ body {
 a {
   display: inline-block;
   vertical-align: baseline;
-  // color: $btn;
 }
 em {
   font-style: oblique;
@@ -228,6 +227,7 @@ ul.list {
 /*cart*/
 
 .cart__contents {
+  position: relative;
   flex: 0 1 calc(100% - 340px);
   font-size: 14px;
   @include bp(800px) {
@@ -325,6 +325,20 @@ table {
     tr,
     td {
       display: block;
+    }
+  }
+}
+
+#checkout-cart {
+  .cart__aside {
+    position: absolute;
+    width: 320px;
+    top: 0;
+    left: calc(100% + 20px);
+    @include bp(800px) {
+      position: relative;
+      left: 0;
+      width: 100%;
     }
   }
 }

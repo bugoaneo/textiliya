@@ -201,6 +201,10 @@ select {
   appearance: none;
   padding-right: 30px;
 }
+
+textarea {
+  height: 100px;
+}
 .form__select-wrap {
   position: relative;
   &:after {

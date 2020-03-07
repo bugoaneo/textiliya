@@ -1,3 +1,6 @@
+.cart__lead {
+@extend .content__lead;
+}
 .cart__table {
   position: relative;
 }
@@ -202,15 +205,15 @@
     background-color: #fff;
     text-align: center;
   }
-  .discount-cupon {
-    padding: 2px;
-    font-size: 14px;
-    width: 90px;
-    border: 1px solid #000;
-    text-transform: uppercase;
-    background-color: #fff;
-    text-align: center;
-  }
+  // .discount-cupon {
+  //   padding: 2px;
+  //   font-size: 14px;
+  //   width: 90px;
+  //   border: 1px solid #000;
+  //   text-transform: uppercase;
+  //   background-color: #fff;
+  //   text-align: center;
+  // }
   .cart__points-available {
     font-size: 11px;
   }
@@ -221,14 +224,14 @@
     width: 100%;
     margin-top: 10px;
   }
-  .delete-cupon {
-    width: 28px;
-    padding: 5px;
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
+  // .delete-cupon {
+  //   width: 28px;
+  //   padding: 5px;
+  //   img {
+  //     display: block;
+  //     width: 100%;
+  //   }
+  // }
   form {
     margin: 10px 0;
   }
@@ -237,6 +240,23 @@
     margin-bottom: 10px;
   }
 }
+  .delete-cupon {
+    width: 28px;
+    padding: 5px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .discount-cupon {
+    padding: 2px;
+    font-size: 14px;
+    width: 90px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    background-color: #fff;
+    text-align: center;
+  }
 
 .cart__remove-notice {
   position: absolute;
@@ -272,14 +292,33 @@
 
 .simplecheckout-cart {
   width: 100%;
+  margin-bottom: 20px;
   .remove {
     position: relative;
   }
   .quantity {
     margin-left: 0;
   }
-  @include bp(900px) {
+  th {
+
+  }
+  td,
+  th {
+    border-left: none;
+    border-right: none;
+    vertical-align: middle;
+    text-align: center;
+    word-break: inherit;
+  }
+  .name {
+    width: 22%;
+    text-align: left;
+  }
+  @include bp(1000px) {
     table-layout: auto;
+    .name {
+      width: auto;
+    }
     .image,
     .model {
       display: none;
@@ -289,5 +328,52 @@
     }
   }
   @include bp(800px) {
+  }
+}
+
+.simplecheckout-cart-total {
+  margin-bottom: 10px;
+  &.row {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .col-20 {
+    @include bp (600px) {
+      flex: 0 1 50%;
+    }
+  }
+  &.total_total {
+    font-size: 20px;
+  }
+}
+
+.simplecheckout-cart-buttons {
+  padding-bottom: 20px;
+  border-bottom: 1px solid$mist;
+  margin-bottom: 20px;
+}
+
+.checkout-heading, .panel-heading {
+  @extend .table__caption;
+  + p {
+    margin-bottom: 5px;
+  }
+}
+
+.simplecheckout-block {
+@extend .content__inner;
+  a {
+    color: $btn;
+  }
+}
+
+#simplecheckout_text_help {
+  padding: 20px;
+  background-color: #e4e7e9;
+  p {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

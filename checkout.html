@@ -460,8 +460,9 @@ http://browsehappy.com/">обновите</a>
           </ul>
         </div>
 
+        <h2 class="cart__lead">Проверьте состав заказа</h2>
         <div class="row jsb">
-          <div class="cart__contents">
+          <div class="cart__contents" id="checkout-cart">
             <table class="simplecheckout-cart">
               <!-- <colgroup>
                 <col class="image">
@@ -625,74 +626,395 @@ http://browsehappy.com/">обновите</a>
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="cart__aside">
+            <div class="simplecheckout-cart-total row" id="total_sub_total">
+              <span class="col-20"><b>Сумма:</b></span>
+              <span class="simplecheckout-cart-total-value col-20">2384 руб.</span>
+              <span class="simplecheckout-cart-total-remove"></span>
+            </div>
+            <div class="simplecheckout-cart-total row ac">
+              <span class="inputs col-20">Купон:</span>
+              <div class="col-20"><input type="text" placeholder="" class="discount-cupon" id="discount-cupon"
+                  name="coupon" value="" data-onchange="reloadAll">
+                <button class="delete-cupon" type="button"><img src="img/misc/delete.png" alt=""></button></div>
+            </div>
+            <div class="simplecheckout-cart-total total_total row" id="total_total">
+              <span class="col-20"><b>Итого:</b></span>
+              <span class="simplecheckout-cart-total-value col-20">2384 руб.</span>
+              <span class="simplecheckout-cart-total-remove">
+              </span>
+            </div>
+            <div class="simplecheckout-cart-total simplecheckout-cart-buttons row">
+              <span class="inputs buttons"><a id="simplecheckout_button_cart" data-onclick="reloadAll"
+                  class="button btn-primary button_oc btn"><span>Обновить</span></a></span>
+            </div>
+            <div class="simplecheckout-cart-total" id="total_shipping">
+              <span><b>Бесплатная доставка при сумме заказа более 3000 рублей. Почта РФ или СДЭК до склада.</b></span>
+              <span class="simplecheckout-cart-total-value"></span>
+              <span class="simplecheckout-cart-total-remove">
+              </span>
+            </div>
+            <div class="simplecheckout-block" id="simplecheckout_shipping">
+              <div class="checkout-heading panel-heading"> Способ доставки</div>
+              <p>Выбирите подходящий способ доставки: </p>
+              <div class="simplecheckout-block-content form__select-wrap">
+                <select class="form-control form__input" data-onchange="reloadAll" name="shipping_method">
+                  <optgroup label="Бесплатная доставка">
+                    <option value="free.free" selected="selected">Бесплатная доставка при сумме заказа более 3000
+                      рублей. Почта РФ
+                      или СДЭК до склада. - Бесплатно</option>
+                  </optgroup>
+                  <optgroup label="РЦР по Новосибирску:">
+                    <option value="rcr.0">РЦР Западный (г. Новосибирск, ул. Титова 198) оплата доставки при получении в
+                      РЦР: 3-4 дня
+                      от 50 руб</option>
+                    <option value="rcr.1">РЦР Затулинка (г. Новосибирск, ул. Петухова, 76, 1 этаж) оплата доставки при
+                      получении в
+                      РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.2">РЦР Калинина (г. Новосибирск, ул.Дуси Ковальчук, 274, оф. 3) оплата доставки
+                      при получении
+                      в РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.3">РЦР Кольцово (Никольский проспект, 6) оплата доставки при получении в РЦР: 3-4
+                      дня от 50
+                      руб</option>
+                    <option value="rcr.4">РЦР Краснообск (Краснообск пос, дом 217, цоколь) оплата доставки при получении
+                      в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.5">РЦР КСМ (г. Новосибирск, ул.Одоевского 1/8. цоколь) оплата доставки при
+                      получении в РЦР:
+                      3-4 дня от 50 руб</option>
+                    <option value="rcr.6">РЦР Ленина (г. Новосибирск, Красный проспект, 28, оф.306) оплата доставки при
+                      получении в
+                      РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.7">РЦР Маркса (г. Новосибирск, ул. Ватутина, 27, цоколь) оплата доставки при
+                      получении в РЦР:
+                      3-4 дня от 50 руб</option>
+                    <option value="rcr.8">РЦР Меркурий (г. Новосибирск, ул. Выборная, 144, оф.23) оплата доставки при
+                      получении в
+                      РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.9">РЦР МЖК (г. Новосибирск, ул.Высоцкого 43, цоколь) оплата доставки при
+                      получении в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.10">РЦР Нива (г. Новосибирск, ул. Кошурникова, 45, оф.10) оплата доставки при
+                      получении в
+                      РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.11">РЦР Ника (г. Новосибирск, ул. Гоголя,16) оплата доставки при получении в РЦР:
+                      3-4 дня от
+                      50 руб</option>
+                    <option value="rcr.12">РЦР Новосибирск Главный (г. Новосибирск, ул.Челюскинцев 14/1) оплата доставки
+                      при
+                      получении в РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.13">РЦР Первомайка (г. Новосибирск, ул.Шмидта 8, цоколь) оплата доставки при
+                      получении в РЦР:
+                      3-4 дня от 50 руб</option>
+                    <option value="rcr.14">РЦР Родники (г. Новосибирск, ул. Краузе д. 21/1) оплата доставки при
+                      получении в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.15">РЦР Стрижи (г. Новосибирск, ул.Кубовая 86 к.12 ) оплата доставки при
+                      получении в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.16">РЦР Телецентр (г. Новосибирск, ул.Костычева, 5) оплата доставки при получении
+                      в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.17">РЦР Учительская (г. Новосибирск, ул.Богдана Хмельницкого, 72. оф.206) оплата
+                      доставки при
+                      получении в РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.18">РЦР Чемской (г. Новосибирск, ул. Комсомольская, д.23а, киоски 2,3) оплата
+                      доставки при
+                      получении в РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.19">РЦР Щ (г. Новосибирск, ул.Полевая 7/1, цоколь) оплата доставки при получении
+                      в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.20">РЦР Экватор (г. Новосибирск, ул.Большевистская, 43/1, оф.306) оплата доставки
+                      при
+                      получении в РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.21">РЦР Слобода (г. Новосибирск, ул. Каменогорская,52) оплата доставки при
+                      получении в РЦР:
+                      3-4 дня от 50 руб</option>
+                    <option value="rcr.22">РЦР Академ ( ул. Жемчужная 34) оплата доставки при получении в РЦР: 3-4 дня
+                      от 50 руб
+                    </option>
+                    <option value="rcr.23">РЦР Бердск ( Ушакова 3, оф. 1) оплата доставки при получении в РЦР: 3-4 дня
+                      от 50 руб
+                    </option>
+                    <option value="rcr.24">РЦР Березовая роща (г. Новосибирск, ул. Кошурникова 3) оплата доставки при
+                      получении в
+                      РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.25">РЦР Волна-ОбьГЭС (г. Новосибирск, ул. Приморская 9/2, оф. 21) оплата доставки
+                      при
+                      получении в РЦР: 3-4 дня от 50 руб</option>
+                    <option value="rcr.26">РЦР Горский (г. Новосибирск, Горский, 78, цоколь) оплата доставки при
+                      получении в РЦР:
+                      3-4 дня от 50 руб</option>
+                    <option value="rcr.27">РЦР Добрый (г. Новосибирск, ул.Зыряновская 34/1) оплата доставки при
+                      получении в РЦР: 3-4
+                      дня от 50 руб</option>
+                    <option value="rcr.28">РЦР Заельцовский (ул. Дуси Ковальчук, 179/4, 2 этаж) оплата доставки при
+                      получении в РЦР:
+                      3-4 дня от 50 руб</option>
+                  </optgroup>
+                  <optgroup label="Транспортная компания СДЭК">
+                    <option value="cdek.tariff_137_0">До двери курьером: 2–3 дня - 265 руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK67">До склада: г. Новосибирск, Ул. Молодости, 21. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK49">До склада: г. Новосибирск, Ул. Балтийская, 29. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK39">До склада: г. Новосибирск, Ул. Крылова, 7/1, 2. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK47">До склада: г. Новосибирск, Ул. Нарымская, 17/2. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK90">До склада: г. Новосибирск, Ул. Орджоникидзе, 47. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK82">До склада: г. Новосибирск, Ул. Журинская, 80/2. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK13">До склада: г. Новосибирск, Ул. Богдана Хмельницкого, 63. 2–3
+                      дня - 125
+                      руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK46">До склада: г. Новосибирск, Ул. Московская, 93. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK1">До склада: г. Новосибирск, Ул. Кривощековская, 15, корп.1. 2–3
+                      дня - 125
+                      руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK44">До склада: г. Новосибирск, Ул. Кутателадзе, 4. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK21">До склада: г. Новосибирск, Ул. Героев Революции, 5/2. 2–3 дня
+                      - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK11">До склада: г. Новосибирск, Ул. Вокзальная Магистраль, 3. 2–3
+                      дня - 125
+                      руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK51">До склада: г. Новосибирск, Ул. Богдана Хмельницкого, 1/1. 2–3
+                      дня - 125
+                      руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK45">До склада: г. Новосибирск, Ул. Широкая, 1а. 2–3 дня - 125 руб.
+                      руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK69">До склада: г. Новосибирск, Ул. Советская, 36/1. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK7">До склада: г. Новосибирск, Ул. Зорге, 1а. 2–3 дня - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK83">До склада: г. Новосибирск, Ул. Одоевского, 1/10. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK52">До склада: г. Новосибирск, Ул. Оловозаводская, 18/1. 2–3 дня -
+                      125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK43">До склада: г. Новосибирск, Гусинобродское ш., 62 к.1. 2–3 дня
+                      - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK81">До склада: г. Новосибирск, Ул. Бориса Богаткова, 248а. 2–3 дня
+                      - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK85">До склада: г. Новосибирск, Ул. Кропоткина, 271. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK68">До склада: г. Новосибирск, Пр-т Карла Маркса, 24, оф. 1. 2–3
+                      дня - 125
+                      руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK25">До склада: г. Новосибирск, Пр-кт Дзержинского, 1/1. 2–3 дня -
+                      125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK35">До склада: г. Новосибирск, Ул. Вавилова, 3, 2. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK9">До склада: г. Новосибирск, Ул. Ильича, 6. 2–3 дня - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK38">До склада: г. Новосибирск, Ул. Большевистская, 48. 2–3 дня -
+                      125 руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK65">До склада: г. Новосибирск, Ул. Рассветная, 17. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK42">До склада: г. Новосибирск, Ул. Немировича – Данченко, 165,
+                      109. 2–3 дня -
+                      125 руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK17">До склада: г. Новосибирск, Ул. Гоголя, 38. 2–3 дня - 125 руб.
+                      руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK5">До склада: г. Новосибирск, Пр-т Красный, 99. 2–3 дня - 125 руб.
+                      руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK70">До склада: г. Новосибирск, Ул. Октябрьская, 42, 110а. 2–3 дня
+                      - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK50">До склада: г. Новосибирск, Ул. Ленинградская, 102. 2–3 дня -
+                      125 руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK86">До склада: г. Новосибирск, УЛ. БОРИСА БОГАТКОВА, 99. 2–3 дня -
+                      125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK8">До склада: г. Новосибирск, Пр-т Карла Маркса, 2, 102 , БЦ на
+                      Башне. 2–3 дня
+                      - 125 руб. руб.</option>
+                    <option value="cdek.tariff_136_NSK66">До склада: г. Новосибирск, Ул. Титова, 17. 2–3 дня - 125 руб.
+                      руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK2">До склада: г. Новосибирск, Пр-т Красный, 25, 205. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK33">До склада: г. Новосибирск, Ул. Дуси Ковальчук, 179а, 3. 2–3
+                      дня - 125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK30">До склада: г. Новосибирск, Пр. Северный, 3/8. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK84">До склада: г. Новосибирск, Пр-т Дзержинского, 32/1. 2–3 дня -
+                      125 руб.
+                      руб.</option>
+                    <option value="cdek.tariff_136_NSK53">До склада: г. Новосибирск, Ул. Титова, 198. 2–3 дня - 125 руб.
+                      руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK71">До склада: г. Новосибирск, Ул. Холодильная, 13. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK31">До склада: г. Новосибирск, Ул. Мясниковой, 20. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK23">До склада: г. Новосибирск, Мрн Горский, 53. 2–3 дня - 125 руб.
+                      руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK18">До склада: г. Новосибирск, Ул. Восход, 1а, 105. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_136_NSK80">До склада: г. Новосибирск, Ул. Выборная, 89/2. 2–3 дня - 125
+                      руб. руб.
+                    </option>
+                    <option value="cdek.tariff_11_0">Экспресс лайт (С-Д): 2 дня - 350 руб. руб.</option>
+                  </optgroup>
+                  <optgroup label="Самовывоз">
+                    <option value="pickup.pickup4">Большевистской: 1-3 дня - Бесплатно</option>
+                    <option value="pickup.pickup1">г.Новосибирск, ул. Красный проспект, 153Б: 1-3 дня - Бесплатно
+                    </option>
+                    <option value="pickup.pickup2">г.Новосибирск, Гоголя 7: 1-3 дня - Бесплатно</option>
+                    <option value="pickup.pickup3">г.Новосибирск, ул. Титова 1: 1-3 дня - Бесплатно</option>
+                  </optgroup>
+                </select>
+                <input type="hidden" name="shipping_method_current" value="free.free">
+                <input type="hidden" name="shipping_method_checked" value="free.free">
+              </div>
+            </div>
+            <div class="simplecheckout-block" id="simplecheckout_comment">
+              <div class="checkout-heading panel-heading"><i class="fa fa-check-square-o"></i> Пожелания к
+                заказу</div>
+              <div class="simplecheckout-block-content">
+                <textarea class="form__input" name="comment" placeholder="Ваши комментарии к заказу"
+                  data-reload-payment-form="true"></textarea>
+              </div>
+            </div>
+            <div class="simplecheckout-block" id="text_agreement">
 
-            <div class="cart__asidewidget">
-              <div class="cart__asidewidget-title">Адрес доставки</div>
-              <div class="simplecheckout-block" id="simplecheckout_customer">
-                <div class="checkout-heading panel-heading"><span> Введите данные для связи с
-                    вами</span></div>
-                <div class="simplecheckout-block-content">
-                  <fieldset class="form-horizontal">
-                    <div class="form__row form-group required">
-                      <label class="form__label control-label col-sm-3" for="customer_telephone">*Телефон</label>
+              <h3 class="content__subtitle">Почти готово</h3>
+              <p>Нажимая кнопку "ОФОРМИТЬ ЗАКАЗ", я подтверждаю, что я старше 18
+                лет, принимаю условия работы сайта и даю добровольное согласие на обработку своих персональных данных и
+                получение
+                E-Mail/SMS рассылок с информацией об акциях и новых поступлениях Интернет-магазина. Я прочитал и
+                согласен с правилами:
+                <a class="colorbox fancybox agree"
+                  href="https://stage.tkani-textiliya.ru/index.php?route=information/information/agree&amp;information_id=14"
+                  alt="Пользовательское соглашение">Пользовательское соглашение</a></p>
+            </div>
+            <!-- WORNING!!!!!!!!!!!!!!! -->
+            <div class="cart__aside">
+              <div class="cart__asidewidget">
+                <div class="cart__asidewidget-title">Адрес доставки</div>
+                <div class="simplecheckout-block" id="simplecheckout_customer">
+                  <div class="checkout-heading panel-heading"><span> Введите данные для связи с
+                      вами</span></div>
+                  <div class="simplecheckout-block-content">
+                    <fieldset class="form-horizontal">
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-3" for="customer_telephone">*Телефон</label>
 
-                      <input class="form-control form__input" type="tel" name="customer[telephone]"
-                        id="customer_telephone" value="891399314345" placeholder="Обязательно для заполнения"
-                        data-reload-payment-form="true">
-                      <div class="simplecheckout-rule-group" data-for="customer_telephone">
-                        <div style="display:none;" data-for="customer_telephone" data-rule="byLength"
-                          class="simplecheckout-error-text simplecheckout-rule" data-length-min="3" data-length-max="32"
-                          data-required="true">Телефон должен быть от 3 до 32 символов!</div>
+                        <input class="form-control form__input" type="tel" name="customer[telephone]"
+                          id="customer_telephone" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="customer_telephone">
+                          <div style="display:none;" data-for="customer_telephone" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="3"
+                            data-length-max="32" data-required="true">Телефон должен быть от 3 до 32 символов!</div>
+                        </div>
+
                       </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-3" for="customer_firstname">*Имя</label>
 
-                    </div>
-                    <div class="form__row form-group required">
-                      <label class="form__label control-label col-sm-3" for="customer_firstname">*Имя</label>
+                        <input class="form-control form__input" type="text" name="customer[firstname]"
+                          id="customer_firstname" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="customer_firstname">
+                          <div style="display:none;" data-for="customer_firstname" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Имя должно быть от 1 до 32 символов!</div>
+                        </div>
 
-                      <input class="form-control form__input" type="text" name="customer[firstname]"
-                        id="customer_firstname" value="Полина" placeholder="Обязательно для заполнения"
-                        data-reload-payment-form="true">
-                      <div class="simplecheckout-rule-group" data-for="customer_firstname">
-                        <div style="display:none;" data-for="customer_firstname" data-rule="byLength"
-                          class="simplecheckout-error-text simplecheckout-rule" data-length-min="1" data-length-max="32"
-                          data-required="true">Имя должно быть от 1 до 32 символов!</div>
                       </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-3" for="customer_lastname">*Фамилия</label>
 
-                    </div>
-                    <div class="form__row form-group required">
-                      <label class="form__label control-label col-sm-3" for="customer_lastname">*Фамилия</label>
-
-                      <input class="form-control form__input" type="text" name="customer[lastname]"
-                        id="customer_lastname" value="Емельянова" placeholder="Обязательно для заполнения"
-                        data-reload-payment-form="true">
-                      <div class="simplecheckout-rule-group" data-for="customer_lastname">
-                        <div style="display:none;" data-for="customer_lastname" data-rule="byLength"
-                          class="simplecheckout-error-text simplecheckout-rule" data-length-min="1" data-length-max="32"
-                          data-required="true">Фамилия должна быть от 1 до 32 символов!</div>
+                        <input class="form-control form__input" type="text" name="customer[lastname]"
+                          id="customer_lastname" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="customer_lastname">
+                          <div style="display:none;" data-for="customer_lastname" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Фамилия должна быть от 1 до 32 символов!</div>
+                        </div>
                       </div>
+                      <div class="form__row form-group required">
+                        <label class="form__label control-label col-sm-3" for="customer_patronymic">*Отчество</label>
 
-                    </div>
-                    <div class="form__row form-group required">
-                      <label class="form__label control-label col-sm-3" for="customer_patronymic">*Отчество</label>
+                        <input class="form-control form__input" type="text" name="customer[patronymic]"
+                          id="customer_patronymic" value="" placeholder="Обязательно для заполнения"
+                          data-reload-payment-form="true">
+                        <div class="simplecheckout-rule-group" data-for="customer_patronymic">
+                          <div style="display:none;" data-for="customer_patronymic" data-rule="byLength"
+                            class="simplecheckout-error-text simplecheckout-rule" data-length-min="1"
+                            data-length-max="32" data-required="true">Отчество должна быть от 1 до 32 символов!</div>
+                        </div>
 
-                      <input class="form-control form__input" type="text" name="customer[patronymic]"
-                        id="customer_patronymic" value="" placeholder="Обязательно для заполнения"
-                        data-reload-payment-form="true">
-                      <div class="simplecheckout-rule-group" data-for="customer_patronymic">
-                        <div style="display:none;" data-for="customer_patronymic" data-rule="byLength"
-                          class="simplecheckout-error-text simplecheckout-rule" data-length-min="1" data-length-max="32"
-                          data-required="true">Отчество должна быть от 1 до 32 символов!</div>
                       </div>
-                      <div class="simplecheckout-tooltip" data-for="customer_patronymic">Отчество</div>
-
-                    </div>
-                  </fieldset>
+                    </fieldset>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- /WORNING!!!!!!!!!!!!!!! -->
+            <div class="simplecheckout-button-block row jsb">
+              <div class="simplecheckout-button-right"><a class="button btn-primary button_oc btn btn--alert"
+                  data-onclick="createOrder" id="simplecheckout_button_confirm"><span>Оформить заказ</span></a></div>
+              <div class="simplecheckout-button-left">
+                <a class="button btn-default button_oc btn btn--haze" data-onclick="backHistory"
+                  id="simplecheckout_button_back"><span>Назад</span></a></div>
+            </div>
+
+            <div class="simplecheckout-block" id="simplecheckout_text_help">
+              <div class="content__subtitle">
+                Обязательно к прочтению!
+              </div>
+              <div class="simplecheckout-block-content">
+                <p>После нажатия на кнопку «ОФОРМИТЬ ЗАКАЗ» менеджер свяжется с вами по указанному номеру телефона.
+                  Обычно это происходит в течение суток. Менеджеры обрабатывают заказы с понедельника по субботу, с
+                  10:00 до 19:00 по новосибирскому времени.</p>
+                <p>После уведомления о согласовании заказа выбранные товары бронируются за покупателем на 3 суток. За
+                  это время покупателю следует оплатить заказ через личный кабинет. Если по истечении указанного срока
+                  оплата не производится, бронь аннулируется.</p>
+                <p>Передача заказа в отдел отправок происходит только после получения магазином полной оплаты, включая
+                  стоимость доставки.</p>
+                <p>При онлайн-оплате заказов мы используем ОФД «Сбербанк». Оплата онлайн действует для карт Visa, Master
+                  Card, Maestro, «МИР». Если клиент хочет оплатить заказ через электронный кошелёк «Яндекс.Деньги»,
+                  следует сообщить об этом менеджеру.</p>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
 
