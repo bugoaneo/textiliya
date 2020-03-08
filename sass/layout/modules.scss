@@ -130,6 +130,18 @@
   top: 10px;
   left: 10px;
   z-index: 2;
+  &--small {
+    top: -5px;
+    .shild__item {
+      font-size: 10px;
+      @include bp(800px) {
+        font-size: 14px;
+      }
+      @include bp(600px) {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
 .shild__list {
@@ -137,16 +149,16 @@
 }
 
 .shild__item {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 2.85em;
+  height: 2.85em;
+  line-height: 2.85em;
   border-radius: 100%;
   text-align: center;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-right: 10px;
+  margin-right: 0.8em;
   &:last-child {
     margin-right: 0;
   }
@@ -555,5 +567,19 @@
 }
 
 .dropdown-close {
+  @extend .close;
+}
+
+.popup {
+  @extend .popup-geo;
+  height: 90%;
+}
+
+.popup__body {
+  overflow: auto;
+  height: 100%;
+}
+
+.popup__close {
   @extend .close;
 }

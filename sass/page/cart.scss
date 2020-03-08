@@ -1,5 +1,5 @@
 .cart__lead {
-@extend .content__lead;
+  @extend .content__lead;
 }
 .cart__table {
   position: relative;
@@ -49,7 +49,11 @@
     margin: 0 0 10px 0;
   }
 }
-
+#order-list {
+  td[colspan] {
+    text-align: right;
+  }
+}
 .table__caption {
   padding: 5px 10px;
   margin-bottom: 10px;
@@ -240,23 +244,23 @@
     margin-bottom: 10px;
   }
 }
-  .delete-cupon {
-    width: 28px;
-    padding: 5px;
-    img {
-      display: block;
-      width: 100%;
-    }
+.delete-cupon {
+  width: 28px;
+  padding: 5px;
+  img {
+    display: block;
+    width: 100%;
   }
-  .discount-cupon {
-    padding: 2px;
-    font-size: 14px;
-    width: 90px;
-    border: 1px solid #000;
-    text-transform: uppercase;
-    background-color: #fff;
-    text-align: center;
-  }
+}
+.discount-cupon {
+  padding: 2px;
+  font-size: 14px;
+  width: 90px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  background-color: #fff;
+  text-align: center;
+}
 
 .cart__remove-notice {
   position: absolute;
@@ -300,7 +304,6 @@
     margin-left: 0;
   }
   th {
-
   }
   td,
   th {
@@ -338,7 +341,7 @@
     text-align: right;
   }
   .col-20 {
-    @include bp (600px) {
+    @include bp(600px) {
       flex: 0 1 50%;
     }
   }
@@ -353,7 +356,8 @@
   margin-bottom: 20px;
 }
 
-.checkout-heading, .panel-heading {
+.checkout-heading,
+.panel-heading {
   @extend .table__caption;
   + p {
     margin-bottom: 5px;
@@ -361,7 +365,7 @@
 }
 
 .simplecheckout-block {
-@extend .content__inner;
+  @extend .content__inner;
   a {
     color: $btn;
   }

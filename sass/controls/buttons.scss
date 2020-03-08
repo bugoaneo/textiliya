@@ -40,6 +40,10 @@
   &--lowcase {
     text-transform: none;
   }
+  &.disabled {
+    text-transform: none;
+    font-size: 1em;
+  }
 }
 
 .btn-link {
@@ -191,6 +195,10 @@
     border-bottom: 3px solid #fff;
     border-left: 3px solid #fff;
   }
+}
+
+.popup-close {
+  @extend .close-tooltip;
 }
 
 .delete {

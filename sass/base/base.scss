@@ -20,7 +20,7 @@ body {
   flex-grow: 1;
   background-color: #fbfbfb;
   /******/
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .footer {
@@ -265,10 +265,6 @@ table {
     @include bp(600px) {
       word-break: break-all;
     }
-    &[colspan] {
-      text-align: right;
-      font-weight: 700;
-    }
   }
   td {
     border: 1px solid $text;
@@ -287,6 +283,10 @@ table {
       @include bp(600px) {
         white-space: initial;
       }
+    }
+    &[colspan] {
+      font-weight: 700;
+      text-align: center;
     }
   }
   th {
@@ -339,6 +339,29 @@ table {
       position: relative;
       left: 0;
       width: 100%;
+    }
+  }
+}
+
+.opt-aside {
+  width: 200px;
+  @include bp(800px) {
+    display: none;
+  }
+}
+
+.opt-list {
+  width: calc(100% - 220px);
+  @include bp(800px) {
+    width: 100%;
+  }
+}
+
+.opt__catalog {
+  .catalog__item {
+    flex: 0 1 20%;
+    @include bp(800px) {
+      flex: 0 0 50%;
     }
   }
 }

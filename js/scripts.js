@@ -62,7 +62,7 @@ $(document).ready(function () {
   });
 
   $('.dropdown-btn').click(function () {
-    $('.dropdown-body').toggleClass('open');
+    $(this).siblings($('.dropdown-body')).toggleClass('open');
   });
 
   $('.dropdown-close').click(function () {
