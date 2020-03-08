@@ -343,6 +343,8 @@ table {
   }
 }
 
+/*opt*/
+
 .opt-aside {
   width: 200px;
   @include bp(800px) {
@@ -360,6 +362,31 @@ table {
 .opt__catalog {
   .catalog__item {
     flex: 0 1 20%;
+    @include bp(800px) {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+/*flter*/
+
+.filter-aside {
+  width: 250px;
+  @include bp(800px) {
+    display: none;
+  }
+}
+
+.filter-list {
+  width: calc(100% - 270px);
+  @include bp(800px) {
+    width: 100%;
+  }
+}
+
+.filter__catalog {
+  .catalog__item {
+    flex: 0 1 33%;
     @include bp(800px) {
       flex: 0 0 50%;
     }

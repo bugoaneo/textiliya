@@ -12,7 +12,8 @@
   }
 }
 
-.opt-list {
+.opt-list,
+.filter-list {
   .tags-module {
     margin: 0 auto;
   }
@@ -22,7 +23,6 @@
   padding-bottom: 15px;
   border-bottom: 1px solid #000;
   font-size: 18px;
-  color: #c63b3b;
   font-weight: 700;
   text-transform: uppercase;
 }
