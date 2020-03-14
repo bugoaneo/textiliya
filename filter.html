@@ -458,10 +458,42 @@ http://browsehappy.com/">обновите</a>
         <div class="row jsb">
           <div class="filter-aside">
             <div class="filter-aside__widget">
-              <ul class="filter-aside__nav">
-                <li class="filter-aside__navitem"><a href="">Атлас</a></li>
-                <li class="filter-aside__navitem"><a href="">Мех искусственный</a></li>
-                <li class="filter-aside__navitem"><a href="">Трикотаж кулирка гладкокрашеная</a></li>
+              <ul class="filter-aside__list">
+                <li class="filter-aside__item"><a href="">Атлас <span class="link-count">105</span></a></li>
+                <li class="filter-aside__item"><a href="">Мех искусственный <span class="link-count">15</span></a>
+                </li>
+                <li class="filter-aside__item"><a href="">Трикотаж кулирка гладкокрашеная <span
+                    class="link-count">1005</span></a></li>
+                <li class="filter-aside__item"><a href="">Лен <span class="link-count">5</span></a></li>
+                <li class="filter-aside__item filter-dropdown__container"><a href="" class="filter-dropdown__btn">Подкладочные <span
+                    class="link-count">135</span></a>
+                  <ul class="dropdown-aside__list">
+                    <li class="dropdown-aside__item"><a href="">Lorem.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem ipsum</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum.</a></li>
+                  </ul>
+                </li>
+                <li class="filter-aside__item"><a href="">Атлас <span class="link-count">105</span></a></li>
+                <li class="filter-aside__item"><a href="">Мех искусственный <span class="link-count">15</span></a>
+                </li>
+                <li class="filter-aside__item filter-dropdown__container"><a href="" class="dropdown-btn">Подкладочные <span
+                    class="link-count">15</span></a>
+                  <ul class="dropdown-aside__list">
+                    <li class="dropdown-aside__item"><a href="">Lorem.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem ipsum dolor sit.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum dolor.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem ipsum</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem.</a></li>
+                    <li class="dropdown-aside__item"><a href="">Lorem, ipsum.</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -1120,7 +1152,6 @@ http://browsehappy.com/">обновите</a>
 
   <script>
     $('.dropdown__text').shave(20);
-
     //dropdoun
 
     $(".dropdown-btn").click(function () {
@@ -1132,6 +1163,11 @@ http://browsehappy.com/">обновите</a>
         $(".overlay-remind").fadeOut();
       });
 
+    });
+
+    $(".filter-dropdown__btn").click(function () {
+      $(this).next('.dropdown-aside__list').toggleClass('open');
+      return false;
     });
 
     //slider

@@ -69,6 +69,15 @@
 .catalog__link {
   color: initial;
 }
+
+.catalog__pic {
+  display: block;
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 .catalog__price {
   margin-top: -18px;
   margin-bottom: 10px;

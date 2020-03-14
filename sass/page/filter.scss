@@ -8,3 +8,44 @@
     margin-bottom: 20px;
   }
 }
+
+.filter-aside {
+  padding: 25px 5px 20px 0;
+}
+
+.filter-aside__item {
+  &.filter-dropdown__container {
+    &:before {
+      content: "+";
+      position: absolute;
+      left: 0;
+      top: 0.2em;
+    }
+  }
+  a {
+    display: block;
+    padding: 3px 0 3px 10px;
+  }
+  .link-count {
+    color: #626262;
+    padding-left: 4px;
+  }
+  &:hover {
+    > a {
+      font-weight: 700;
+    }
+  }
+}
+
+.filter-dropdown__container {
+  position: relative;
+}
+
+.dropdown-aside__list {
+  padding-left: 10px;
+  max-height: 0;
+  overflow: hidden;
+  &.open {
+    max-height: 550px;
+  }
+}
