@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic-ext"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/jquery-ui-custom.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -104,7 +105,8 @@ http://browsehappy.com/">обновите</a>
                   </div>
                   <div class="form__row">
                     <button class="btn" id="btn-login" type="submit">Войти</button> <a href="/**/"
-                      class="btn-link">Забыли пароль?</a>
+                      class="btn-link">Забыли
+                      пароль?</a>
                   </div>
                 </form>
               </div>
@@ -207,7 +209,8 @@ http://browsehappy.com/">обновите</a>
                             </li>
                             <li class="submenu__item">
                               <a href="" class="submenu__link"><span class="dropdown__text"><span
-                                    class="dropdown__text">Lorem, ipsum.</span></span>
+                                    class="dropdown__text">Lorem,
+                                    ipsum.</span></span>
                                 <span class="link-count">10</span></a>
                             </li>
                             <li class="submenu__item">
@@ -463,10 +466,11 @@ http://browsehappy.com/">обновите</a>
                 <li class="filter-aside__item"><a href="">Мех искусственный <span class="link-count">15</span></a>
                 </li>
                 <li class="filter-aside__item"><a href="">Трикотаж кулирка гладкокрашеная <span
-                    class="link-count">1005</span></a></li>
+                      class="link-count">1005</span></a></li>
                 <li class="filter-aside__item"><a href="">Лен <span class="link-count">5</span></a></li>
-                <li class="filter-aside__item filter-dropdown__container"><a href="" class="filter-dropdown__btn">Подкладочные <span
-                    class="link-count">135</span></a>
+                <li class="filter-aside__item filter-dropdown__container"><a href=""
+                    class="filter-dropdown__btn">Подкладочные
+                    <span class="link-count">135</span></a>
                   <ul class="dropdown-aside__list">
                     <li class="dropdown-aside__item"><a href="">Lorem.</a></li>
                     <li class="dropdown-aside__item"><a href="">Lorem, ipsum.</a></li>
@@ -481,8 +485,9 @@ http://browsehappy.com/">обновите</a>
                 <li class="filter-aside__item"><a href="">Атлас <span class="link-count">105</span></a></li>
                 <li class="filter-aside__item"><a href="">Мех искусственный <span class="link-count">15</span></a>
                 </li>
-                <li class="filter-aside__item filter-dropdown__container"><a href="" class="dropdown-btn">Подкладочные <span
-                    class="link-count">15</span></a>
+                <li class="filter-aside__item filter-dropdown__container"><a href=""
+                    class="filter-dropdown__btn">Подкладочные
+                    <span class="link-count">15</span></a>
                   <ul class="dropdown-aside__list">
                     <li class="dropdown-aside__item"><a href="">Lorem.</a></li>
                     <li class="dropdown-aside__item"><a href="">Lorem, ipsum.</a></li>
@@ -507,12 +512,7 @@ http://browsehappy.com/">обновите</a>
               </ul>
             </div>
             <h2 class="filter__title">Ткань подкладочная жаккард</h2>
-            <!-- <div class="filter__row">
-              <p>Мы предлагаем специальные условия сотрудничества по всем товарным категориям.</p>
-            </div>
-            <div class="filter__row">
-              <button class="btn btn--alert popup-trigger" type="button">Подробнее</button>
-            </div> -->
+
             <div class="tags-module">
               <div class="swiper-container tags">
                 <div class="swiper-wrapper tags__list">
@@ -540,11 +540,223 @@ http://browsehappy.com/">обновите</a>
                 </div>
               </div>
               <!-- Add navigation buttons -->
-
               <div class="swiper-button-next tag-next"></div>
               <div class="swiper-button-prev tag-prev"></div>
-
             </div>
+
+            <!-- filter block -->
+            <div class="filter-block">
+              <div class="filter__row row ac">
+                <div class="col col-60">
+                  <div class="filter__category">
+                    <ul class="filter__category-list">
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="novelty" checked=""
+                          id="novelty"><label class="filter__category-btn novelty" for="novelty">Новинки</label></li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="gross"
+                          id="gross"><label class="filter__category-btn gross" for="gross">Опт</label></li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="sale-filter"
+                          id="sale-filter"><label class="filter__category-btn sale" for="sale-filter">Скидки</label>
+                      </li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter-popular"
+                          id="filter-popular"><label class="filter__category-btn hit" for="filter-popular">Сейчас
+                          покупают</label></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter__sorting">
+                  <div class="form__select-wrap">
+                    <select name="category_id" class="form__input" id="">
+                      <option value="0">Сначала новые</option>
+                      <option value="189">Lorem, ipsum.</option>
+                      <option value="189">Lorem ipsum dolor sit amet.</option>
+                    </select>
+                  </div>
+                  <button class="btn filter-trigger mobil" type="button">Фильтры</button>
+                </div>
+              </div>
+              <!-- filter menu -->
+              <div class="filter__row filter-nav">
+                <button class="filter-nav__close mobil" type="button">x</button>
+                <div class="filter__menu">
+                  <ul class="filter__menu-list">
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Цена</span>
+                      <div class="filter__menu-dropdown">
+                        <div class="range-slider">
+                          <div class="range-slider__val"><input type="text" id="range-slider-min" type="text"
+                              name="min-area" value="150" /></div>
+                          <div id="slider-range"></div>
+                          <div class="range-slider__val"><input type="text" id="range-slider-max" type="text"
+                              name="max-area" value="15000" /></div>
+                        </div>
+                        <p>По каким ценам фильтруем?</p>
+                        <div class="filter-price row">
+                          <div class="col-50">
+                            <input type="radio" class="hidden" name="filter__price" id="filter__opt-price">
+                            <label class="filter-price__label" for="filter__opt-price">опт</label>
+                          </div>
+                          <div class="col-50">
+                            <input type="radio" class="hidden" checked="" name="filter__price"
+                              id="filter__retail-price">
+                            <label class="filter-price__label" for="filter__retail-price">розница</label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Цвет</span>
+                      <div class="filter__menu-dropdown column">
+                        <ul class="filter__list">
+                          <li class="filter__item">
+                            <input type="checkbox" name="" id="color-red" value="" class="hidden">
+                            <label for="color-red" class="filter__label"><span class="filter__label-color"></span><span
+                                class="filter__label-text">Красный</span></label>
+                          </li>
+                          <li class="filter__item">
+                            <input type="checkbox" name="" id="color-blue" value="" class="hidden">
+                            <label class="filter__label" for="color-blue">
+                              <span class="filter__label-color"></span>
+                              <span class="filter__label-text">Синий</span>
+                            </label>
+                          </li>
+                          <li class="filter__item">
+                            <input type="checkbox" name="" id="lorem0" value="" class="hidden">
+                            <label class="filter__label" for="lorem0">
+                              <span class="filter__label-color" style="background-color:#001"></span>
+                              <span class="filter__label-text">lorem</span>
+                            </label>
+                          </li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem1" value=""
+                              class="hidden"><label class="filter__label" for="lorem1"><span class="filter__label-color"
+                                style="background-color:#002"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem2" value=""
+                              class="hidden"><label class="filter__label" for="lorem2"><span class="filter__label-color"
+                                style="background-color:#003"></span><span class="filter__label-text">Lorem,
+                                ipsum.</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem3" value=""
+                              class="hidden"><label class="filter__label" for="lorem3"><span class="filter__label-color"
+                                style="background-color:#004"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem4" value=""
+                              class="hidden"><label class="filter__label" for="lorem4"><span class="filter__label-color"
+                                style="background-color:#005"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem5" value=""
+                              class="hidden"><label class="filter__label" for="lorem5"><span class="filter__label-color"
+                                style="background-color:#006"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem6" value=""
+                              class="hidden"><label class="filter__label" for="lorem6"><span class="filter__label-color"
+                                style="background-color:#007"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem7" value=""
+                              class="hidden"><label class="filter__label" for="lorem7"><span class="filter__label-color"
+                                style="background-color:#008"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem8" value=""
+                              class="hidden"><label class="filter__label" for="lorem8"><span class="filter__label-color"
+                                style="background-color:#009"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem9" value=""
+                              class="hidden"><label class="filter__label" for="lorem9"><span
+                                class="filter__label-color" style="background-color:#0010"></span><span
+                                class="filter__label-text">Lorem, ipsum dolor.</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem10" value=""
+                              class="hidden"><label class="filter__label" for="lorem10"><span
+                                class="filter__label-color" style="background-color:#0011"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem11" value=""
+                              class="hidden"><label class="filter__label" for="lorem11"><span
+                                class="filter__label-color" style="background-color:#0012"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem12" value=""
+                              class="hidden"><label class="filter__label" for="lorem12"><span
+                                class="filter__label-color" style="background-color:#0013"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem13" value=""
+                              class="hidden"><label class="filter__label" for="lorem13"><span
+                                class="filter__label-color" style="background-color:#0014"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem14" value=""
+                              class="hidden"><label class="filter__label" for="lorem14"><span
+                                class="filter__label-color" style="background-color:#0015"></span><span
+                                class="filter__label-text">Lorem, ipsum dolor.</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem15" value=""
+                              class="hidden"><label class="filter__label" for="lorem15"><span
+                                class="filter__label-color" style="background-color:#0016"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem16" value=""
+                              class="hidden"><label class="filter__label" for="lorem16"><span
+                                class="filter__label-color" style="background-color:#0017"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem17" value=""
+                              class="hidden"><label class="filter__label" for="lorem17"><span
+                                class="filter__label-color" style="background-color:#0018"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem18" value=""
+                              class="hidden"><label class="filter__label" for="lorem18"><span
+                                class="filter__label-color" style="background-color:#0019"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem19" value=""
+                              class="hidden"><label class="filter__label" for="lorem19"><span
+                                class="filter__label-color" style="background-color:#0020"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem20" value=""
+                              class="hidden"><label class="filter__label" for="lorem20"><span
+                                class="filter__label-color" style="background-color:#0021"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem21" value=""
+                              class="hidden"><label class="filter__label" for="lorem21"><span
+                                class="filter__label-color" style="background-color:#0022"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem22" value=""
+                              class="hidden"><label class="filter__label" for="lorem22"><span
+                                class="filter__label-color" style="background-color:#0023"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem23" value=""
+                              class="hidden"><label class="filter__label" for="lorem23"><span
+                                class="filter__label-color" style="background-color:#0024"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+                          <li class="filter__item"><input type="checkbox" name="" id="lorem24" value=""
+                              class="hidden"><label class="filter__label" for="lorem24"><span
+                                class="filter__label-color" style="background-color:#0025"></span><span
+                                class="filter__label-text">lorem</span></label></li>
+
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Узор</span>
+                      <div class="filter__menu-dropdown column">
+                      <ul class="filter__list">
+                        <li class="filter__item">
+                          <input type="checkbox" name="" id="pattern1" value="" class="hidden">
+                          <label for="pattern1" class="filter__label"><span
+                              class="filter__label-text">lorem</span></label>
+                        </li>
+                        <li class="filter__item">
+                          <input type="checkbox" name="" id="pattern2" value="" class="hidden">
+                          <label for="pattern2" class="filter__label"><span
+                              class="filter__label-text">Lorem, ipsum dolor.</span></label>
+                        </li>
+                        <li class="filter__item">
+                          <input type="checkbox" name="" id="pattern3" value="" class="hidden">
+                          <label for="pattern3" class="filter__label"><span class="filter__label-text">Lorem, ipsum dolor.</span></label>
+                        </li>
+                      </ul>
+                      </div>
+                    </li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Состав</span></li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Ширина</span></li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Плотность</span></li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Производитель</span></li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Назначение</span></li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Фактура</span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /filter menu -->
+            </div>
+            <!-- /filter block -->
+
             <div class="row filter__catalog">
               <div class="catalog__item">
                 <div class="shild shild--small">
@@ -1026,152 +1238,24 @@ http://browsehappy.com/">обновите</a>
       </form>
     </div>
   </div>
-  <div class="overlay filter-conditions" style="display: none;">
-    <div class="popup">
-      <button class="popup__close filter-conditions__close" type="button">x</button>
-      <div class="popup__body">
-        <p class="accent"><b>Одежные ткани:</b></p>
-        <ul class="list">
-          <li>у нас нет минимальной суммы покупки</li>
-          <li>минимальный оптовый отрез ткани от 3 метров</li>
-        </ul>
-        <p class="accent"><b>Ткани для дома, Мебельные и портьерные ткани:</b></p>
-        <ul class="list">
-          <li>у нас нет минимальной суммы покупки</li>
-          <li>минимальный оптовый отрез ткани от 12 метров</li>
-        </ul>
-        <p class="accent"><b>Разовые скидки от суммы заказа на одёжные ткани:</b></p>
-        <ul class="list">
-          <li>от 20 000 руб. - скидка 3%</li>
-          <li>от 40 000 руб. – скидка 5%</li>
-          <li>от 60 000 руб. – скидка 7%</li>
-        </ul>
-        <p class="accent"><b>Накопительные скидки:</b></p>
-        <p>Накопительная скидка в текущем месяце зависит от суммы заказов в прошлом. Т.е. если в мае вы сделали заказы
-          на
-          большую
-          сумму, то в июне на любой ваш заказ будет действовать накопительная скидка.</p>
-        <p class="accent"><b>Границы накопительных скидок:</b></p>
-        <p><b>Одежные ткани:</b></p>
-        <ul class="list">
-          <li>от 15 000 руб. - скидка 3%</li>
-          <li>от 30 000 руб. – скидка 5%</li>
-          <li>от 50 000 руб. – скидка 7%</li>
-        </ul>
-        <table style="width: 100%;margin-bottom: 30px; font-size:.9em">
-          <tbody>
-            <tr>
-              <td valign="top">
-                Условие
-              </td>
-              <td valign="top">
-                %, клиенты до 12 мес
-              </td>
-              <td valign="top">
-                %, клиенты более 12 мес.
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3" valign="top">
-                За разовый объем закупки (единовременная)
-              </td>
-            </tr>
-            <tr>
-              <td valign="top">
-                40 000 руб
-              </td>
-              <td valign="top">
-                3%
-              </td>
-              <td valign="top">
-                4%
-              </td>
-            </tr>
-            <tr>
-              <td valign="top">
-                60 000 руб
-              </td>
-              <td valign="top">
-                5%
-              </td>
-              <td valign="top">
-                6%
-              </td>
-            </tr>
-            <tr>
-              <td valign="top">
-                150 000 руб
-              </td>
-              <td valign="top">
-                7%
-              </td>
-              <td valign="top">
-                8%
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3" valign="top">
-                Скидка за предоплату
-              </td>
-            </tr>
-            <tr>
-              <td valign="top">
-                предоплата 20%
-              </td>
-              <td valign="top">
-                5%
-              </td>
-              <td valign="top">
-                5%
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="accent"><b>Пояснения:</b></p>
-        <p><b>Единовременная</b> - применяется для новых и постоянных клиентов. Данная скидка зависит от срока работы с
-          клиентом и
-          увеличивается при работе с клиентом более года (с момента проведения первого заказа). Действует только для
-          клиентов
-          работающих по предоплате.</p>
-        <p><b>Скидка за предоплату</b> - применяется для клиентов:</p>
-        <ul class="list">
-          <li>внесших предоплату за новую коллекцию до момента ее поступления в продажу (не менее чем за 2 недели,
-            денежные средства должны поступить на р/с). </li>
-          <li>для клиентов которые заказали трикотажные хлопковые ткани со склада поставщика. Данная скидка <span
-              class="accent">НЕ
-              суммируется с единовременной</span>. </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/shave.js"></script>
   <script src="js/swiper.min.js"></script>
-
+  <script src="js/jquery-ui-custom.min.js"></script>
+  <script src="js/touch-punch.min.js"></script>
   <script src="js/scripts.js"></script>
 
   <script>
     $('.dropdown__text').shave(20);
-    //dropdoun
 
-    $(".dropdown-btn").click(function () {
-      $(this).each(function () {
-        $(".overlay-remind").fadeIn();
-        $('.dropdown-body').addClass('open').css('top', '20%');
-      });
-      $('.dropdown-close').click(function () {
-        $(".overlay-remind").fadeOut();
-      });
-
-    });
-
+    //sidebar menu
     $(".filter-dropdown__btn").click(function () {
       $(this).next('.dropdown-aside__list').toggleClass('open');
       return false;
     });
 
     //slider
-
     var tags = new Swiper('.tags', {
       slidesPerView: 'auto',
       spaceBetween: 10,
@@ -1183,12 +1267,68 @@ http://browsehappy.com/">обновите</a>
     });
 
     // popup
-    $(".popup-trigger").click(function () {
-      $(".filter-conditions").fadeIn();
-      $('.filter-conditions__close').click(function () {
-        $(".filter-conditions").fadeOut();
+    $(".dropdown-btn").click(function () {
+      $(this).each(function () {
+        $(".overlay-remind").css({ 'display': 'block' });
+        $('.dropdown-body').addClass('open').css('top', '20%');
       });
+      $('.dropdown-close').click(function () {
+        $(".overlay-remind").css({ 'display': 'none' });
+      });
+
     });
+
+    //prise range in menu
+    $("#slider-range").slider({
+      range: true,
+      min: 150,
+      max: 5000,
+      values: [500, 1500],
+      slide: function (event, ui) {
+        $("#range-slider-min").val(ui.values[0]);
+        $("#range-slider-max").val(ui.values[1]);
+      }
+    });
+    $("#range-slider-min").val($("#slider-range").slider("values", 0));
+    $("#range-slider-max").val($("#slider-range").slider("values", 1));
+
+    /*filter menu*/
+    $(".filter__menu-btn").each(function () {
+      $(this).click(function () {
+        $(this).next(".filter__menu-dropdown").toggleClass('open');
+      })
+    })
+
+    /*filter menu on mobile*/
+
+    $(".filter-trigger").click(function () {
+      $(".filter-nav").addClass('open');
+    });
+
+    if (window.matchMedia("(max-width: 780px)").matches) {
+      $(".filter__menu-dropdown").slideUp();
+      $(".filter__menu-btn").each(function () {
+        $(this).click(function () {
+          if ($(this).next(".filter__menu-dropdown").is(":hidden")) {
+            $(this).next(".filter__menu-dropdown").slideDown();
+          } else {
+            $(this).next(".filter__menu-dropdown").slideUp();
+          }
+        })
+      })
+    };
+
+    $(document).mouseup(function (e) {
+      if (!$('.filter-nav').is(e.target) && $('.filter-nav').has(e.target).length === 0) {
+        $('.filter-nav').removeClass('open');
+      }
+    });
+
+    $(".filter-nav__close").click(function () {
+      $(".filter-nav").removeClass('open');
+    });
+
+
   </script>
 </body>
 

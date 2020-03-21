@@ -386,7 +386,7 @@ table {
 
 .filter__catalog {
   .catalog__item {
-    flex: 0 1 33%;
+    flex: 0 1 33.333%;
     @include bp(800px) {
       flex: 0 0 50%;
     }
