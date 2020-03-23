@@ -61,7 +61,7 @@
   }
 }
 .filter-price {
-  margin-top: 10px;
+  margin-top: 20px;
   .filter-price__label {
     position: relative;
     padding-left: 20px;
@@ -265,6 +265,11 @@
       border-color: $btn;
     }
   }
+  input[type="radio"]:checked + .filter__label {
+    &:after {
+      border-color: $btn;
+    }
+  }
 }
 
 .filter__label {
@@ -309,7 +314,6 @@
 
 .filter-nav {
   position: relative;
-  background-color: #fff;
   @include bp(800px) {
     position: fixed;
     top: 0;
@@ -320,6 +324,7 @@
     z-index: 100;
     box-shadow: 0px 0px 4px 0px rgba(86, 86, 86, 0.5);
     transition: left 0.3s ease-in-out;
+    background-color: #fff;
   }
   &.open {
     left: 0;

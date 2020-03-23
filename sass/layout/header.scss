@@ -396,6 +396,12 @@
       .dropdown__item {
         display: inline-block;
         width: 100%;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        page-break-before: avoid;
+        position: relative;
+        -webkit-column-break-inside: avoid;
+        -webkit-backface-visibility: hidden;
       }
     }
     @include bp(720px) {
