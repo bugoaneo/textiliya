@@ -462,7 +462,7 @@ http://browsehappy.com/">обновите</a>
           <div class="filter-aside">
             <div class="filter-aside__widget">
               <ul class="filter-aside__list">
-                <li class="filter-aside__item"><a href="">Атлас <span class="link-count">105</span></a></li>
+                <li class="filter-aside__item current"><a href="">Атлас <span class="link-count">105</span></a></li>
                 <li class="filter-aside__item"><a href="">Мех искусственный <span class="link-count">15</span></a>
                 </li>
                 <li class="filter-aside__item"><a href="">Трикотаж кулирка гладкокрашеная <span
@@ -546,24 +546,39 @@ http://browsehappy.com/">обновите</a>
 
             <!-- filter block -->
             <div class="filter-block">
-              <div class="filter__row row ac">
-                <div class="col col-60">
+              <div class="filter__row filter-area">
+                <div class="filter__sorting">
                   <div class="filter__category">
                     <ul class="filter__category-list">
-                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="novelty" checked=""
-                          id="novelty"><label class="filter__category-btn novelty" for="novelty">Новинки</label></li>
-                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="gross"
-                          id="gross"><label class="filter__category-btn gross" for="gross">Опт</label></li>
-                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="sale-filter"
-                          id="sale-filter"><label class="filter__category-btn sale" for="sale-filter">Скидки</label>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter[]" value="40"
+                          id="filter_checkbox_40"><label class="filter__category-btn novelty"
+                          for="filter_checkbox_40">Новинки</label>
                       </li>
-                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter-popular"
-                          id="filter-popular"><label class="filter__category-btn hit" for="filter-popular">Сейчас
-                          покупают</label></li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter[]"
+                          value="320" id="filter_checkbox_320"><label class="filter__category-btn gross"
+                          for="filter_checkbox_320">Опт</label>
+                      </li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter[]"
+                          value="694" id="filter_checkbox_694"><label class="filter__category-btn gross"
+                          for="filter_checkbox_694">от 3-х метров</label>
+                      </li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter[]"
+                          value="696" id="filter_checkbox_696"><label class="filter__category-btn gross"
+                          for="filter_checkbox_696">от 6-и метров</label>
+                      </li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter[]"
+                          value="568" id="filter_checkbox_568"><label class="filter__category-btn hit"
+                          for="filter_checkbox_568">Под заказ</label>
+                      </li>
+                      <li class="filter__category-item"><input type="checkbox" class="hidden" name="filter[]"
+                          value="sale" id="filter_checkbox_sale"><label class="filter__category-btn sale"
+                          for="filter_checkbox_sale">Распродажа</label>
+                      </li>
+
                     </ul>
                   </div>
                 </div>
-                <div class="filter__sorting">
+                <div class="filter__trigger">
                   <div class="form__select-wrap">
                     <select name="category_id" class="form__input" id="">
                       <option value="0">Сначала новые</option>
@@ -572,6 +587,16 @@ http://browsehappy.com/">обновите</a>
                     </select>
                   </div>
                   <button class="btn filter-trigger mobil" type="button">Фильтры</button>
+                  <div class="pagination desc">
+                    <ul class="pagination__list small">
+                      <li class="pagination__item prev"><a href="">&#8249;</a></li>
+                      <li class="pagination__item active"><a href="">1</a></li>
+                      <li class="pagination__item"><a href="">12</a></li>
+                      <li class="pagination__item"><a href="">33</a></li>
+                      <li class="pagination__item more"><a href="">&#187;</a></li>
+                      <li class="pagination__item next"><a href="">&#8250;</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <!-- filter menu -->
@@ -605,6 +630,29 @@ http://browsehappy.com/">обновите</a>
                         </div> -->
                       </div>
                     </li>
+
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Узор</span>
+                      <div class="filter__menu-dropdown column">
+                        <ul class="filter__list">
+                          <li class="filter__item">
+                            <input type="checkbox" name="" id="pattern1" value="" class="hidden">
+                            <label for="pattern1" class="filter__label"><span
+                                class="filter__label-text">lorem</span></label>
+                          </li>
+                          <li class="filter__item">
+                            <input type="checkbox" name="" id="pattern2" value="" class="hidden">
+                            <label for="pattern2" class="filter__label"><span class="filter__label-text">Lorem, ipsum
+                                dolor.</span></label>
+                          </li>
+                          <li class="filter__item">
+                            <input type="checkbox" name="" id="pattern3" value="" class="hidden">
+                            <label for="pattern3" class="filter__label"><span class="filter__label-text">Lorem, ipsum
+                                dolor.</span></label>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Состав</span></li>
                     <li class="filter__menu-item"><span class="filter__menu-btn">Цвет</span>
                       <div class="filter__menu-dropdown column">
                         <ul class="filter__list">
@@ -682,7 +730,8 @@ http://browsehappy.com/">обновите</a>
                           <li class="filter__item"><input type="radio" name="color" id="lorem14" value=""
                               class="hidden"><label class="filter__label" for="lorem14"><span
                                 class="filter__label-color" style="background-color:#0015"></span><span
-                                class="filter__label-text">Lorem, ipsum dolor.</span></label></li>
+                                class="filter__label-text">Lorem, ipsum dolor.</span></label>
+                          </li>
                           <li class="filter__item"><input type="radio" name="color" id="lorem15" value=""
                               class="hidden"><label class="filter__label" for="lorem15"><span
                                 class="filter__label-color" style="background-color:#0016"></span><span
@@ -727,33 +776,11 @@ http://browsehappy.com/">обновите</a>
                         </ul>
                       </div>
                     </li>
-                    <li class="filter__menu-item"><span class="filter__menu-btn">Узор</span>
-                      <div class="filter__menu-dropdown column">
-                        <ul class="filter__list">
-                          <li class="filter__item">
-                            <input type="checkbox" name="" id="pattern1" value="" class="hidden">
-                            <label for="pattern1" class="filter__label"><span
-                                class="filter__label-text">lorem</span></label>
-                          </li>
-                          <li class="filter__item">
-                            <input type="checkbox" name="" id="pattern2" value="" class="hidden">
-                            <label for="pattern2" class="filter__label"><span class="filter__label-text">Lorem, ipsum
-                                dolor.</span></label>
-                          </li>
-                          <li class="filter__item">
-                            <input type="checkbox" name="" id="pattern3" value="" class="hidden">
-                            <label for="pattern3" class="filter__label"><span class="filter__label-text">Lorem, ipsum
-                                dolor.</span></label>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="filter__menu-item"><span class="filter__menu-btn">Состав</span></li>
-                    <li class="filter__menu-item"><span class="filter__menu-btn">Ширина</span></li>
+                    <!-- <li class="filter__menu-item"><span class="filter__menu-btn">Ширина</span></li>
                     <li class="filter__menu-item"><span class="filter__menu-btn">Плотность</span></li>
                     <li class="filter__menu-item"><span class="filter__menu-btn">Производитель</span></li>
                     <li class="filter__menu-item"><span class="filter__menu-btn">Назначение</span></li>
-                    <li class="filter__menu-item"><span class="filter__menu-btn">Фактура</span></li>
+                    <li class="filter__menu-item"><span class="filter__menu-btn">Фактура</span></li> -->
                   </ul>
                 </div>
               </div>
@@ -1169,7 +1196,16 @@ http://browsehappy.com/">обновите</a>
                 </div>
               </div>
             </div>
-
+            <div class="pagination mobil">
+              <ul class="pagination__list">
+                <li class="pagination__item prev"><a href="">&#8249;</a></li>
+                <li class="pagination__item active"><a href="">1</a></li>
+                <li class="pagination__item"><a href="">12</a></li>
+                <li class="pagination__item"><a href="">23</a></li>
+                <li class="pagination__item more"><a href="">&#187;</a></li>
+                <li class="pagination__item next"><a href="">&#8250;</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1285,7 +1321,7 @@ http://browsehappy.com/">обновите</a>
     //sidebar menu
     $(".filter-dropdown__btn").click(function () {
       $(this).next('.dropdown-aside__list').toggleClass('open');
-      return false;
+      // return false;
     });
 
     //slider

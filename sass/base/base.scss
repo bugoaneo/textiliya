@@ -385,6 +385,9 @@ table {
 }
 
 .filter__catalog {
+  @include bp(800px) {
+    margin-bottom: 30px;
+  }
   .catalog__item {
     flex: 0 1 33.333%;
     @include bp(800px) {
