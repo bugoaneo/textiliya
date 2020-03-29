@@ -229,6 +229,14 @@
       font-weight: bold;
     }
   }
+  &-city {
+    left: 0;
+    transform: none;
+  }
+  &-opt {
+    @extend .popup-geo;
+    height: 90%;
+  }
   p {
     margin-bottom: 0.8em;
   }
@@ -576,11 +584,6 @@
 
 .dropdown-close {
   @extend .close;
-}
-
-.popup {
-  @extend .popup-geo;
-  height: 90%;
 }
 
 .popup__body {
