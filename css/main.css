@@ -4435,7 +4435,9 @@ ul.care__table {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow: hidden;
+  /*important!!!*/ }
 
 .product__slider {
   -webkit-box-flex: 0;

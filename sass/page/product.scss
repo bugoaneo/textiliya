@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden; /*important!!!*/
 }
 
 .product__slider {
@@ -306,7 +307,7 @@
     2: #c2c3d1,
     3: #b7b8c5,
     4: #aeafbb,
-    5: #9e9faa
+    5: #9e9faa,
   );
   @each $color, $bg in $color-map {
     .r-tabs-tab:nth-child(#{$color}n) {
